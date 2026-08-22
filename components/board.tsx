@@ -1,9 +1,7 @@
 'use client';
 
 import { useMemo, useState } from 'react';
-import { Search } from 'lucide-react';
 import { SiteRow } from '@/components/site-row';
-import { Input } from '@/components/ui/input';
 import type { Listing } from '@/lib/site-data';
 import { cn } from '@/lib/utils';
 
@@ -29,40 +27,38 @@ export function Board({ listings }: { listings: Listing[] }) {
 
   return (
     <section>
-      <div className="mb-3 flex items-center gap-2">
-        <div className="relative flex-1">
-          <Search className="pointer-events-none absolute left-3 top-1/2 h-4 w-4 -translate-y-1/2 text-muted-foreground" />
-          <Input
-            value={query}
-            onChange={(event) => setQuery(event.target.value)}
-            placeholder="Search sites"
-            aria-label="Search sites"
-            className="pl-9"
-          />
-        </div>
-        <div className="flex shrink-0 rounded-md border border-border p-0.5 text-xs">
+      <div className="mb-5 flex flex-wrap items-stretch gap-3">
+        <input
+          value={query}
+          onChange={(event) => setQuery(event.target.value)}
+          placeholder="SEARCH"
+          aria-label="Search sites"
+          className="brut brut-shadow min-w-0 flex-1 bg-card px-3 py-2.5 text-sm uppercase tracking-[0.04em] outline-none placeholder:text-muted-foreground focus:bg-[color-mix(in_srgb,var(--orange)_12%,var(--card))]"
+        />
+        <div className="brut brut-shadow flex shrink-0 bg-card">
           {(['bid', 'name'] as const).map((option) => (
             <button
               key={option}
               type="button"
               onClick={() => setSort(option)}
               className={cn(
-                'rounded px-2.5 py-1.5 transition-colors',
+                'px-3 py-2.5 text-[11px] font-bold uppercase tracking-[0.06em]',
+                option === 'bid' && 'border-r-[3px] border-border',
                 sort === option
-                  ? 'bg-muted font-medium text-foreground'
-                  : 'text-muted-foreground hover:text-foreground'
+                  ? 'bg-foreground text-background'
+                  : 'hover:bg-[var(--orange)] hover:text-black'
               )}
             >
-              {option === 'bid' ? 'Top bid' : 'A–Z'}
+              {option === 'bid' ? 'By bid' : 'A–Z'}
             </button>
           ))}
         </div>
       </div>
 
-      <div className="overflow-hidden rounded-lg border border-border">
+      <div className="brut brut-shadow bg-card">
         {visible.length === 0 ? (
-          <p className="px-4 py-10 text-center text-sm text-muted-foreground">
-            Nothing matches “{query}”.
+          <p className="px-4 py-12 text-center text-sm font-bold uppercase">
+            Nothing matches “{query}”
           </p>
         ) : (
           visible.map((listing) => <SiteRow key={listing.domain} listing={listing} />)

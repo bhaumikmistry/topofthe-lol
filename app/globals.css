@@ -130,3 +130,155 @@
     @apply font-sans;
     }
 }
+/* ---------- brutalist theme ----------
+   Black on paper, 3px borders, hard offset shadows, no radius, no gradients,
+   monospace throughout. These land after the shadcn token block on purpose:
+   the primitives in components/ui keep working, they just stop being soft. */
+
+:root {
+    --ink: #000000;
+    --paper: #fdfdf8;
+    --orange: #ff5c00;
+    --grey: #6b6b6b;
+    --line: 3px;
+    --shadow: 7px 7px 0 var(--ink);
+
+    --background: var(--paper);
+    --foreground: var(--ink);
+    --card: #ffffff;
+    --card-foreground: var(--ink);
+    --popover: #ffffff;
+    --popover-foreground: var(--ink);
+    --primary: var(--ink);
+    --primary-foreground: var(--paper);
+    --secondary: var(--orange);
+    --secondary-foreground: var(--ink);
+    --muted: #f2f2ea;
+    --muted-foreground: var(--grey);
+    --accent: var(--orange);
+    --accent-foreground: var(--ink);
+    --border: var(--ink);
+    --input: var(--ink);
+    --ring: var(--orange);
+    --radius: 0px;
+}
+
+.dark {
+    --ink: #fdfdf8;
+    --paper: #0a0a0a;
+    --grey: #9a9a92;
+    --shadow: 7px 7px 0 var(--orange);
+
+    --background: var(--paper);
+    --foreground: var(--ink);
+    --card: #131311;
+    --card-foreground: var(--ink);
+    --popover: #131311;
+    --popover-foreground: var(--ink);
+    --primary: var(--ink);
+    --primary-foreground: var(--paper);
+    --muted: #1c1c19;
+    --muted-foreground: var(--grey);
+    --border: var(--ink);
+    --input: var(--ink);
+}
+
+body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--font-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Monospace at display sizes overruns narrow screens; nothing may scroll sideways. */
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+.brut {
+    border: var(--line) solid var(--ink);
+}
+
+.brut-shadow {
+    box-shadow: var(--shadow);
+}
+
+.brut-btn {
+    border: var(--line) solid var(--ink);
+    box-shadow: 4px 4px 0 var(--ink);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+}
+
+.brut-btn:hover {
+    background: var(--orange);
+    color: var(--ink);
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0 var(--ink);
+}
+
+.brut-btn:active {
+    transform: translate(4px, 4px);
+    box-shadow: none;
+}
+
+.dark .brut-btn,
+.dark .brut-btn:hover {
+    box-shadow: 4px 4px 0 var(--orange);
+}
+
+.mark {
+    background: var(--orange);
+    color: #000;
+    padding: 0 4px;
+}
+
+/* ---------- ticker ---------- */
+
+.ticker {
+    background: var(--orange);
+    color: #000;
+    border-bottom: var(--line) solid var(--ink);
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.ticker__track {
+    display: inline-flex;
+    animation: ticker 42s linear infinite;
+    will-change: transform;
+}
+
+.ticker__track span {
+    padding-right: 44px;
+}
+
+@keyframes ticker {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        /* Two identical copies of the list sit side by side, so a 50% shift
+           lands exactly where it started. */
+        transform: translateX(-50%);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .ticker__track {
+        animation: none;
+    }
+    .brut-btn:hover,
+    .brut-btn:active {
+        transform: none;
+    }
+}
+
+@media (max-width: 640px) {
+    :root {
+        --shadow: 5px 5px 0 var(--ink);
+    }
+}

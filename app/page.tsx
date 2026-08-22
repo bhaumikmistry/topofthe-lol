@@ -1,16 +1,23 @@
 import { Board } from '@/components/board';
 import { Footer } from '@/components/footer';
 import { Header } from '@/components/header';
+import { Ticker } from '@/components/ticker';
 import { formatMoney, getListings, getStats, updatedAt } from '@/lib/site-data';
 
 // Rebuilt on every deploy and every bid refresh commit — no request-time work.
 export const dynamic = 'force-static';
 
-function Stat({ label, value }: { label: string; value: string }) {
+function Stat({ label, value, hot }: { label: string; value: string; hot?: boolean }) {
   return (
-    <div className="rounded-lg border border-border px-3 py-2.5">
-      <div className="font-mono text-lg font-semibold tabular-nums">{value}</div>
-      <div className="text-[11px] uppercase tracking-wide text-muted-foreground">{label}</div>
+    <div
+      className={`border-b-[3px] border-r-[3px] border-border px-4 py-4 last:border-r-0 sm:border-b-0 ${
+        hot ? 'bg-[var(--orange)] text-black' : ''
+      }`}
+    >
+      <span className="block text-2xl font-extrabold tracking-[-0.04em] tabular-nums sm:text-3xl">
+        {value}
+      </span>
+      <span className="text-[11px] uppercase leading-tight tracking-[0.04em]">{label}</span>
     </div>
   );
 }
@@ -18,39 +25,60 @@ function Stat({ label, value }: { label: string; value: string }) {
 export default function Home() {
   const listings = getListings();
   const stats = getStats(listings);
+  const leader = listings[0];
 
   return (
     <div className="flex min-h-screen flex-col">
+      <Ticker listings={listings} />
       <Header />
+
       <main className="flex-1">
-        <div className="mx-auto max-w-3xl px-4 pb-8">
-          <section className="py-6">
-            <h1 className="text-2xl font-bold tracking-tight sm:text-3xl">
-              Every .lol bid site, ranked by its own top bid.
+        <div className="mx-auto max-w-3xl px-4">
+          <section className="border-b-[3px] border-border py-10">
+            <h1 className="text-[clamp(32px,7.6vw,62px)] font-extrabold uppercase leading-[0.94] tracking-[-0.04em]">
+              Every .lol bid site,
+              <br />
+              <span className="mark box-decoration-clone">ranked by bid</span>
             </h1>
-            <p className="mt-2 max-w-xl text-sm text-muted-foreground">
-              Pay-to-rank leaderboards took over the timeline. This is the index: which board is
-              real money, which one you can still top for the price of a coffee.
+
+            <p className="mt-5 max-w-[46ch] text-sm font-medium leading-relaxed">
+              Pay-to-rank boards took over the timeline. This is the index:{' '}
+              {leader?.domain ? (
+                <>
+                  <strong className="font-extrabold">{leader.domain}</strong> is holding{' '}
+                  <strong className="font-extrabold">{formatMoney(leader.topBid)}</strong>, and the
+                  cheapest board on this page can still be topped for pocket change.
+                </>
+              ) : (
+                'which board is real money and which one you can still top for pocket change.'
+              )}
             </p>
-            <p className="mt-3 text-sm">
+
+            <div className="mt-6 flex flex-wrap gap-3">
               <a
                 href="https://github.com/bhaumikmistry/topofthe-lol/issues/new?template=add-site.yml"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="underline underline-offset-4 hover:text-foreground"
+                className="brut-btn bg-foreground px-5 py-3 text-[13px] text-background no-underline"
               >
-                Know one that&rsquo;s missing?
-              </a>{' '}
-              <span className="text-muted-foreground">
-                Drop the domain in an issue — a bot reads its top bid and opens the pull request.
-              </span>
-            </p>
-            <div className="mt-5 grid grid-cols-2 gap-2 sm:grid-cols-4">
-              <Stat label="sites" value={String(stats.count)} />
-              <Stat label="highest bid" value={formatMoney(stats.highest)} />
+                Add a site
+              </a>
+              <a
+                href="https://github.com/shadcn-labs/outbid-template"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="brut-btn bg-card px-5 py-3 text-[13px] no-underline"
+              >
+                Build your own
+              </a>
+            </div>
+
+            <div className="brut brut-shadow mt-8 grid grid-cols-2 bg-card sm:grid-cols-4">
+              <Stat label="sites tracked" value={String(stats.count)} />
+              <Stat label="highest bid" value={formatMoney(stats.highest)} hot />
               <Stat label="all top bids" value={formatMoney(Math.round(stats.total))} />
               <Stat
-                label="updated"
+                label="last refresh"
                 value={
                   updatedAt
                     ? new Date(updatedAt).toLocaleDateString('en-US', {
@@ -63,9 +91,19 @@ export default function Home() {
             </div>
           </section>
 
-          <Board listings={listings} />
+          <section className="py-8">
+            <h2 className="mb-4 text-[13px] font-extrabold uppercase tracking-[0.08em]">
+              <span className="text-[var(--orange)]">01 /</span> The board
+            </h2>
+            <Board listings={listings} />
+            <p className="mt-4 text-[11.5px] uppercase tracking-[0.04em] text-muted-foreground">
+              A dash means the site renders its board in JavaScript and hasn&rsquo;t published a
+              number we can read yet.
+            </p>
+          </section>
         </div>
       </main>
+
       <Footer count={stats.count} />
     </div>
   );
