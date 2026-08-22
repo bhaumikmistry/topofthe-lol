@@ -2,7 +2,9 @@ import { formatMoney, type Listing } from '@/lib/site-data';
 import { cn } from '@/lib/utils';
 
 export function SiteRow({ listing }: { listing: Listing }) {
-  const { rank, domain, url, tagline, topBid, topEntry } = listing;
+  const { rank, domain, url, tagline, topBid, topEntry, exact } = listing;
+  // Scraped numbers are the price to take #1, not a confirmed standing bid.
+  const approximate = topBid !== null && !exact;
   const leader = rank === 1;
 
   return (
@@ -45,7 +47,11 @@ export function SiteRow({ listing }: { listing: Listing }) {
           !leader && 'group-hover:border-black'
         )}
       >
-        <span className="text-base font-extrabold tabular-nums sm:text-lg">
+        <span
+          className="text-base font-extrabold tabular-nums sm:text-lg"
+          title={approximate ? 'Read off the page — this is the price to take #1' : undefined}
+        >
+          {approximate ? '~' : ''}
           {formatMoney(topBid)}
         </span>
         <span
@@ -54,7 +60,7 @@ export function SiteRow({ listing }: { listing: Listing }) {
             leader ? 'text-black/70' : 'text-muted-foreground group-hover:text-black/70'
           )}
         >
-          top bid
+          {approximate ? 'to beat' : 'top bid'}
         </span>
       </span>
     </a>

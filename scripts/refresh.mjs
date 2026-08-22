@@ -17,8 +17,10 @@ const started = Date.now();
 const probed = await mapWithConcurrency(targets, 8, async (site) => {
   const result = await probeSite(site);
   const before = previous.results?.[site.domain];
-  // Keep the last known good number visible instead of blanking the row.
-  if (!result.ok && before?.ok) {
+  // Keep the last known good number visible instead of blanking the row — but
+  // only for transient failures. A site we deliberately stopped reading must
+  // lose its old number rather than keep showing it.
+  if (!result.ok && before?.ok && !result.skipped) {
     return { ...before, error: result.error, stale: true, checkedAt: result.checkedAt };
   }
   if (result.ok && before?.ok && typeof before.topBid === 'number' && before.topBid !== result.topBid) {

@@ -3,7 +3,8 @@
   "sites": [
     {
       "domain": "outbid.lol",
-      "tagline": "The original pay-to-rank leaderboard"
+      "tagline": "The original pay-to-rank leaderboard",
+      "htmlKey": "amountCents"
     },
     {
       "domain": "watchbid.lol",
@@ -21,7 +22,8 @@
     },
     {
       "domain": "lastspot.lol",
-      "tagline": "Only the last spot matters"
+      "tagline": "Buy one of 100 spots, value decays 5% a day",
+      "htmlFallback": false
     },
     {
       "domain": "overbid.lol",
@@ -49,7 +51,8 @@
     },
     {
       "domain": "bidwall.lol",
-      "tagline": "A wall of paid listings"
+      "tagline": "A wall of paid listings",
+      "htmlFallback": false
     },
     {
       "domain": "rankly.vip",
@@ -77,7 +80,10 @@
     },
     {
       "domain": "dontbid.lol",
-      "tagline": "Please do not bid"
+      "tagline": "Please do not bid",
+      "htmlKey": "claimTopCents",
+      "htmlKeyIsAsk": true,
+      "htmlFallback": false
     },
     {
       "domain": "warmap.lol",
@@ -128,7 +134,10 @@
     },
     {
       "domain": "stealmyspot.lol",
-      "tagline": "Place your website or X profile on a live paid leaderboard. Outbid another listing to claim a higher position and attract more visitors."
+      "tagline": "Place your website or X profile on a live paid leaderboard. Outbid another listing to claim a higher position and attract more visitors.",
+      "endpoint": "/api/leaderboard",
+      "listPath": "entries",
+      "nameKey": "label"
     },
     {
       "domain": "bidroyale.lol",
@@ -144,7 +153,8 @@
     },
     {
       "domain": "marketrank.lol",
-      "tagline": "Back products. Trade virtual shares. Climb the ranks. Higher price means higher rank."
+      "tagline": "Back products. Trade virtual shares. Climb the ranks. Higher price means higher rank.",
+      "htmlFallback": false
     }
   ]
 }

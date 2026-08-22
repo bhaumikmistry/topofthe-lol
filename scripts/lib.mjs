@@ -114,6 +114,24 @@ const MONEY = /\$\s?([0-9]{1,3}(?:,[0-9]{3})+|[0-9]+)(?:\.([0-9]{2}))?/g;
 const MAX_PLAUSIBLE_BID = 5_000_000;
 
 /**
+ * Many of these boards ship their data inside the page as escaped JSON (a
+ * Next.js flight payload, a hydration blob). Reading a known key out of it is
+ * exact, unlike scanning for dollar signs.
+ */
+export function embeddedKeyValue(html, key, cents) {
+  const unescaped = html.replace(/\\"/g, '"');
+  const pattern = new RegExp(`"${key}"\\s*:\\s*"?(\\d+(?:\\.\\d+)?)"?`, 'g');
+  let best = null;
+  for (const match of unescaped.matchAll(pattern)) {
+    const value = Number(match[1]);
+    if (!Number.isFinite(value)) continue;
+    if (best === null || value > best) best = value;
+  }
+  if (best === null) return null;
+  return cents ?? /cents/i.test(key) ? best / 100 : best;
+}
+
+/**
  * Fallback for sites with no JSON API. Returns every plausible dollar amount in
  * document order, so callers can use both the largest (the #1 bid) and the
  * first (the top row, since these boards render highest-first).
@@ -178,6 +196,7 @@ export async function probeSite(site) {
     source: null,
     claimPrice: null,
     nextBid: null,
+    skipped: false,
     ok: false,
     error: null,
     meta: {},
@@ -237,7 +256,22 @@ export async function probeSite(site) {
     const html = await response.text();
     result.meta = extractMeta(html);
     result.claimPrice = claimPrice(html);
-    if (!result.ok) {
+
+    if (!result.ok && site.htmlKey) {
+      const value = embeddedKeyValue(html, site.htmlKey, site.htmlKeyCents);
+      if (value !== null) {
+        result.topBid = value;
+        result.source = 'embedded';
+        result.ok = true;
+        result.error = null;
+      }
+    }
+
+    if (!result.ok && site.htmlFallback === false) {
+      // Deliberate, not a hiccup — so the previous number must not be kept.
+      result.skipped = true;
+      result.error = result.error ?? 'html scraping disabled for this site';
+    } else if (!result.ok) {
       const amounts = dollarAmounts(html);
       if (amounts.length) {
         // These boards render highest-first, so the first amount is normally the
@@ -256,6 +290,14 @@ export async function probeSite(site) {
     if (result.ok && result.claimPrice !== null && result.topBid !== null) {
       result.nextBid = result.claimPrice > result.topBid ? result.claimPrice : null;
     }
+
+    // Scraped dollar signs cannot tell a bid apart from the price to beat it,
+    // and on these boards the largest number on the page is usually the latter.
+    // Say so rather than presenting a guess as a reading.
+    result.exact =
+      (result.source === 'api' || result.source === 'embedded' || result.source === 'manual') &&
+      // Some pages only publish the ask. It is exact, but it is not the bid.
+      site.htmlKeyIsAsk !== true;
   } catch (error) {
     if (!result.error) result.error = `html: ${error.message}`;
   }

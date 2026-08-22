@@ -10,6 +10,7 @@ export interface SiteConfig {
   bidKey?: string;
   nameKey?: string;
   nameValuePath?: string;
+  htmlFallback?: boolean;
   manualBid?: number;
   manualEntry?: string;
 }
@@ -19,9 +20,11 @@ export interface BidResult {
   topBid: number | null;
   topEntry: string | null;
   previousBid?: number | null;
-  source: 'api' | 'html' | 'manual' | null;
+  source: 'api' | 'embedded' | 'html' | 'manual' | null;
+  exact?: boolean;
   ok: boolean;
   stale?: boolean;
+  skipped?: boolean;
   error: string | null;
   checkedAt: string;
   meta?: { title?: string | null; description?: string | null };
@@ -37,6 +40,7 @@ export interface Listing {
   topEntry: string | null;
   previousBid: number | null;
   source: BidResult['source'];
+  exact: boolean;
   stale: boolean;
   checkedAt: string | null;
 }
@@ -66,6 +70,7 @@ export function getListings(): Listing[] {
         topEntry: result?.topEntry ?? null,
         previousBid: result?.previousBid ?? null,
         source: result?.source ?? null,
+        exact: result?.exact !== false,
         stale: Boolean(result?.stale),
         checkedAt: result?.checkedAt ?? null,
       };

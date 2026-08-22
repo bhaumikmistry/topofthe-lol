@@ -231,9 +231,14 @@ body {
 }
 
 .mark {
+    /* Padded highlight on a display heading would otherwise paint over the line
+       above it, so the box is clipped to the text box and the leading carries
+       the breathing room instead. */
     background: var(--orange);
     color: #000;
-    padding: 0 4px;
+    padding: 0 0.12em;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
 }
 
 /* ---------- ticker ---------- */

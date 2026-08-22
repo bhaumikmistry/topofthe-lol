@@ -35,7 +35,7 @@ export default function Home() {
       <main className="flex-1">
         <div className="mx-auto max-w-3xl px-4">
           <section className="border-b-[3px] border-border py-10">
-            <h1 className="text-[clamp(32px,7.6vw,62px)] font-extrabold uppercase leading-[0.94] tracking-[-0.04em]">
+            <h1 className="text-[clamp(32px,7.6vw,62px)] font-extrabold uppercase leading-[1.12] tracking-[-0.04em]">
               Every .lol bid site,
               <br />
               <span className="mark box-decoration-clone">ranked by bid</span>
@@ -52,6 +52,11 @@ export default function Home() {
               ) : (
                 'which board is real money and which one you can still top for pocket change.'
               )}
+            </p>
+
+            <p className="brut mt-5 max-w-[46ch] border-l-[14px] border-l-[var(--orange)] bg-card px-4 py-3 text-[12px] font-bold uppercase leading-relaxed tracking-[0.02em]">
+              No paid placement. You cannot buy a spot on this page, boost one, or bid your way up
+              it. The only money here is the money already sitting on someone else&rsquo;s board.
             </p>
 
             <div className="mt-6 flex flex-wrap gap-3">
@@ -96,9 +101,11 @@ export default function Home() {
               <span className="text-[var(--orange)]">01 /</span> The board
             </h2>
             <Board listings={listings} />
-            <p className="mt-4 text-[11.5px] uppercase tracking-[0.04em] text-muted-foreground">
-              A dash means the site renders its board in JavaScript and hasn&rsquo;t published a
-              number we can read yet.
+            <p className="mt-4 max-w-[70ch] text-[11.5px] uppercase leading-relaxed tracking-[0.04em] text-muted-foreground">
+              &ldquo;Top bid&rdquo; is read from the site&rsquo;s own data. A tilde means the number
+              was read off the page instead, where the figure on offer is usually the price to take
+              #1 rather than the bid already sitting there. A dash means the board renders in
+              JavaScript and publishes nothing we can read.
             </p>
           </section>
         </div>

@@ -14,6 +14,10 @@ const KNOWN_KEYS = new Set([
   'nameValuePath',
   'manualBid',
   'manualEntry',
+  'htmlFallback',
+  'htmlKey',
+  'htmlKeyCents',
+  'htmlKeyIsAsk',
 ]);
 
 const DOMAIN = /^(?!-)[a-z0-9-]{1,63}(?:\.[a-z0-9-]{1,63})*\.[a-z]{2,24}$/;
@@ -57,7 +61,7 @@ file.sites.forEach((site, index) => {
     }
   }
 
-  for (const key of ['tagline', 'endpoint', 'listPath', 'valuePath', 'bidKey', 'nameKey', 'nameValuePath', 'manualEntry']) {
+  for (const key of ['tagline', 'endpoint', 'listPath', 'valuePath', 'bidKey', 'nameKey', 'nameValuePath', 'manualEntry', 'htmlKey']) {
     if (key in site && typeof site[key] !== 'string') {
       errors.push(`${domain}: "${key}" must be a string.`);
     }
@@ -65,6 +69,12 @@ file.sites.forEach((site, index) => {
 
   if ('endpoint' in site && typeof site.endpoint === 'string' && !site.endpoint.startsWith('/')) {
     errors.push(`${domain}: "endpoint" must be a path on the site, starting with "/" (got "${site.endpoint}").`);
+  }
+
+  for (const key of ['htmlFallback', 'htmlKeyCents', 'htmlKeyIsAsk']) {
+    if (key in site && typeof site[key] !== 'boolean') {
+      errors.push(`${domain}: "${key}" must be true or false.`);
+    }
   }
 
   if ('manualBid' in site) {
