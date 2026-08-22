@@ -144,6 +144,10 @@
       "domain": "winbid.lol",
       "tagline": "Claim a spot for a product URL or handle, outbid the rest",
       "htmlFallback": false
+    },
+    {
+      "domain": "hiddengems.lol",
+      "tagline": "A bidding leaderboard for underrated indie games. Bid. Climb. Get played."
     }
   ]
 }

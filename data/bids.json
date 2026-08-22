@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T10:53:10.542Z",
+  "updatedAt": "2026-08-22T11:19:20.739Z",
   "results": {
     "outbid.lol": {
       "domain": "outbid.lol",
@@ -508,6 +508,24 @@
         "description": "A public leaderboard where rank is the bid. Claim a spot for your product URL or @handle, outbid the rest, and win the clicks."
       },
       "checkedAt": "2026-08-22T10:53:06.561Z",
+      "exact": false,
+      "stale": false
+    },
+    "hiddengems.lol": {
+      "domain": "hiddengems.lol",
+      "topBid": 100,
+      "topEntry": null,
+      "source": "html",
+      "claimPrice": 3,
+      "nextBid": null,
+      "skipped": false,
+      "ok": true,
+      "error": null,
+      "meta": {
+        "title": "HiddenGems.lol",
+        "description": "A bidding leaderboard for underrated indie games. Bid. Climb. Get played."
+      },
+      "checkedAt": "2026-08-22T11:19:19.603Z",
       "exact": false,
       "stale": false
     }
