@@ -23,8 +23,22 @@ jobs:
         with:
           node-version: 22
 
+      # The issue-form template applies the label as the issue is opened, so
+      # this workflow fires twice for the same issue. One branch per issue plus
+      # this check makes the second run a no-op instead of a failure.
+      - name: Skip if this issue already has a branch
+        id: guard
+        run: |
+          BRANCH="add-site/issue-${{ github.event.issue.number }}"
+          echo "branch=$BRANCH" >> "$GITHUB_OUTPUT"
+          if git ls-remote --exit-code --heads origin "$BRANCH" >/dev/null 2>&1; then
+            echo "Branch $BRANCH already exists — another run handled this issue."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          fi
+
       - name: Parse issue and add the site
         id: add
+        if: steps.guard.outputs.skip != 'true'
         # The issue body is untrusted input, so it is passed as an environment
         # variable and never interpolated into the shell.
         env:
@@ -43,7 +57,7 @@ jobs:
           cat "$RUNNER_TEMP/add.txt" >> "$GITHUB_OUTPUT"
 
       - name: Comment and stop if parsing failed
-        if: steps.add.outputs.failed == 'true'
+        if: steps.guard.outputs.skip != 'true' && steps.add.outputs.failed == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
           REASON: ${{ steps.add.outputs.reason }}
@@ -53,26 +67,32 @@ jobs:
             | gh issue comment "$NUMBER" --body-file -
 
       - name: Validate the result
-        if: steps.add.outputs.failed != 'true'
+        if: steps.guard.outputs.skip != 'true' && steps.add.outputs.failed != 'true'
         run: node scripts/validate.mjs
 
       - name: Open the pull request
-        if: steps.add.outputs.failed != 'true'
+        if: steps.guard.outputs.skip != 'true' && steps.add.outputs.failed != 'true'
         env:
           GH_TOKEN: ${{ github.token }}
           DOMAIN: ${{ steps.add.outputs.domain }}
           SUMMARY: ${{ steps.add.outputs.summary }}
           NUMBER: ${{ github.event.issue.number }}
+          BRANCH: ${{ steps.guard.outputs.branch }}
+          REPO: ${{ github.repository }}
         run: |
-          BRANCH="add-site/${DOMAIN//./-}-${NUMBER}"
           git config user.name "bid-bot"
           git config user.email "bid-bot@users.noreply.github.com"
           git checkout -b "$BRANCH"
           git add data/sites.json data/bids.json
           git commit -m "feat: list ${DOMAIN}" -m "Closes #${NUMBER}"
           git push -u origin "$BRANCH"
-          gh pr create \
-            --title "Add ${DOMAIN}" \
-            --body "Requested in #${NUMBER}. The bot ${SUMMARY}."$'\n\n'"Merging publishes it — the site rebuilds statically from \`data/bids.json\`." \
-            --head "$BRANCH"
-          gh issue comment "$NUMBER" --body "Opened a pull request — the bot ${SUMMARY}."
+
+          BODY="Requested in #${NUMBER}. The bot ${SUMMARY}."$'\n\n'"Merging publishes it — the site rebuilds statically from \`data/bids.json\`."
+          # Creating pull requests needs "Allow GitHub Actions to create and
+          # approve pull requests" in repo settings. If it is off, the branch is
+          # still pushed, so fall back to handing over the compare link.
+          if gh pr create --title "Add ${DOMAIN}" --body "$BODY" --head "$BRANCH" --base "${{ github.event.repository.default_branch }}"; then
+            gh issue comment "$NUMBER" --body "Opened a pull request — the bot ${SUMMARY}."
+          else
+            gh issue comment "$NUMBER" --body "The bot ${SUMMARY} and pushed \`${BRANCH}\`, but could not open the pull request itself. Open it here: https://github.com/${REPO}/compare/${BRANCH}?expand=1"
+          fi
