@@ -60,7 +60,7 @@ export function SiteRow({ listing }: { listing: Listing }) {
             leader ? 'text-black/70' : 'text-muted-foreground group-hover:text-black/70'
           )}
         >
-          {approximate ? 'to beat' : 'top bid'}
+          {topBid === null ? 'not published' : approximate ? 'to beat' : 'top bid'}
         </span>
       </span>
     </a>

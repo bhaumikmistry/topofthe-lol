@@ -60,7 +60,11 @@
     },
     {
       "domain": "topapp.lol",
-      "tagline": "Top app by bid"
+      "tagline": "Top app by bid",
+      "endpoint": "/.netlify/functions/apps",
+      "listPath": "apps",
+      "bidKey": "totalBidCents",
+      "nameKey": "name"
     },
     {
       "domain": "uprank.lol",

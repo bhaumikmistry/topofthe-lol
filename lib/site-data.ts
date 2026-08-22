@@ -87,6 +87,7 @@ export function getStats(listings: Listing[]) {
     priced: priced.length,
     total,
     highest: priced[0]?.topBid ?? 0,
+    cheapest: priced.length ? (priced[priced.length - 1].topBid ?? 0) : 0,
   };
 }
 

@@ -30,7 +30,7 @@ export function Footer({ count }: { count: number }) {
             </a>
           </nav>
         </div>
-        <p className="mt-5 max-w-[74ch] text-[12px] leading-relaxed text-muted-foreground">
+        <p className="mt-5 text-[12px] leading-relaxed text-muted-foreground">
           Bids refresh every 30 minutes, read straight off each site&rsquo;s own public board. These
           are the numbers those sites publish, not verified payments. Nobody paid to be on this
           page and there is nothing to buy here.

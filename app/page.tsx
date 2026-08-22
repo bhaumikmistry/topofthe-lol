@@ -1,11 +1,14 @@
 import { Board } from '@/components/board';
 import { Footer } from '@/components/footer';
 import { Header } from '@/components/header';
+import { ShareButton } from '@/components/share-button';
 import { Ticker } from '@/components/ticker';
 import { formatMoney, getListings, getStats, updatedAt } from '@/lib/site-data';
 
 // Rebuilt on every deploy and every bid refresh commit — no request-time work.
 export const dynamic = 'force-static';
+
+const SITE_URL = 'https://topofthe.lol';
 
 function Stat({ label, value, hot }: { label: string; value: string; hot?: boolean }) {
   return (
@@ -41,20 +44,22 @@ export default function Home() {
               <span className="mark box-decoration-clone">ranked by bid</span>
             </h1>
 
-            <p className="mt-5 max-w-[46ch] text-sm font-medium leading-relaxed">
-              Pay-to-rank boards took over the timeline. This is the index:{' '}
+            <p className="mt-5 text-sm font-medium leading-relaxed">
+              A market map for the .lol bidding boom. Every board in one place, what the top spot
+              costs on each, and who is already holding it — so you can pick the room your audience
+              is actually in and buy attention where it is still cheap.
               {leader?.domain ? (
                 <>
-                  <strong className="font-extrabold">{leader.domain}</strong> is holding{' '}
-                  <strong className="font-extrabold">{formatMoney(leader.topBid)}</strong>, and the
-                  cheapest board on this page can still be topped for pocket change.
+                  {' '}
+                  Owning #1 runs from{' '}
+                  <strong className="font-extrabold">{formatMoney(stats.cheapest)}</strong> to{' '}
+                  <strong className="font-extrabold">{formatMoney(stats.highest)}</strong>, and the
+                  gap between those two numbers is the whole opportunity.
                 </>
-              ) : (
-                'which board is real money and which one you can still top for pocket change.'
-              )}
+              ) : null}
             </p>
 
-            <p className="brut mt-5 max-w-[46ch] border-l-[14px] border-l-[var(--orange)] bg-card px-4 py-3 text-[12px] font-bold uppercase leading-relaxed tracking-[0.02em]">
+            <p className="brut mt-5 border-l-[14px] border-l-[var(--orange)] bg-card px-4 py-3 text-[12px] font-bold uppercase leading-relaxed tracking-[0.02em]">
               No paid placement. You cannot buy a spot on this page, boost one, or bid your way up
               it. The only money here is the money already sitting on someone else&rsquo;s board.
             </p>
@@ -66,7 +71,16 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="brut-btn bg-foreground px-5 py-3 text-[13px] text-background no-underline"
               >
-                Add a site
+                Add yours
+              </a>
+              <ShareButton url={SITE_URL} />
+              <a
+                href="https://github.com/bhaumikmistry/topofthe-lol"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="brut-btn bg-card px-5 py-3 text-[13px] no-underline"
+              >
+                Star the repo
               </a>
               <a
                 href="https://github.com/shadcn-labs/outbid-template"
@@ -81,7 +95,7 @@ export default function Home() {
             <div className="brut brut-shadow mt-8 grid grid-cols-2 bg-card sm:grid-cols-4">
               <Stat label="sites tracked" value={String(stats.count)} />
               <Stat label="highest bid" value={formatMoney(stats.highest)} hot />
-              <Stat label="all top bids" value={formatMoney(Math.round(stats.total))} />
+              <Stat label="cheapest #1" value={formatMoney(stats.cheapest)} />
               <Stat
                 label="last refresh"
                 value={
@@ -101,7 +115,7 @@ export default function Home() {
               <span className="text-[var(--orange)]">01 /</span> The board
             </h2>
             <Board listings={listings} />
-            <p className="mt-4 max-w-[70ch] text-[11.5px] uppercase leading-relaxed tracking-[0.04em] text-muted-foreground">
+            <p className="mt-4 text-[11.5px] uppercase leading-relaxed tracking-[0.04em] text-muted-foreground">
               &ldquo;Top bid&rdquo; is read from the site&rsquo;s own data. A tilde means the number
               was read off the page instead, where the figure on offer is usually the price to take
               #1 rather than the bid already sitting there. A dash means the board renders in
