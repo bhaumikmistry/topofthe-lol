@@ -11,7 +11,7 @@ export function Footer({ count }: { count: number }) {
         <p className="mt-2">
           Missing a site?{' '}
           <a
-            href="https://github.com/"
+            href="https://github.com/bhaumikmistry/topofthe-lol"
             className="underline hover:text-foreground"
             target="_blank"
             rel="noopener noreferrer"

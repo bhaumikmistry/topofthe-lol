@@ -9,11 +9,11 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-sans', display: 'swa
 const fontMono = Geist_Mono({ subsets: ['latin'], variable: '--font-mono', display: 'swap' });
 
 export const metadata: Metadata = {
-  title: '.lol index — every bid site, ranked by top bid',
+  title: 'topofthe.lol — every .lol bid site, ranked by top bid',
   description:
     'A live directory of pay-to-rank .lol leaderboards, sorted by the highest bid currently sitting on each one.',
   openGraph: {
-    title: '.lol index',
+    title: 'topofthe.lol',
     description: 'Every .lol bid site, ranked by its own top bid.',
     type: 'website',
   },
