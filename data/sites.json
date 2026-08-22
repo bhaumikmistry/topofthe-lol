@@ -139,6 +139,11 @@
       "domain": "marketrank.lol",
       "tagline": "Back products. Trade virtual shares. Climb the ranks. Higher price means higher rank.",
       "htmlFallback": false
+    },
+    {
+      "domain": "winbid.lol",
+      "tagline": "Claim a spot for a product URL or handle, outbid the rest",
+      "htmlFallback": false
     }
   ]
 }
