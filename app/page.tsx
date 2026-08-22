@@ -45,9 +45,9 @@ export default function Home() {
             </h1>
 
             <p className="mt-5 text-sm font-medium leading-relaxed">
-              A market map for the .lol bidding boom. Every board in one place, what the top spot
-              costs on each, and who is already holding it — so you can pick the room your audience
-              is actually in and buy attention where it is still cheap.
+              A market map for the .lol bidding boom. Every .lol board in one place, what the top
+              spot costs on each, and who is already holding it — so you can pick the room your
+              audience is actually in and buy attention where it is still cheap.
               {leader?.domain ? (
                 <>
                   {' '}

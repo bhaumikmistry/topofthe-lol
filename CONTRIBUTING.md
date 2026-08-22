@@ -1,6 +1,8 @@
 # Adding a site
 
-Three ways, easiest first. All of them end in the same place: one object in `data/sites.json`.
+**.lol only.** The list tracks `.lol` bidding sites and nothing else — CI rejects any other
+extension. Three ways to add one, easiest first. All end in the same place: one object in
+`data/sites.json`.
 
 ## 1. Open an issue (no git needed)
 

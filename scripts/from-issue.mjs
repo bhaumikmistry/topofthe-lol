@@ -25,7 +25,7 @@ function field(label) {
   return raw.split('\n')[0].trim();
 }
 
-const DOMAIN = /^(?!-)[a-z0-9-]{1,63}(?:\.[a-z0-9-]{1,63})*\.[a-z]{2,24}$/;
+const DOMAIN = /^(?!-)[a-z0-9-]{1,63}\.lol$/;
 
 const domain = (field('Domain') ?? '')
   .toLowerCase()
@@ -40,7 +40,9 @@ function fail(message) {
 }
 
 if (!DOMAIN.test(domain)) {
-  fail(`"${domain || '(empty)'}" is not a valid bare hostname. Example: outbid.lol`);
+  fail(
+    `"${domain || '(empty)'}" is not a bare .lol hostname. This list only tracks .lol sites — example: outbid.lol`
+  );
 }
 
 const { sites } = await readJson(SITES_FILE, { sites: [] });

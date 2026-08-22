@@ -20,7 +20,9 @@ const KNOWN_KEYS = new Set([
   'htmlKeyIsAsk',
 ]);
 
-const DOMAIN = /^(?!-)[a-z0-9-]{1,63}(?:\.[a-z0-9-]{1,63})*\.[a-z]{2,24}$/;
+// The list is .lol only — that is the whole premise, so it is enforced here
+// rather than left to review.
+const DOMAIN = /^(?!-)[a-z0-9-]{1,63}\.lol$/;
 
 const errors = [];
 const warnings = [];
@@ -46,7 +48,7 @@ file.sites.forEach((site, index) => {
 
   const domain = site.domain;
   if (typeof domain !== 'string' || !DOMAIN.test(domain)) {
-    errors.push(`${where}: "domain" must be a bare lowercase hostname, e.g. "outbid.lol" (got ${JSON.stringify(domain)}).`);
+    errors.push(`${where}: "domain" must be a bare lowercase .lol hostname, e.g. "outbid.lol" (got ${JSON.stringify(domain)}). This list only tracks .lol sites.`);
     return;
   }
   if (seen.has(domain)) {
