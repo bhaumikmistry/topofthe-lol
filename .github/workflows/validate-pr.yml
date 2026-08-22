@@ -1,0 +1,54 @@
+name: Validate sites
+
+on:
+  pull_request:
+    paths:
+      - 'data/**'
+      - 'scripts/**'
+      - '.github/workflows/validate-pr.yml'
+
+# Read-only: this runs code from forks, so it gets no write access and posts
+# nothing back. Results land in the job summary and the check status.
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Check data/sites.json
+        run: |
+          git show "origin/${{ github.base_ref }}:data/sites.json" > "$RUNNER_TEMP/base-sites.json" 2>/dev/null || echo '{"sites":[]}' > "$RUNNER_TEMP/base-sites.json"
+          node scripts/validate.mjs --base "$RUNNER_TEMP/base-sites.json" | tee "$RUNNER_TEMP/validate.txt"
+
+      - name: Refresh the added sites
+        run: |
+          ADDED=$(grep '^added:' "$RUNNER_TEMP/validate.txt" | cut -d: -f2- | tr ',' ' ')
+          {
+            echo "## Sites check"
+            echo
+            echo '```'
+            grep -v '^added:' "$RUNNER_TEMP/validate.txt"
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+          if [ -z "$ADDED" ]; then
+            echo "No new sites in this pull request." >> "$GITHUB_STEP_SUMMARY"
+            exit 0
+          fi
+          echo "Resolving: $ADDED"
+          {
+            echo
+            echo "## New sites"
+            echo
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+          # shellcheck disable=SC2086
+          node scripts/refresh.mjs $ADDED | tee -a "$GITHUB_STEP_SUMMARY"
+          echo '```' >> "$GITHUB_STEP_SUMMARY"

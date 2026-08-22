@@ -1,0 +1,78 @@
+name: Add site from issue
+
+on:
+  issues:
+    types: [opened, labeled]
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+concurrency:
+  group: add-site-${{ github.event.issue.number }}
+  cancel-in-progress: false
+
+jobs:
+  add:
+    if: contains(github.event.issue.labels.*.name, 'add-site')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Parse issue and add the site
+        id: add
+        # The issue body is untrusted input, so it is passed as an environment
+        # variable and never interpolated into the shell.
+        env:
+          ISSUE_BODY: ${{ github.event.issue.body }}
+        run: |
+          set -o pipefail
+          if ! node scripts/from-issue.mjs | tee "$RUNNER_TEMP/add.txt"; then
+            {
+              echo "failed=true"
+              echo "reason<<EOF"
+              cat "$RUNNER_TEMP/add.txt"
+              echo "EOF"
+            } >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          cat "$RUNNER_TEMP/add.txt" >> "$GITHUB_OUTPUT"
+
+      - name: Comment and stop if parsing failed
+        if: steps.add.outputs.failed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REASON: ${{ steps.add.outputs.reason }}
+          NUMBER: ${{ github.event.issue.number }}
+        run: |
+          printf 'Could not add this one automatically:\n\n```\n%s\n```\n\nEdit the issue and the bot will try again, or open a pull request against `data/sites.json` yourself.\n' "$REASON" \
+            | gh issue comment "$NUMBER" --body-file -
+
+      - name: Validate the result
+        if: steps.add.outputs.failed != 'true'
+        run: node scripts/validate.mjs
+
+      - name: Open the pull request
+        if: steps.add.outputs.failed != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DOMAIN: ${{ steps.add.outputs.domain }}
+          SUMMARY: ${{ steps.add.outputs.summary }}
+          NUMBER: ${{ github.event.issue.number }}
+        run: |
+          BRANCH="add-site/${DOMAIN//./-}-${NUMBER}"
+          git config user.name "bid-bot"
+          git config user.email "bid-bot@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add data/sites.json data/bids.json
+          git commit -m "feat: list ${DOMAIN}" -m "Closes #${NUMBER}"
+          git push -u origin "$BRANCH"
+          gh pr create \
+            --title "Add ${DOMAIN}" \
+            --body "Requested in #${NUMBER}. The bot ${SUMMARY}."$'\n\n'"Merging publishes it — the site rebuilds statically from \`data/bids.json\`." \
+            --head "$BRANCH"
+          gh issue comment "$NUMBER" --body "Opened a pull request — the bot ${SUMMARY}."

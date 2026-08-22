@@ -5,13 +5,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm run refresh:safe && next build",
+    "build": "node scripts/validate.mjs && npm run refresh:safe && next build",
     "refresh:safe": "node scripts/refresh.mjs || true",
     "start": "next start",
     "lint": "eslint",
     "format": "prettier --write \"**/*.{ts,tsx}\"",
     "typecheck": "tsc --noEmit",
     "refresh": "node scripts/refresh.mjs",
+    "validate": "node scripts/validate.mjs",
     "add": "node scripts/add.mjs"
   },
   "dependencies": {

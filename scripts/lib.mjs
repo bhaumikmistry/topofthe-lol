@@ -275,3 +275,28 @@ export async function mapWithConcurrency(items, limit, worker) {
   await Promise.all(runners);
   return results;
 }
+
+/**
+ * Append a site and resolve its bid in one step. Shared by `npm run add` and the
+ * issue-to-pull-request bot so both take exactly the same path.
+ */
+export async function addSite(site) {
+  const file = await readJson(SITES_FILE, { sites: [] });
+  if (file.sites.some((existing) => existing.domain === site.domain)) {
+    throw new Error(`${site.domain} is already listed.`);
+  }
+
+  const result = await probeSite(site);
+  const entry = { ...site };
+  if (!entry.tagline && result.meta?.description) entry.tagline = result.meta.description;
+
+  file.sites.push(entry);
+  await writeJson(SITES_FILE, file);
+
+  const bids = await readJson(BIDS_FILE, { results: {} });
+  bids.results[site.domain] = { ...result, stale: false };
+  bids.updatedAt = new Date().toISOString();
+  await writeJson(BIDS_FILE, bids);
+
+  return { entry, result };
+}

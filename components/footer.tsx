@@ -11,14 +11,14 @@ export function Footer({ count }: { count: number }) {
         <p className="mt-2">
           Missing a site?{' '}
           <a
-            href="https://github.com/bhaumikmistry/topofthe-lol"
+            href="https://github.com/bhaumikmistry/topofthe-lol/issues/new?template=add-site.yml"
             className="underline hover:text-foreground"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Open a pull request
+            Open an issue
           </a>{' '}
-          adding one line to <code className="font-mono">data/sites.json</code>.
+          with the domain and a bot opens the pull request for you.
           {updatedAt ? ` Last refresh: ${new Date(updatedAt).toUTCString()}.` : ''}
         </p>
       </div>

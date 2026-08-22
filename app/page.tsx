@@ -32,6 +32,19 @@ export default function Home() {
               Pay-to-rank leaderboards took over the timeline. This is the index: which board is
               real money, which one you can still top for the price of a coffee.
             </p>
+            <p className="mt-3 text-sm">
+              <a
+                href="https://github.com/bhaumikmistry/topofthe-lol/issues/new?template=add-site.yml"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline underline-offset-4 hover:text-foreground"
+              >
+                Know one that&rsquo;s missing?
+              </a>{' '}
+              <span className="text-muted-foreground">
+                Drop the domain in an issue — a bot reads its top bid and opens the pull request.
+              </span>
+            </p>
             <div className="mt-5 grid grid-cols-2 gap-2 sm:grid-cols-4">
               <Stat label="sites" value={String(stats.count)} />
               <Stat label="highest bid" value={formatMoney(stats.highest)} />

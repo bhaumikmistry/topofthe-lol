@@ -41,8 +41,13 @@ export interface Listing {
   checkedAt: string | null;
 }
 
-const configs = (sites as { sites: SiteConfig[] }).sites;
-const results = (bids as { updatedAt: string; results: Record<string, BidResult> }).results ?? {};
+// Contributions land here as hand-edited JSON, so treat both files as untrusted:
+// a malformed entry gets dropped, it never takes the build down.
+const configs = ((sites as { sites?: SiteConfig[] }).sites ?? []).filter(
+  (site): site is SiteConfig =>
+    Boolean(site) && typeof site === 'object' && typeof site.domain === 'string' && site.domain.includes('.')
+);
+const results = (bids as { updatedAt?: string; results?: Record<string, BidResult> }).results ?? {};
 
 export const updatedAt: string = (bids as { updatedAt: string }).updatedAt ?? '';
 
@@ -51,12 +56,13 @@ export function getListings(): Listing[] {
   return configs
     .map((site) => {
       const result = results[site.domain];
+      const bid = typeof result?.topBid === 'number' && Number.isFinite(result.topBid) ? result.topBid : null;
       return {
         domain: site.domain,
         url: `https://${site.domain}`,
         title: result?.meta?.title?.split(/[—|·]/)[0]?.trim() || site.domain,
         tagline: site.tagline || result?.meta?.description || '',
-        topBid: result?.topBid ?? null,
+        topBid: bid,
         topEntry: result?.topEntry ?? null,
         previousBid: result?.previousBid ?? null,
         source: result?.source ?? null,

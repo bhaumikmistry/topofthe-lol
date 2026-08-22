@@ -1,0 +1,38 @@
+name: Add a site
+description: Suggest a bid site to list on topofthe.lol
+title: 'Add: '
+labels: ['add-site']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Fill in the domain and submit. A bot will try to read the site's current top bid and open
+        a pull request for you — usually within a minute. You do not need to know anything else.
+  - type: input
+    id: domain
+    attributes:
+      label: Domain
+      description: Just the hostname, no https:// and no trailing slash.
+      placeholder: outbid.lol
+    validations:
+      required: true
+  - type: input
+    id: endpoint
+    attributes:
+      label: JSON endpoint (optional)
+      description: >
+        Only if you know it. Most of these sites expose their board at a path like /api/leaderboard,
+        /api/board or /api/listings. Leave blank and the bot will scrape the homepage instead.
+      placeholder: /api/leaderboard
+  - type: input
+    id: tagline
+    attributes:
+      label: One-line description (optional)
+      description: Leave blank to use the site's own meta description.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: This is a live pay-to-rank / bidding site, not a placeholder or parked domain.
+          required: true

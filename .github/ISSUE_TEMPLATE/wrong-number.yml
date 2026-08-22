@@ -1,0 +1,24 @@
+name: Wrong bid number
+description: A listed site shows the wrong top bid
+title: 'Wrong bid: '
+labels: ['wrong-bid']
+body:
+  - type: input
+    id: domain
+    attributes:
+      label: Domain
+      placeholder: outbid.lol
+    validations:
+      required: true
+  - type: input
+    id: expected
+    attributes:
+      label: What the site actually shows
+      placeholder: $14,019
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Where you saw it
+      description: A screenshot or the exact spot on the page helps a lot.
