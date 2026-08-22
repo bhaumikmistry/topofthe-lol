@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-22T07:10:55.804Z",
+  "updatedAt": "2026-08-22T07:15:26.640Z",
   "results": {
     "outbid.lol": {
       "domain": "outbid.lol",
@@ -427,6 +427,22 @@
       "checkedAt": "2026-08-22T07:10:51.445Z",
       "previousBid": null,
       "changedAt": null,
+      "stale": false
+    },
+    "marketrank.lol": {
+      "domain": "marketrank.lol",
+      "topBid": 29,
+      "topEntry": null,
+      "source": "html",
+      "claimPrice": null,
+      "nextBid": null,
+      "ok": true,
+      "error": null,
+      "meta": {
+        "title": "MarketRank — The market for products",
+        "description": "Back products. Trade virtual shares. Climb the ranks. Higher price means higher rank."
+      },
+      "checkedAt": "2026-08-22T07:15:25.966Z",
       "stale": false
     }
   }
