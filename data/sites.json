@@ -1,0 +1,26 @@
+{
+  "$comment": "Source of truth. Add a site: npm run add <domain>  (or append an object here, then npm run refresh).",
+  "sites": [
+    { "domain": "outbid.lol", "tagline": "The original pay-to-rank leaderboard" },
+    { "domain": "watchbid.lol", "endpoint": "/api/board", "valuePath": "topPriceCents", "tagline": "Bid for a screen on the wall" },
+    { "domain": "takeone.lol", "endpoint": "/api/leaderboard", "listPath": "entries", "bidKey": "totalCents", "nameKey": "displayName", "tagline": "Take the one spot" },
+    { "domain": "lastspot.lol", "tagline": "Only the last spot matters" },
+    { "domain": "overbid.lol", "endpoint": "/api/board", "listPath": "listings", "bidKey": "bid_cents", "nameKey": "title", "tagline": "Overbid the listing above you" },
+    { "domain": "outrank.lol", "endpoint": "/api/leaderboard", "listPath": "entries", "bidKey": "amountCents", "nameKey": "displayName", "tagline": "Outrank X accounts" },
+    { "domain": "spots.lol", "endpoint": "/api/board", "listPath": "rows", "bidKey": "amount", "nameKey": "name", "tagline": "Claim a spot" },
+    { "domain": "bidwall.lol", "tagline": "A wall of paid listings" },
+    { "domain": "rankly.vip", "tagline": "Ranking, but .vip" },
+    { "domain": "topapp.lol", "tagline": "Top app by bid" },
+    { "domain": "uprank.lol", "tagline": "Pay to move up" },
+    { "domain": "dethrone.site", "endpoint": "/api/leaderboard", "listPath": "week", "bidKey": "allTime", "nameKey": "name", "tagline": "Dethrone the king" },
+    { "domain": "macbid.lol", "tagline": "Bid, Mac flavoured" },
+    { "domain": "dontbid.lol", "tagline": "Please do not bid" },
+    { "domain": "warmap.lol", "endpoint": "/api/state", "listPath": "powers", "bidKey": "value_cents", "nameKey": "owner_name", "tagline": "Conquer countries with money" },
+    { "domain": "whosetheboss.lol", "endpoint": "/api/state", "valuePath": "boss.banked", "nameValuePath": "boss.title", "tagline": "One boss at a time" },
+    { "domain": "whynotalso.bid", "endpoint": "/api/leaderboard", "listPath": "entries", "bidKey": "totalCents", "nameKey": "displayName", "tagline": "Why not also bid" },
+    { "domain": "topnewsletters.lol", "endpoint": "/api/listings", "listPath": "entries", "tagline": "Newsletters, ranked by bid" },
+    { "domain": "bidding.lol", "tagline": "A directory of bidding sites" },
+    { "domain": "aithrone.lol", "endpoint": "/api/leaderboard", "listPath": "listings", "tagline": "The AI throne" },
+    { "domain": "biddirectory.lol", "endpoint": "/api/listings", "listPath": "listings", "bidKey": "bidCents", "nameKey": "title", "tagline": "Directory you bid into" }
+  ]
+}
