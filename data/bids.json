@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-23T07:37:17.736Z",
+  "updatedAt": "2026-08-23T07:45:30.123Z",
   "results": {
     "outbid.lol": {
       "domain": "outbid.lol",
@@ -508,6 +508,24 @@
         "description": "A public leaderboard where rank is the bid. Claim a spot for your product URL or @handle, outbid the rest, and win the clicks."
       },
       "checkedAt": "2026-08-23T07:37:14.484Z",
+      "exact": false,
+      "stale": false
+    },
+    "appstorerank.lol": {
+      "domain": "appstorerank.lol",
+      "topBid": 5,
+      "topEntry": null,
+      "source": "html",
+      "claimPrice": null,
+      "nextBid": null,
+      "skipped": false,
+      "ok": true,
+      "error": null,
+      "meta": {
+        "title": "appstorerank.lol — the App Store leaderboard money can buy",
+        "description": "Pay to place any iOS app on the leaderboard. The highest paid claim holds #1 until somebody outbids it."
+      },
+      "checkedAt": "2026-08-23T07:45:29.185Z",
       "exact": false,
       "stale": false
     }

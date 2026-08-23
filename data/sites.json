@@ -144,6 +144,10 @@
       "domain": "winbid.lol",
       "tagline": "Claim a spot for a product URL or handle, outbid the rest",
       "htmlFallback": false
+    },
+    {
+      "domain": "appstorerank.lol",
+      "tagline": "Pay to place any iOS app on the leaderboard. The highest paid claim holds #1 until somebody outbids it."
     }
   ]
 }
