@@ -78,6 +78,13 @@ jobs:
             echo
             echo "Edit the issue and the bot will try again, or open a pull request against \`data/sites.json\` yourself."
           } > "$RUNNER_TEMP/comment.md"
+          # Opening an issue from the template fires both "opened" and
+          # "labeled", so the same explanation can be produced twice.
+          REASON="$(head -c 200 "$RUNNER_TEMP/err.txt")"
+          if gh issue view "$NUMBER" --json comments -q '.comments[].body' | grep -qF "$REASON"; then
+            echo "Already said this."
+            exit 0
+          fi
           gh issue comment "$NUMBER" --body-file "$RUNNER_TEMP/comment.md"
 
       # The listing is free and permanent, so the asking price is a star or a
