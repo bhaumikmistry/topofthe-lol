@@ -20,7 +20,7 @@ export interface BidResult {
   topBid: number | null;
   topEntry: string | null;
   previousBid?: number | null;
-  source: 'api' | 'embedded' | 'html' | 'manual' | null;
+  source: 'api' | 'embedded' | 'claim' | 'html' | 'manual' | null;
   exact?: boolean;
   ok: boolean;
   stale?: boolean;

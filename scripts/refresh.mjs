@@ -36,6 +36,13 @@ const probed = await mapWithConcurrency(targets, 8, async (site) => {
 const results = { ...(previous.results ?? {}) };
 for (const result of probed) results[result.domain] = result;
 
+// Drop readings for sites that are no longer listed, so a delisted domain
+// cannot linger in the data file.
+const listed = new Set(sites.map((site) => site.domain));
+for (const domain of Object.keys(results)) {
+  if (!listed.has(domain)) delete results[domain];
+}
+
 await writeJson(BIDS_FILE, { updatedAt: new Date().toISOString(), results });
 
 const rows = probed

@@ -144,6 +144,183 @@
       "domain": "winbid.lol",
       "tagline": "Claim a spot for a product URL or handle, outbid the rest",
       "htmlFallback": false
+    },
+    {
+      "domain": "launchwars.lol",
+      "endpoint": "/api/listings",
+      "tagline": "Launch your startup, SaaS, or product on LaunchWars. Place a bid, climb the leaderboard, get discovered, and compete for the top spot."
+    },
+    {
+      "domain": "befamous.lol",
+      "endpoint": "/api/leaderboard",
+      "tagline": "Outbid everyone else to put your name at the top. No ads. Rank is the bid."
+    },
+    {
+      "domain": "herobid.lol",
+      "endpoint": "/api/board",
+      "tagline": "Paste a URL, name a price. Outbid everyone and your site takes over the top of the page. SaaS, agencies, designers, side projects \u2014 anyone with a URL."
+    },
+    {
+      "domain": "hotbid.lol",
+      "endpoint": "/api/board",
+      "tagline": "A public leaderboard of builders, ranked strictly by what they paid. No algorithm, no merit, just the figure."
+    },
+    {
+      "domain": "stackbid.lol",
+      "endpoint": "/api/state",
+      "tagline": "One slot on top of the stack. Everyone else is underneath it."
+    },
+    {
+      "domain": "vibewar.lol",
+      "endpoint": "/api/leaderboard",
+      "tagline": "The battlefield for vibecoded apps & SaaS \u2014 and nothing else. No ads. No subscriptions. Founders pay to rank \u2014 outbid them to take their spot."
+    },
+    {
+      "domain": "afkbid.lol",
+      "endpoint": "/api/state",
+      "tagline": "One second on this page = one point for your startup. Or pay to buy some time."
+    },
+    {
+      "domain": "bestdirectories.lol",
+      "endpoint": "/api/board",
+      "tagline": "Every launch directory and agency on one board, ranked by how much they bid to be seen. No ads, no algorithm \u2014 the top spot goes to whoever pays most."
+    },
+    {
+      "domain": "footballbid.lol",
+      "endpoint": "/api/board",
+      "tagline": "150 clubs across 24 European leagues. Take your club&#x27;s fan crown, put your name on the map, and defend it from rivals."
+    },
+    {
+      "domain": "outbids.lol",
+      "endpoint": "/api/leaderboard",
+      "tagline": "Claim a verified public position. Your bid decides your rank on the live outbids.lol board."
+    },
+    {
+      "domain": "subwars.lol",
+      "endpoint": "/api/board",
+      "tagline": "Every subreddit is at war with the one above it. Rank is what your community paid. $1 minimum."
+    },
+    {
+      "domain": "toolbid.lol",
+      "endpoint": "/api/listings",
+      "tagline": "Pay $1 more than #1. List a developer tool, AI tool, Chrome extension, Android app, or X handle, so people can see your work."
+    },
+    {
+      "domain": "buildbid.lol"
+    },
+    {
+      "domain": "toolcup.lol",
+      "tagline": "Paid leaderboard for websites, AI tools and software. $1 to list. Pay more to take #1. Every bid is public."
+    },
+    {
+      "domain": "solarwar.lol",
+      "tagline": "Click the Sun or a planet. Conquer it vacant, or invade at 1.5\u00d7 the last hold. The Sun opens at $10, planets at $2. The belt is $100 for a week."
+    },
+    {
+      "domain": "tapshelf.lol",
+      "tagline": "Join when the price feels right. Your payment puts the app at the top, then the next move costs $1 more."
+    },
+    {
+      "domain": "leaderbid.lol",
+      "tagline": "Pay to climb the leaderboard. Leaderbid your competition and take the top spot.",
+      "htmlKey": "currentBid",
+      "htmlKeyCents": true
+    },
+    {
+      "domain": "wintop.lol",
+      "tagline": "Discover products winning this week&#x27;s leaderboard, compare live bids, and bid for seven days of visibility on the next wintop product ranking every Wednesday."
+    },
+    {
+      "domain": "hiddengems.lol"
+    },
+    {
+      "domain": "claimland.lol",
+      "tagline": "Claim territory on the internet at claimland.lol. Claimland independently donates 75% of eligible season payments to Cure4CF for cystic fibrosis research."
+    },
+    {
+      "domain": "dnbid.lol",
+      "tagline": "DNBid is a coffee-powered domain leaderboard. Buy a coffee to list your domain, buy more to climb the ranks and gain visibility."
+    },
+    {
+      "domain": "eu-outbid.lol",
+      "tagline": "A leaderboard for European startups. No ads, no algorithm, no revenue share. The board is sorted by money, and nothing else."
+    },
+    {
+      "domain": "xrank.lol",
+      "tagline": "Xrank is a public leaderboard of X accounts ordered purely by the money paid into each account&#x27;s rank value. No algorithm, no votes."
+    },
+    {
+      "domain": "georush.lol",
+      "tagline": "Everyone claims they&#x27;re winning AI Search. Now there&#x27;s a leaderboard \u2014 highest bid wins. The #1 spot currently costs $15. Tools, agencies and people compete for rank."
+    },
+    {
+      "domain": "topple.lol",
+      "tagline": "The live leaderboard where listings start at $1, every bid melts 50% a day, and #1 opens back up daily. Public stats, real cost per click, no account needed."
+    },
+    {
+      "domain": "landgrab.lol",
+      "tagline": "A live ad grid where your square&#x27;s size is your share of the total pot. Every new dollar dilutes everyone. Grab land, get seen, defend your ground."
+    },
+    {
+      "domain": "charitybid.lol",
+      "tagline": "Outbid the current #1 and the slot is yours. Every bid is a 100% donation to the charity you pick. We&#x27;re a nonprofit project and take no cut."
+    },
+    {
+      "domain": "top-job.lol",
+      "tagline": "top-job.lol is the transparent paid leaderboard for open job positions."
+    },
+    {
+      "domain": "rankbid.lol",
+      "tagline": "No judges, votes, or secret sauce. Name your price, take the place it buys, and stay there until someone brings one more dollar."
+    },
+    {
+      "domain": "topx.lol",
+      "tagline": "@nicolaslecocqhq holds the top at $10. Bid $11 to take it. Own a piece of internet real estate."
+    },
+    {
+      "domain": "xbid.lol",
+      "tagline": "A public leaderboard of X accounts ranked by one thing: how much you have paid to be on it. Outbid the person above you and take their spot."
+    },
+    {
+      "domain": "topferry.lol",
+      "tagline": "puremoney.lol holds \u21161 at $7. $18.84 in the pot. Anyone can outbid anyone."
+    },
+    {
+      "domain": "theinternetkeyboard.lol",
+      "tagline": "Claim a key on the internet&#x27;s keyboard. 0 keys claimed, 67 still open. Every first key is free."
+    },
+    {
+      "domain": "biggerfish.lol",
+      "tagline": "Pay to rank. Your place is what you have paid, highest first. Outspend the fish above you and take its place."
+    },
+    {
+      "domain": "thebidboard.lol",
+      "tagline": "TheBidBoard \u2014 claim your spot on the board."
+    },
+    {
+      "domain": "outbidstory.lol",
+      "htmlFallback": false,
+      "tagline": "One founder turned a public leaderboard into roughly $182,000 in about 90 hours, and the whole indie community started building their own. Outbid Story tracks every bid site as it launches, climbs, an"
+    },
+    {
+      "domain": "lamborghini.lol",
+      "htmlFallback": false,
+      "tagline": "Bid for screen time on a real Lamborghini&#x27;s digital billboard. $1,000 minimum, $200,000 total. Your ad runs for the lifetime of the car."
+    },
+    {
+      "domain": "bidfast.lol",
+      "htmlFallback": false,
+      "tagline": "Overtake competitor products on the 3-lane highway in a 3D car race to claim the #1 rank on the leaderboard!"
+    },
+    {
+      "domain": "when1m.lol",
+      "htmlFallback": false,
+      "tagline": "Guess the UTC day Outbid hits $1,000,000. Each day can only be claimed once \u2014 from $10. Your X profile or product is featured on every day you bid."
+    },
+    {
+      "domain": "outlike.lol",
+      "htmlFallback": false,
+      "tagline": "List your site for free. Post the announcement tweet. The most-liked tweet holds #1. No bids, no money, just likes."
     }
   ]
 }

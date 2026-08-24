@@ -146,15 +146,68 @@ export function dollarAmounts(html) {
   return amounts;
 }
 
-// "Claim this listing for $14,019", "Take the top spot — $250", "Outbid for $12".
-const CLAIM = /\b(claim|take[\s-]?(?:the|this|over)?|outbid|overbid|beat|dethrone|steal|buy|own|bid)\b[^$<]{0,60}\$\s?([0-9]{1,3}(?:,[0-9]{3})+|[0-9]+)(?:\.([0-9]{2}))?/gi;
+// Anchored to the top spot on purpose: "claim #1 for $26.00", "Take #1 · $22",
+// "#1 costs $16". A looser pattern matches the bid-increment buttons these
+// boards are covered in (+$5 / +$25 / +$100) and reports the biggest button.
+// One pattern, deliberately strict: an explicit call to take the top spot,
+// with the price right there. Looser variants matched listing rows ("at #1 ·
+// $3,600") and every bid-increment button on the page.
+const CLAIM_PATTERNS = [
+  /(?:claim|take|beat|outbid|overbid|dethrone|steal|own)\s+(?:the\s+)?#\s?1\s*(?:spot\s*)?(?:for|at|costs?|·|-|—)?\s*\$\s?([0-9]{1,3}(?:,[0-9]{3})+|[0-9]+)(?:\.([0-9]{2}))?/gi,
+];
 
-/** The price the site is asking to take the #1 spot, when it advertises one. */
+/** Markup between words breaks the anchored patterns, so match on text. */
+export function toText(html) {
+  return html
+    .replace(/<script[\s\S]*?<\/script>/gi, ' ')
+    .replace(/<style[\s\S]*?<\/style>/gi, ' ')
+    .replace(/<[^>]+>/g, ' ')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/\s+/g, ' ');
+}
+
+/** The price the site is asking for #1, when it says so in as many words. */
 export function claimPrice(html) {
+  for (const pattern of CLAIM_PATTERNS) {
+    let best = null;
+    for (const match of html.matchAll(pattern)) {
+      const value = Number(`${match[1].replace(/,/g, '')}.${match[2] ?? '0'}`);
+      if (!Number.isFinite(value) || value > MAX_PLAUSIBLE_BID) continue;
+      if (best === null || value > best) best = value;
+    }
+    if (best !== null) return best;
+  }
+  return null;
+}
+
+// Keys specific enough to be a bid. Deliberately narrow: "total", "paid" and
+// "price" all show up as board-wide aggregates or shop prices.
+const EMBEDDED_BID_KEY = /^(bid|bid_?amount|bid_?cents|amount|amount_?cents|current_?bid|top_?bid|highest_?bid|highest_?bid_?cents|bidAmount|bidCents|amountCents|currentBid|topBid|highestBid)$/i;
+
+/** Is this dollar figure actually printed on the page? */
+export function shownOnPage(text, value) {
+  const whole = Math.round(value);
+  const forms = new Set([
+    `$${value}`,
+    `$${whole}`,
+    `$${whole.toLocaleString('en-US')}`,
+    `$${value.toFixed(2)}`,
+    `$${whole.toLocaleString('en-US')}.00`,
+  ]);
+  return [...forms].some((form) => text.includes(form));
+}
+
+/** Largest bid-shaped number in the JSON embedded in the page. */
+export function embeddedBid(html) {
+  const unescaped = html.replace(/\\"/g, '"');
   let best = null;
-  for (const match of html.matchAll(CLAIM)) {
-    const value = Number(`${match[2].replace(/,/g, '')}.${match[3] ?? '0'}`);
-    if (!Number.isFinite(value) || value > MAX_PLAUSIBLE_BID) continue;
+  for (const match of unescaped.matchAll(/"([A-Za-z_]{2,24})"\s*:\s*"?(\d+(?:\.\d+)?)"?/g)) {
+    const key = match[1];
+    if (!EMBEDDED_BID_KEY.test(key)) continue;
+    const raw = Number(match[2]);
+    if (!Number.isFinite(raw)) continue;
+    const value = /cents/i.test(key) ? raw / 100 : raw;
+    if (value > MAX_PLAUSIBLE_BID) continue;
     if (best === null || value > best) best = value;
   }
   return best;
@@ -228,7 +281,15 @@ export async function probeSite(site) {
         }
       } else {
         const list = site.listPath ? getPath(payload, site.listPath) : findEntryArray(payload);
-        if (Array.isArray(list) && list.length) {
+        // A working endpoint returning no entries means the board is empty, not
+        // that the read failed. Without this the HTML fallback picks up the
+        // site's minimum-bid copy and reports it as a standing bid.
+        if (Array.isArray(list) && list.length === 0) {
+          result.topBid = 0;
+          result.topEntry = null;
+          result.source = 'api';
+          result.ok = true;
+        } else if (Array.isArray(list) && list.length) {
           let top = null;
           for (const entry of list) {
             const bid = pickBidFromEntry(entry, site.bidKey);
@@ -254,9 +315,15 @@ export async function probeSite(site) {
   try {
     const response = await fetchWithTimeout(base);
     const html = await response.text();
+    // A site that is down or paused is a transient failure: keep whatever was
+    // last read rather than dropping the row to a dash.
+    const reachable = response.ok !== false && response.status < 400 && !/DEPLOYMENT_PAUSED|DEPLOYMENT_NOT_FOUND/i.test(html);
     result.meta = extractMeta(html);
-    result.claimPrice = claimPrice(html);
+    const text = toText(html);
+    result.claimPrice = claimPrice(text);
 
+    // Resolution order for a page, most trustworthy first.
+    // 1. A key this site was configured with.
     if (!result.ok && site.htmlKey) {
       const value = embeddedKeyValue(html, site.htmlKey, site.htmlKeyCents);
       if (value !== null) {
@@ -267,24 +334,50 @@ export async function probeSite(site) {
       }
     }
 
-    if (!result.ok && site.htmlFallback === false) {
-      // Deliberate, not a hiccup — so the previous number must not be kept.
-      result.skipped = true;
-      result.error = result.error ?? 'html scraping disabled for this site';
-    } else if (!result.ok) {
-      const amounts = dollarAmounts(html);
-      if (amounts.length) {
-        // These boards render highest-first, so the first amount is normally the
-        // #1 bid; fall back to the largest when the markup order says otherwise.
-        const largest = Math.max(...amounts);
-        result.topBid = amounts[0] === largest ? amounts[0] : largest;
-        result.source = 'html';
+    if (site.htmlFallback === false) {
+      if (!result.ok) {
+        // Deliberate, not a hiccup — so the previous number must not be kept.
+        result.skipped = true;
+        result.error = result.error ?? 'reading this page is switched off';
+      }
+    } else {
+      // 2. A bid-shaped key in the JSON the page ships with.
+      if (!result.ok) {
+        let embedded = embeddedBid(html);
+        // A key called "amount" or "bid" may hold cents or dollars and the name
+        // does not say which. The page itself settles it: whichever reading is
+        // printed on it is the right one.
+        if (embedded !== null && embedded >= 100 && !shownOnPage(text, embedded) && shownOnPage(text, embedded / 100)) {
+          embedded = embedded / 100;
+        }
+        if (embedded !== null) {
+          result.topBid = embedded;
+          result.source = 'embedded';
+          result.ok = true;
+          result.error = null;
+        }
+      }
+
+      // 3. What the board says in words that #1 costs.
+      if (!result.ok && result.claimPrice !== null) {
+        result.topBid = result.claimPrice;
+        result.source = 'claim';
         result.ok = true;
         result.error = null;
-      } else if (!result.error) {
-        result.error = 'no dollar amount found in html';
+      }
+
+      // There is no "largest dollar figure on the page" step any more. It was
+      // wrong more often than right: bid-increment buttons, prices quoted in
+      // listing copy and board-wide totals all outrank the actual bid. A board
+      // that gets this far shows no number until someone wires its endpoint.
+      if (!result.ok) {
+        result.skipped = reachable;
+        result.error = reachable
+          ? 'nothing readable: no endpoint, no bid key, no "claim #1 for $X"'
+          : `site unreachable (HTTP ${response.status})`;
       }
     }
+
     // A "claim for $X" price above the parsed bid means the board is asking more
     // than the number we scraped — surface it rather than silently disagreeing.
     if (result.ok && result.claimPrice !== null && result.topBid !== null) {
