@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T13:29:03.974Z",
+  "updatedAt": "2026-08-24T13:30:53.464Z",
   "results": {
     "outbid.lol": {
       "domain": "outbid.lol",
@@ -2939,6 +2939,24 @@
       "previousBid": null,
       "changedAt": null,
       "verifiedAt": "2026-08-24T13:29:02.800Z",
+      "stale": false
+    },
+    "toolcup.lol": {
+      "domain": "toolcup.lol",
+      "topBid": 6,
+      "topEntry": null,
+      "source": "claim",
+      "claimPrice": 6,
+      "nextBid": null,
+      "skipped": false,
+      "ok": true,
+      "error": null,
+      "meta": {
+        "title": "toolcup.lol | list your website and win the ToolCup",
+        "description": "Paid leaderboard for websites, AI tools and software. $1 to list. Pay more to take #1. Every bid is public."
+      },
+      "checkedAt": "2026-08-24T13:30:51.895Z",
+      "exact": false,
       "stale": false
     }
   }
