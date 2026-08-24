@@ -6,8 +6,16 @@ body:
   - type: markdown
     attributes:
       value: |
-        Fill in the domain and submit. A bot will try to read the site's current top bid and open
-        a pull request for you — usually within a minute. You do not need to know anything else.
+        Fill in the domain and submit. A bot reads the site's current top bid, opens the pull
+        request and merges it, usually within a minute.
+
+        Two conditions. **Star or fork this repo first** — listings are free and permanent, and
+        that is the whole asking price. And the board has to **publish a number the bot can
+        read**; boards that render their leaderboard in JavaScript with no endpoint cannot be
+        listed until they expose one.
+
+        If you star or fork after opening the issue, comment `recheck` and the bot picks it back
+        up.
   - type: input
     id: domain
     attributes:
@@ -35,4 +43,6 @@ body:
       label: Checks
       options:
         - label: This is a live .lol pay-to-rank / bidding site, not a placeholder or parked domain.
+          required: true
+        - label: I have starred or forked this repo.
           required: true

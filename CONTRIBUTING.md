@@ -8,8 +8,12 @@ extension. Three ways to add one, easiest first. All end in the same place: one 
 
 [Add a site →](https://github.com/bhaumikmistry/topofthe-lol/issues/new?template=add-site.yml)
 
-Type the domain, submit. A bot reads the site's current top bid and opens the pull request for
-you. If it can't read a bid, it says so in a comment instead of failing silently.
+Type the domain, submit. A bot reads the site's current top bid, opens the pull request and merges
+it. If it can't read a bid, it says so in a comment instead of failing silently.
+
+**Star or fork the repo first.** Listings are free, permanent and link straight back to you, and a
+star is the entire asking price. The bot checks, and if you star after opening the issue, comment
+`recheck` and it carries on. Opening a pull request yourself counts too, since that is a fork.
 
 ## 2. Edit the file in the browser
 

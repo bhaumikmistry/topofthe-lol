@@ -65,6 +65,15 @@ if (tagline) site.tagline = tagline.replace(/[\r\n<>]+/g, ' ').slice(0, 160);
 
 const { result } = await addSite(site).catch((error) => fail(error.message));
 
+// The list only carries boards with a number on them.
+if (!result.ok || result.topBid === null) {
+  fail(
+    `${domain} is live, but nothing readable was found on it: ${result.error}. ` +
+      `Boards are listed once a number can be read. If it has a JSON endpoint, say which path ` +
+      `(for example /api/leaderboard) and the bot will try again.`
+  );
+}
+
 // Read by the workflow to name the branch and write the pull request body.
 const summary = result.ok
   ? `resolved a top bid of $${result.topBid.toLocaleString()} via ${result.source}`

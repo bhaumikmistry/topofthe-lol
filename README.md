@@ -38,6 +38,9 @@ bad scrape never blanks a row.
 
 ## Adding a site
 
+Two conditions: star or fork the repo, and the board has to publish a number that can be read.
+Listings are free, permanent and link back to the site.
+
 ```bash
 npm run add outbid.lol
 ```
