@@ -116,6 +116,9 @@ export default function Home() {
             </h2>
             <Board listings={listings} />
             <p className="mt-4 text-[11.5px] uppercase leading-relaxed tracking-[0.04em] text-muted-foreground">
+              {stats.empty > 0
+                ? `${stats.empty} of these boards are empty right now, so #1 is there for the taking. `
+                : ''}
               &ldquo;Top bid&rdquo; is read from the site&rsquo;s own data. A tilde means the number
               was read off the page instead, where the figure on offer is usually the price to take
               #1 rather than the bid already sitting there. A dash means the board renders in

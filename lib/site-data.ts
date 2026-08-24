@@ -87,7 +87,10 @@ export function getStats(listings: Listing[]) {
     priced: priced.length,
     total,
     highest: priced[0]?.topBid ?? 0,
-    cheapest: priced.length ? (priced[priced.length - 1].topBid ?? 0) : 0,
+    // Boards sitting at $0 are empty rather than cheap, and quoting $0 as the
+    // going rate for #1 is misleading.
+    cheapest: priced.filter((listing) => (listing.topBid ?? 0) > 0).at(-1)?.topBid ?? 0,
+    empty: priced.filter((listing) => listing.topBid === 0).length,
   };
 }
 
