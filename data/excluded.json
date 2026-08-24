@@ -1,0 +1,13 @@
+{
+  "$comment": "Domains deliberately not listed, with the reason. discover.mjs and validate.mjs both honour this.",
+  "excluded": {
+    "slowblog.lol": "ranks page-load speed, not money",
+    "timebid.lol": "ranks seconds spent on the page, not money",
+    "satsbid.lol": "denominated in satoshis, not dollars",
+    "nobid.lol": "ranks by attention and explicitly refuses paid rank",
+    "outlike.lol": "ranks by likes, not money",
+    "bidfast.lol": "ranks by game score, not money",
+    "when1m.lol": "tracks progress toward a target, not a board",
+    "biggusdickus.lol": "live board, left off on name grounds"
+  }
+}

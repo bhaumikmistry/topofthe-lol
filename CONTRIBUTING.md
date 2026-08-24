@@ -45,6 +45,25 @@ Only needed when the automatic detection gets it wrong.
 | `valuePath` | Dotted path to a single number, for sites that expose one price rather than a list. |
 | `manualBid` | Hardcode the number. Wins over everything — use it for sites that render their board in JavaScript. |
 
+## What gets listed
+
+A site is listed only once a number can be read off it. Everything else lives in
+[`data/candidates.json`](data/candidates.json) with the reason and the date it was last checked,
+so a board that goes live later can be picked up rather than rediscovered.
+
+[`data/excluded.json`](data/excluded.json) is the other list: .lol boards that work fine but rank
+by something other than money (page speed, seconds on page, likes, satoshis, game score). CI
+rejects anything on it.
+
+To vet a batch of domains at once:
+
+```bash
+node scripts/discover.mjs domains.txt   # one per line
+```
+
+It keeps .lol only, drops what is already listed or excluded, probes each one for an endpoint,
+adds the ones that resolve and files the rest as candidates.
+
 ## What CI checks
 
 `scripts/validate.mjs` runs on every pull request and rejects: malformed JSON, a missing or

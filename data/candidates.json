@@ -1,0 +1,720 @@
+{
+  "candidates": {
+    "15minsoffame.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "adwars.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "afternic.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "allstates.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "appbid.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "bestplayer.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "bidbento.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "bidbod.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "bidfull.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "bidking.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "bidlist.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "bidorb.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "bidweek.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "biggusdickus.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "billiondollarhomepage.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "billiondollarpage.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "bubbleboard.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "bunnyrace.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "camelrace.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "caniroast.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "channelbid.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "climbclaim.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "creatorbid.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "dailyrank.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "dinobid.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "dinogamebid.lol": {
+      "reason": "html: This operation was aborted",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "directory.lol": {
+      "reason": "html: fetch failed",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "elmapa.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "exed.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "fanboard.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "fartbid.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "firstbid.lol": {
+      "reason": "site unreachable (HTTP 451)",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "flexxx.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "gamebids.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "getdeals.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "goup.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "halfbid.lol": {
+      "reason": "html: fetch failed",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "handlebid.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "highrank.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "hivebid.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "infinitecanvas.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "lastlife.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "lasttoclick.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "lololololololololo.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "lowbid.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "macapps.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "makeitworse.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "memleket.lol": {
+      "reason": "site unreachable (HTTP 403)",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "myearth.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "onead.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "onedollarbid.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "outbid-directory.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "outbidclone.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "outbidforfun.lol": {
+      "reason": "html: fetch failed",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "outbidmacapp.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "outblob.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "outbring.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "outflex.lol": {
+      "reason": "site unreachable (HTTP 503)",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "outlvl.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "outpay.lol": {
+      "reason": "html: fetch failed",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "outpixel.lol": {
+      "reason": "site unreachable (HTTP 404)",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "outsat.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "outsize.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "outspent.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "outsquat.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "overdraw.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "ownakey.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "owntheweb.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "ownworld.lol": {
+      "reason": "site unreachable (HTTP 500)",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "pay2chat.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "payluck.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "peakbid.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "peopletier.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "pitchpit.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "politicos.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "pricefight.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "productoutbid.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "quitsmoking.lol": {
+      "reason": "site unreachable (HTTP 404)",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "radwall.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "ranky.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "reideportugal.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "rentalbid.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "saascity.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "saasleague.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "selfbid.lol": {
+      "reason": "html: fetch failed",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "sendlove.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "shamelessplug.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "simbid.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "spotlit.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "stealit.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "swiperank.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "theclimb.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "thefinalboss.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "thisiscrazy.lol": {
+      "reason": "site unreachable (HTTP 404)",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "throned.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "tinybid.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "toolarena.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "topapps.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "topbeat.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "topbidder.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "topcast.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "topflex.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "toppled.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "topplugin.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "toptheme.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "unbid.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "upapp.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "vclove.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "viralapp.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "vplanet.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "webbid.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "whodeytop.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "wishme.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "wordwar.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "worldmap.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "wpbid.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "yallabid.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "youbid.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "yourhour.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "yourmove.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:06:31.605Z",
+      "checks": 1
+    },
+    "lastspot.lol": {
+      "reason": "reading this page is switched off",
+      "checkedAt": "2026-08-24T03:09:09.476Z",
+      "checks": 1
+    },
+    "bidwall.lol": {
+      "reason": "reading this page is switched off",
+      "checkedAt": "2026-08-24T03:09:09.478Z",
+      "checks": 1
+    },
+    "macbid.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:09:09.776Z",
+      "checks": 1
+    },
+    "marketrank.lol": {
+      "reason": "reading this page is switched off",
+      "checkedAt": "2026-08-24T03:09:10.740Z",
+      "checks": 1
+    },
+    "winbid.lol": {
+      "reason": "reading this page is switched off",
+      "checkedAt": "2026-08-24T03:09:11.278Z",
+      "checks": 1
+    },
+    "afkbid.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:09:11.633Z",
+      "checks": 1
+    },
+    "subwars.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:09:12.237Z",
+      "checks": 1
+    },
+    "toolbid.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:09:12.266Z",
+      "checks": 1
+    },
+    "buildbid.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:09:12.404Z",
+      "checks": 1
+    },
+    "solarwar.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:09:12.548Z",
+      "checks": 1
+    },
+    "tapshelf.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:09:12.649Z",
+      "checks": 1
+    },
+    "wintop.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:09:12.750Z",
+      "checks": 1
+    },
+    "hiddengems.lol": {
+      "reason": "site unreachable (HTTP 429)",
+      "checkedAt": "2026-08-24T03:09:12.753Z",
+      "checks": 1
+    },
+    "claimland.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:09:12.858Z",
+      "checks": 1
+    },
+    "dnbid.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:09:12.872Z",
+      "checks": 1
+    },
+    "landgrab.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:09:13.753Z",
+      "checks": 1
+    },
+    "charitybid.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:09:13.860Z",
+      "checks": 1
+    },
+    "top-job.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:09:13.928Z",
+      "checks": 1
+    },
+    "rankbid.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:09:13.966Z",
+      "checks": 1
+    },
+    "theinternetkeyboard.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:09:14.221Z",
+      "checks": 1
+    },
+    "thebidboard.lol": {
+      "reason": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "checkedAt": "2026-08-24T03:09:14.436Z",
+      "checks": 1
+    },
+    "outbidstory.lol": {
+      "reason": "reading this page is switched off",
+      "checkedAt": "2026-08-24T03:09:14.504Z",
+      "checks": 1
+    },
+    "lamborghini.lol": {
+      "reason": "reading this page is switched off",
+      "checkedAt": "2026-08-24T03:09:14.600Z",
+      "checks": 1
+    }
+  },
+  "updatedAt": "2026-08-24T03:06:31.605Z"
+}

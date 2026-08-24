@@ -42,6 +42,10 @@ export function getPath(object, dotted) {
     .reduce((acc, key) => (acc == null ? undefined : acc[key]), object);
 }
 
+// Nothing on these boards is a seven-figure bid; anything larger is a
+// timestamp, a click total or a number of satoshis.
+const MAX_PLAUSIBLE_BID = 100_000;
+
 const BID_KEY_PATTERN = /(cents|bid|amount|price|total|value|paid|banked|alltime|all_time)/i;
 const BID_KEY_DENYLIST =
   /(rank|position|clicks?|count|id$|_id|createdat|updatedat|created_at|updated_at|hours|week$|timestamp|_ms$|floor)/i;
@@ -55,7 +59,8 @@ export function pickBidFromEntry(entry, explicitKey) {
   if (explicitKey) {
     const raw = entry?.[explicitKey];
     if (typeof raw === 'number' && Number.isFinite(raw)) {
-      return isCentsKey(explicitKey) ? raw / 100 : raw;
+      const value = isCentsKey(explicitKey) ? raw / 100 : raw;
+      return value > MAX_PLAUSIBLE_BID ? null : value;
     }
     return null;
   }
@@ -65,6 +70,9 @@ export function pickBidFromEntry(entry, explicitKey) {
     if (typeof value !== 'number' || !Number.isFinite(value) || value < 0) continue;
     if (BID_KEY_DENYLIST.test(key) || !BID_KEY_PATTERN.test(key)) continue;
     const dollars = isCentsKey(key) ? value / 100 : value;
+    // Epoch timestamps and click totals sail through key matching; nothing on
+    // these boards is a seven-figure bid.
+    if (dollars > MAX_PLAUSIBLE_BID) continue;
     if (best === null || dollars > best) best = dollars;
   }
   return best;
@@ -111,7 +119,6 @@ export function findEntryArray(payload) {
 }
 
 const MONEY = /\$\s?([0-9]{1,3}(?:,[0-9]{3})+|[0-9]+)(?:\.([0-9]{2}))?/g;
-const MAX_PLAUSIBLE_BID = 5_000_000;
 
 /**
  * Many of these boards ship their data inside the page as escaped JSON (a
@@ -154,6 +161,8 @@ export function dollarAmounts(html) {
 // $3,600") and every bid-increment button on the page.
 const CLAIM_PATTERNS = [
   /(?:claim|take|beat|outbid|overbid|dethrone|steal|own)\s+(?:the\s+)?#\s?1\s*(?:spot\s*)?(?:for|at|costs?|·|-|—)?\s*\$\s?([0-9]{1,3}(?:,[0-9]{3})+|[0-9]+)(?:\.([0-9]{2}))?/gi,
+  // "#1 costs $2 right now", "#1 is $16"
+  /#\s?1\s+(?:costs?|is|for|at)\s+\$\s?([0-9]{1,3}(?:,[0-9]{3})+|[0-9]+)(?:\.([0-9]{2}))?/gi,
 ];
 
 /** Markup between words breaks the anchored patterns, so match on text. */
@@ -271,8 +280,9 @@ export async function probeSite(site) {
 
       if (site.valuePath) {
         const raw = getPath(payload, site.valuePath);
-        if (typeof raw === 'number') {
-          result.topBid = /cents/i.test(site.valuePath) ? raw / 100 : raw;
+        const scaled = typeof raw === 'number' ? (/cents/i.test(site.valuePath) ? raw / 100 : raw) : null;
+        if (scaled !== null && scaled <= MAX_PLAUSIBLE_BID) {
+          result.topBid = scaled;
           result.topEntry = site.nameValuePath
             ? (getPath(payload, site.nameValuePath) ?? null)
             : null;
@@ -341,7 +351,17 @@ export async function probeSite(site) {
         result.error = result.error ?? 'reading this page is switched off';
       }
     } else {
-      // 2. A bid-shaped key in the JSON the page ships with.
+      // 2. What the board says, in words, that #1 costs. A sentence beats a
+      // key guessed out of the page's JSON, which is as likely to be a running
+      // total or a fundraising goal as a bid.
+      if (!result.ok && result.claimPrice !== null) {
+        result.topBid = result.claimPrice;
+        result.source = 'claim';
+        result.ok = true;
+        result.error = null;
+      }
+
+      // 3. Failing that, a bid-shaped key in the JSON the page ships with.
       if (!result.ok) {
         let embedded = embeddedBid(html);
         // A key called "amount" or "bid" may hold cents or dollars and the name
@@ -358,14 +378,6 @@ export async function probeSite(site) {
         }
       }
 
-      // 3. What the board says in words that #1 costs.
-      if (!result.ok && result.claimPrice !== null) {
-        result.topBid = result.claimPrice;
-        result.source = 'claim';
-        result.ok = true;
-        result.error = null;
-      }
-
       // There is no "largest dollar figure on the page" step any more. It was
       // wrong more often than right: bid-increment buttons, prices quoted in
       // listing copy and board-wide totals all outrank the actual bid. A board
@@ -378,8 +390,16 @@ export async function probeSite(site) {
       }
     }
 
-    // A "claim for $X" price above the parsed bid means the board is asking more
-    // than the number we scraped — surface it rather than silently disagreeing.
+    // The board saying "#1 costs $2" while the number we read is $100 means the
+    // read is wrong: it found a running total, a goal, or a row that is not the
+    // top one. Trust the sentence.
+    if (result.ok && result.claimPrice !== null && result.topBid !== null && result.topBid > result.claimPrice * 5) {
+      result.topBid = result.claimPrice;
+      result.source = 'claim';
+    }
+
+    // A claim price above the number we read is normal: it is the bid plus the
+    // increment. Keep it alongside rather than overwriting.
     if (result.ok && result.claimPrice !== null && result.topBid !== null) {
       result.nextBid = result.claimPrice > result.topBid ? result.claimPrice : null;
     }

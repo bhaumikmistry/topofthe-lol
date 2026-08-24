@@ -27,6 +27,9 @@ const DOMAIN = /^(?!-)[a-z0-9-]{1,63}\.lol$/;
 const errors = [];
 const warnings = [];
 
+const excludedFile = await readJson(SITES_FILE.replace('sites.json', 'excluded.json'), { excluded: {} });
+const excluded = excludedFile.excluded ?? {};
+
 const file = await readJson(SITES_FILE, null);
 if (file === null) {
   console.error(`data/sites.json is missing or is not valid JSON.`);
@@ -56,6 +59,10 @@ file.sites.forEach((site, index) => {
     return;
   }
   seen.set(domain, index);
+
+  if (excluded[domain]) {
+    errors.push(`${domain}: on the excluded list (${excluded[domain]}). Remove it from data/excluded.json first if that has changed.`);
+  }
 
   for (const key of Object.keys(site)) {
     if (!KNOWN_KEYS.has(key)) {

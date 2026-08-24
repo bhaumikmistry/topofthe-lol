@@ -3,7 +3,7 @@ import { Footer } from '@/components/footer';
 import { Header } from '@/components/header';
 import { ShareButton } from '@/components/share-button';
 import { Ticker } from '@/components/ticker';
-import { formatMoney, getListings, getStats, updatedAt } from '@/lib/site-data';
+import { candidateCount, formatMoney, getListings, getStats, updatedAt } from '@/lib/site-data';
 
 // Rebuilt on every deploy and every bid refresh commit — no request-time work.
 export const dynamic = 'force-static';
@@ -119,10 +119,14 @@ export default function Home() {
               {stats.empty > 0
                 ? `${stats.empty} of these boards are empty right now, so #1 is there for the taking. `
                 : ''}
-              &ldquo;Top bid&rdquo; is read from the site&rsquo;s own data. A tilde means the number
-              was read off the page instead, where the figure on offer is usually the price to take
-              #1 rather than the bid already sitting there. A dash means the board renders in
-              JavaScript and publishes nothing we can read.
+              Every board here has a number read from its own page or API. A tilde means the figure
+              is what the board asks for #1 rather than the bid already on it.{' '}
+              {candidateCount > 0 ? (
+                <>
+                  Another {candidateCount} .lol boards are tracked in the repo but publish nothing
+                  readable, so they are not listed until they do.
+                </>
+              ) : null}
             </p>
           </section>
         </div>

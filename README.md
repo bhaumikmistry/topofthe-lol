@@ -10,7 +10,9 @@ JSON files and a scraper.
 ## How it works
 
 ```
-data/sites.json   # the list you edit — one object per site
+data/sites.json      # the list you edit — one object per site
+data/candidates.json # known boards that publish no readable number, with reasons
+data/excluded.json   # boards that rank by something other than money
 scripts/refresh.mjs  # visits each site, works out its current top bid
 data/bids.json    # generated output, committed to git, read at build time
 app/page.tsx      # renders data/bids.json as a static page
@@ -22,8 +24,13 @@ app/page.tsx      # renders data/bids.json as a static page
 2. The site's own JSON endpoint (`endpoint`, e.g. `/api/leaderboard`). It reads the entry list
    and picks the most bid-like numeric field (`totalCents`, `bid_cents`, `amount`, …), dividing
    by 100 for any key containing `cents`.
-3. The homepage HTML — the largest plausible `$…` amount, plus any advertised
-   "claim this spot for $X" price.
+3. What the page says in words that #1 costs: "claim #1 for $26.00", "#1 costs $2 right now".
+4. A bid-shaped key in the JSON the page ships with, as a last resort.
+
+There is no "largest dollar figure on the page" step. It was wrong more often than right: these
+layouts are full of bid-increment buttons ($5 / $25 / $100), prices quoted inside listing copy and
+board-wide totals, and any of them outranks the actual bid. A board that resolves to nothing is
+not listed at all.
 
 A site that fails to resolve keeps its last known good number and is flagged `stale`, so one
 bad scrape never blanks a row.

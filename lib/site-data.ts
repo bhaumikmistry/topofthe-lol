@@ -1,4 +1,5 @@
 import bids from '@/data/bids.json';
+import candidatesFile from '@/data/candidates.json';
 import sites from '@/data/sites.json';
 
 export interface SiteConfig {
@@ -52,6 +53,11 @@ const configs = ((sites as { sites?: SiteConfig[] }).sites ?? []).filter(
     Boolean(site) && typeof site === 'object' && typeof site.domain === 'string' && site.domain.includes('.')
 );
 const results = (bids as { updatedAt?: string; results?: Record<string, BidResult> }).results ?? {};
+
+/** .lol boards we know of that publish no readable number, kept in the repo. */
+export const candidateCount: number = Object.keys(
+  (candidatesFile as { candidates?: Record<string, unknown> }).candidates ?? {}
+).length;
 
 export const updatedAt: string = (bids as { updatedAt: string }).updatedAt ?? '';
 
