@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-24T01:40:52.324Z",
+  "updatedAt": "2026-08-24T02:39:02.653Z",
   "results": {
     "outbid.lol": {
       "domain": "outbid.lol",
@@ -10,12 +10,12 @@
       "nextBid": 14018,
       "skipped": false,
       "ok": true,
-      "error": "no dollar amount found in html",
+      "error": "site unreachable (HTTP 503)",
       "meta": {
         "title": "outbid.lol",
         "description": "No ads, no API keys, no revenue sharing. Just outbid your competition to get to the top. Will you take #1 when this site goes viral?"
       },
-      "checkedAt": "2026-08-24T01:40:46.438Z",
+      "checkedAt": "2026-08-24T02:38:54.019Z",
       "exact": true,
       "previousBid": 14018,
       "changedAt": "2026-08-22T07:44:13.643Z",
@@ -35,7 +35,7 @@
         "title": "watchbid.lol — buy the top screen",
         "description": "A leaderboard you buy your way up. The top 3 ranks play video. Everyone else is a line of text."
       },
-      "checkedAt": "2026-08-24T01:40:46.486Z",
+      "checkedAt": "2026-08-24T02:38:54.044Z",
       "exact": true,
       "previousBid": 3,
       "changedAt": "2026-08-22T15:49:42.289Z",
@@ -55,7 +55,7 @@
         "title": "takeone — pay your way to #1",
         "description": "A public leaderboard where people pay real money to rank their link. New spots start at $5. Claim #1 for one dollar more than the current king."
       },
-      "checkedAt": "2026-08-24T01:40:46.487Z",
+      "checkedAt": "2026-08-24T02:38:54.044Z",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
@@ -70,12 +70,12 @@
       "nextBid": null,
       "skipped": true,
       "ok": false,
-      "error": "html scraping disabled for this site",
+      "error": "reading this page is switched off",
       "meta": {
         "title": "LastSpot: Sponsor a spot. Rank higher.",
         "description": "A 100-slot product leaderboard where payments set live value, repeat payments top it up, and value drops 5% each day."
       },
-      "checkedAt": "2026-08-24T01:40:46.488Z",
+      "checkedAt": "2026-08-24T02:38:54.045Z",
       "exact": false,
       "stale": false
     },
@@ -84,7 +84,7 @@
       "topBid": 1.25,
       "topEntry": "grok.bot",
       "source": "api",
-      "claimPrice": 0.25,
+      "claimPrice": null,
       "nextBid": null,
       "skipped": false,
       "ok": true,
@@ -93,7 +93,7 @@
         "title": "overbid.lol — the pay-to-rank leaderboard",
         "description": "Rank is for sale. Overbid everyone, take #1, and get seen when this board goes viral. No ads, no API keys, no revenue share."
       },
-      "checkedAt": "2026-08-24T01:40:46.489Z",
+      "checkedAt": "2026-08-24T02:38:54.045Z",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
@@ -113,7 +113,7 @@
         "title": "Pay to Be #1",
         "description": "No algorithm. Highest bid wins."
       },
-      "checkedAt": "2026-08-24T01:40:46.490Z",
+      "checkedAt": "2026-08-24T02:38:54.046Z",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
@@ -121,10 +121,10 @@
     },
     "spots.lol": {
       "domain": "spots.lol",
-      "topBid": 6,
+      "topBid": 0,
       "topEntry": null,
-      "source": "html",
-      "claimPrice": 1,
+      "source": "api",
+      "claimPrice": null,
       "nextBid": null,
       "skipped": false,
       "ok": true,
@@ -133,10 +133,10 @@
         "title": "spots.lol — the ad board where the highest bid ranks #1",
         "description": "Buy an advertising spot for your product or startup. Your bid is your rank — take the spot above you to climb, and the whole board clears every Sunday."
       },
-      "checkedAt": "2026-08-24T01:40:46.491Z",
-      "exact": false,
-      "previousBid": 5,
-      "changedAt": "2026-08-22T10:28:38.963Z",
+      "checkedAt": "2026-08-24T02:38:54.046Z",
+      "exact": true,
+      "previousBid": 6,
+      "changedAt": "2026-08-24T02:38:54.046Z",
       "stale": false
     },
     "bidwall.lol": {
@@ -148,30 +148,12 @@
       "nextBid": null,
       "skipped": true,
       "ok": false,
-      "error": "html scraping disabled for this site",
+      "error": "reading this page is switched off",
       "meta": {
         "title": "BidWall — Put Your Company on the Internet&#x27;s Billboard",
         "description": "A giant digital billboard where position is bought, not given. Pay what you like, take the rank it buys, and hold it until somebody pays more."
       },
-      "checkedAt": "2026-08-24T01:40:46.491Z",
-      "exact": false,
-      "stale": false
-    },
-    "rankly.vip": {
-      "domain": "rankly.vip",
-      "topBid": null,
-      "topEntry": null,
-      "source": null,
-      "claimPrice": null,
-      "nextBid": null,
-      "skipped": false,
-      "ok": false,
-      "error": "no dollar amount found in html",
-      "meta": {
-        "title": "Rankly",
-        "description": null
-      },
-      "checkedAt": "2026-08-22T07:56:03.565Z",
+      "checkedAt": "2026-08-24T02:38:54.046Z",
       "exact": false,
       "stale": false
     },
@@ -189,7 +171,7 @@
         "title": "topapp.lol — Pay your way to #1",
         "description": "The App Store leaderboard where the highest bidder wins. Subtle? No. Effective? Also no idea."
       },
-      "checkedAt": "2026-08-24T01:40:46.556Z",
+      "checkedAt": "2026-08-24T02:38:54.171Z",
       "exact": true,
       "previousBid": 187,
       "changedAt": "2026-08-23T14:27:54.510Z",
@@ -197,10 +179,10 @@
     },
     "uprank.lol": {
       "domain": "uprank.lol",
-      "topBid": 500,
+      "topBid": 79,
       "topEntry": null,
-      "source": "html",
-      "claimPrice": 1,
+      "source": "embedded",
+      "claimPrice": null,
       "nextBid": null,
       "skipped": false,
       "ok": true,
@@ -209,50 +191,28 @@
         "title": "uprank — pay more, rank higher",
         "description": "A public leaderboard for websites. Your rank is your lifetime total, and anyone can pay a dollar more to take it."
       },
-      "checkedAt": "2026-08-24T01:40:46.899Z",
-      "exact": false,
-      "previousBid": 68,
-      "changedAt": "2026-08-23T06:53:49.705Z",
-      "stale": false
-    },
-    "dethrone.site": {
-      "domain": "dethrone.site",
-      "topBid": 5,
-      "topEntry": "Bloomiro",
-      "source": "api",
-      "claimPrice": null,
-      "nextBid": null,
-      "skipped": false,
-      "ok": true,
-      "error": null,
-      "meta": {
-        "title": "Where Websites Compete for #1 | Dethrone",
-        "description": "Dethrone is a public pay-to-climb leaderboard for websites. Check a domain, see its Week and All Time position, or pay to move your site higher."
-      },
-      "checkedAt": "2026-08-22T07:56:03.980Z",
+      "checkedAt": "2026-08-24T02:38:54.295Z",
       "exact": true,
-      "previousBid": null,
-      "changedAt": null,
+      "previousBid": 500,
+      "changedAt": "2026-08-24T02:38:54.295Z",
       "stale": false
     },
     "macbid.lol": {
       "domain": "macbid.lol",
-      "topBid": 6,
+      "topBid": null,
       "topEntry": null,
-      "source": "html",
-      "claimPrice": 3,
+      "source": null,
+      "claimPrice": null,
       "nextBid": null,
-      "skipped": false,
-      "ok": true,
-      "error": null,
+      "skipped": true,
+      "ok": false,
+      "error": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
       "meta": {
         "title": "MacBid — The paid leaderboard for Mac apps",
         "description": "Discover independent macOS apps ranked by real, public bids. Listings start at $3."
       },
-      "checkedAt": "2026-08-24T01:40:47.359Z",
+      "checkedAt": "2026-08-24T02:38:54.461Z",
       "exact": false,
-      "previousBid": null,
-      "changedAt": null,
       "stale": false
     },
     "dontbid.lol": {
@@ -269,7 +229,7 @@
         "title": "dontbid.lol — the top of the page is for sale",
         "description": "A product directory with no algorithm. Every listing is ranked by how much it has paid to sit there. Pay more than the listing above you and take its row."
       },
-      "checkedAt": "2026-08-24T01:40:47.843Z",
+      "checkedAt": "2026-08-24T02:38:54.587Z",
       "exact": false,
       "previousBid": 1,
       "changedAt": "2026-08-22T21:49:12.237Z",
@@ -289,7 +249,7 @@
         "title": "WARMAP — the world is for sale",
         "description": "Conquer a country. Your company, your color, on the world map — until someone pays 1.5x to take it from you. No refunds. That’s war."
       },
-      "checkedAt": "2026-08-24T01:40:47.931Z",
+      "checkedAt": "2026-08-24T02:38:54.681Z",
       "exact": true,
       "previousBid": 160,
       "changedAt": "2026-08-23T22:26:57.222Z",
@@ -300,7 +260,7 @@
       "topBid": 22,
       "topEntry": "Hey Design AI: Website Design Prompts for AI Builders",
       "source": "api",
-      "claimPrice": 1,
+      "claimPrice": null,
       "nextBid": null,
       "skipped": false,
       "ok": true,
@@ -309,30 +269,10 @@
         "title": "whosetheboss.lol",
         "description": "One company is the boss of the internet. Everyone else is just rich. Pay to take the crown. Every dollar you&#x27;ve ever paid stays banked."
       },
-      "checkedAt": "2026-08-24T01:40:48.025Z",
+      "checkedAt": "2026-08-24T02:38:54.713Z",
       "exact": true,
       "previousBid": 12,
       "changedAt": "2026-08-22T14:51:19.861Z",
-      "stale": false
-    },
-    "whynotalso.bid": {
-      "domain": "whynotalso.bid",
-      "topBid": 13.8,
-      "topEntry": "@tolypash",
-      "source": "api",
-      "claimPrice": null,
-      "nextBid": null,
-      "skipped": false,
-      "ok": true,
-      "error": null,
-      "meta": {
-        "title": "whynotalso.bid",
-        "description": "A live leaderboard where you bid real dollars to climb the rankings. Tap to bid. Get outbid. Bid again."
-      },
-      "checkedAt": "2026-08-22T07:56:04.637Z",
-      "exact": true,
-      "previousBid": null,
-      "changedAt": null,
       "stale": false
     },
     "topnewsletters.lol": {
@@ -349,7 +289,7 @@
         "title": "Subscribers don&#x27;t scroll. They open. · topnewsletters.lol",
         "description": "Subscribers don&#x27;t scroll. They open. Bid for the inbox — the opens, the replies, the forwards."
       },
-      "checkedAt": "2026-08-24T01:40:48.054Z",
+      "checkedAt": "2026-08-24T02:38:54.774Z",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
@@ -359,8 +299,8 @@
       "domain": "bidding.lol",
       "topBid": 2,
       "topEntry": null,
-      "source": "html",
-      "claimPrice": 1,
+      "source": "claim",
+      "claimPrice": 2,
       "nextBid": null,
       "skipped": false,
       "ok": true,
@@ -369,7 +309,7 @@
         "title": "bidding.lol — the directory of bidding sites, ranked by bid",
         "description": "A leaderboard of auction and pay-to-rank sites, ordered the only way that fits: by what each one pays for its row. Bid, and your site moves up."
       },
-      "checkedAt": "2026-08-24T01:40:48.265Z",
+      "checkedAt": "2026-08-24T02:38:54.942Z",
       "exact": false,
       "previousBid": null,
       "changedAt": null,
@@ -380,8 +320,8 @@
       "topBid": 14,
       "topEntry": "Street Interview AI Generator - Create Realistic AI Interview Videos",
       "source": "api",
-      "claimPrice": 15,
-      "nextBid": 15,
+      "claimPrice": null,
+      "nextBid": null,
       "skipped": false,
       "ok": true,
       "error": null,
@@ -389,7 +329,7 @@
         "title": "Pay your way to the AI throne.",
         "description": "The live leaderboard where AI startups bid to claim the AI throne."
       },
-      "checkedAt": "2026-08-24T01:40:48.271Z",
+      "checkedAt": "2026-08-24T02:38:55.079Z",
       "exact": true,
       "previousBid": 13,
       "changedAt": "2026-08-23T13:36:04.407Z",
@@ -400,8 +340,8 @@
       "topBid": 60,
       "topEntry": "outoutbid.lol",
       "source": "api",
-      "claimPrice": 61,
-      "nextBid": 61,
+      "claimPrice": null,
+      "nextBid": null,
       "skipped": false,
       "ok": true,
       "error": null,
@@ -409,7 +349,7 @@
         "title": "Bid Directory — for bid sites, ranked by bid",
         "description": "Auction and pay-to-rank directories, competing the only way that fits: by bidding. A leaderboard of bid sites — for bid sites."
       },
-      "checkedAt": "2026-08-24T01:40:48.319Z",
+      "checkedAt": "2026-08-24T02:38:55.248Z",
       "exact": true,
       "previousBid": 58,
       "changedAt": "2026-08-23T18:35:50.834Z",
@@ -429,7 +369,7 @@
         "title": "Promote Your Website on a Live Leaderboard | Steal My Spot",
         "description": "Place your website or X profile on a live paid leaderboard. Outbid another listing to claim a higher position and attract more visitors."
       },
-      "checkedAt": "2026-08-24T01:40:48.490Z",
+      "checkedAt": "2026-08-24T02:38:55.353Z",
       "exact": true,
       "previousBid": 29,
       "changedAt": "2026-08-22T07:44:13.668Z",
@@ -437,9 +377,9 @@
     },
     "bidroyale.lol": {
       "domain": "bidroyale.lol",
-      "topBid": 16,
+      "topBid": 0,
       "topEntry": null,
-      "source": "html",
+      "source": "api",
       "claimPrice": null,
       "nextBid": null,
       "skipped": false,
@@ -449,30 +389,28 @@
         "title": "bidroyale.lol · Pay-to-rank public board",
         "description": "Pay whole dollars to rank a site or X handle on a public board. Listings never expire. Raise by paying the difference. Rank is the bid."
       },
-      "checkedAt": "2026-08-24T01:40:48.753Z",
-      "exact": false,
-      "previousBid": 1,
-      "changedAt": "2026-08-22T21:26:20.722Z",
+      "checkedAt": "2026-08-24T02:38:55.464Z",
+      "exact": true,
+      "previousBid": 16,
+      "changedAt": "2026-08-24T02:38:55.464Z",
       "stale": false
     },
     "topseos.lol": {
       "domain": "topseos.lol",
-      "topBid": 160,
+      "topBid": null,
       "topEntry": null,
-      "source": "html",
-      "claimPrice": 160,
+      "source": null,
+      "claimPrice": null,
       "nextBid": null,
-      "skipped": false,
-      "ok": true,
-      "error": null,
+      "skipped": true,
+      "ok": false,
+      "error": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
       "meta": {
         "title": "topseos.lol",
         "description": "Pay to rank on top of the leaderboard of the best SEO"
       },
-      "checkedAt": "2026-08-24T01:40:49.030Z",
+      "checkedAt": "2026-08-24T02:38:55.771Z",
       "exact": false,
-      "previousBid": 151,
-      "changedAt": "2026-08-22T12:48:54.656Z",
       "stale": false
     },
     "marketrank.lol": {
@@ -480,16 +418,16 @@
       "topBid": null,
       "topEntry": null,
       "source": null,
-      "claimPrice": 5,
+      "claimPrice": 5.01,
       "nextBid": null,
       "skipped": true,
       "ok": false,
-      "error": "html scraping disabled for this site",
+      "error": "reading this page is switched off",
       "meta": {
         "title": "MarketRank — The market for products",
         "description": "Back products. Trade virtual shares. Climb the ranks. Higher price means higher rank."
       },
-      "checkedAt": "2026-08-24T01:40:49.480Z",
+      "checkedAt": "2026-08-24T02:38:56.061Z",
       "exact": false,
       "stale": false
     },
@@ -502,12 +440,770 @@
       "nextBid": null,
       "skipped": true,
       "ok": false,
-      "error": "html scraping disabled for this site",
+      "error": "reading this page is switched off",
       "meta": {
         "title": "winbid.lol — Pay to Rank #1 Leaderboard for Products & Builders",
         "description": "A public leaderboard where rank is the bid. Claim a spot for your product URL or @handle, outbid the rest, and win the clicks."
       },
-      "checkedAt": "2026-08-24T01:40:49.504Z",
+      "checkedAt": "2026-08-24T02:38:56.401Z",
+      "exact": false,
+      "stale": false
+    },
+    "launchwars.lol": {
+      "domain": "launchwars.lol",
+      "topBid": 16,
+      "topEntry": "Top Grossing iOS Apps - CloneChart.io",
+      "source": "api",
+      "claimPrice": 1,
+      "nextBid": null,
+      "skipped": false,
+      "ok": true,
+      "error": null,
+      "meta": {
+        "title": "LaunchWars - Launch Your Product & Climb the Leaderboard",
+        "description": "Launch your startup, SaaS, or product on LaunchWars. Place a bid, climb the leaderboard, get discovered, and compete for the top spot."
+      },
+      "checkedAt": "2026-08-24T02:38:56.422Z",
+      "exact": true,
+      "previousBid": null,
+      "changedAt": null,
+      "stale": false
+    },
+    "befamous.lol": {
+      "domain": "befamous.lol",
+      "topBid": 5,
+      "topEntry": "Abdullah Guc",
+      "source": "api",
+      "claimPrice": null,
+      "nextBid": null,
+      "skipped": false,
+      "ok": true,
+      "error": null,
+      "meta": {
+        "title": "befamous.lol — pay to rank yourself",
+        "description": "Outbid everyone else to put your name at the top. No ads. Rank is the bid."
+      },
+      "checkedAt": "2026-08-24T02:38:56.583Z",
+      "exact": true,
+      "previousBid": null,
+      "changedAt": null,
+      "stale": false
+    },
+    "herobid.lol": {
+      "domain": "herobid.lol",
+      "topBid": 8,
+      "topEntry": null,
+      "source": "embedded",
+      "claimPrice": 10,
+      "nextBid": 10,
+      "skipped": false,
+      "ok": true,
+      "error": null,
+      "meta": {
+        "title": "herobid.lol — the front page money buys",
+        "description": "Paste a URL, name a price. Outbid everyone and your site takes over the top of the page. SaaS, agencies, designers, side projects — anyone with a URL."
+      },
+      "checkedAt": "2026-08-24T02:38:56.609Z",
+      "exact": true,
+      "previousBid": null,
+      "changedAt": null,
+      "stale": false
+    },
+    "hotbid.lol": {
+      "domain": "hotbid.lol",
+      "topBid": 500,
+      "topEntry": "TRY EUREKA",
+      "source": "api",
+      "claimPrice": null,
+      "nextBid": null,
+      "skipped": false,
+      "ok": true,
+      "error": null,
+      "meta": {
+        "title": "hotbid.lol",
+        "description": "A public leaderboard of builders, ranked strictly by what they paid. No algorithm, no merit, just the figure."
+      },
+      "checkedAt": "2026-08-24T02:38:56.711Z",
+      "exact": true,
+      "previousBid": null,
+      "changedAt": null,
+      "stale": false
+    },
+    "stackbid.lol": {
+      "domain": "stackbid.lol",
+      "topBid": 19,
+      "topEntry": "AI Powered SEO Agent",
+      "source": "api",
+      "claimPrice": null,
+      "nextBid": null,
+      "skipped": false,
+      "ok": true,
+      "error": null,
+      "meta": {
+        "title": "stackbid — the top of the stack",
+        "description": "One slot on top of the stack. Everyone else is underneath it."
+      },
+      "checkedAt": "2026-08-24T02:38:56.930Z",
+      "exact": true,
+      "previousBid": null,
+      "changedAt": null,
+      "stale": false
+    },
+    "vibewar.lol": {
+      "domain": "vibewar.lol",
+      "topBid": 61,
+      "topEntry": "ReelRun",
+      "source": "api",
+      "claimPrice": null,
+      "nextBid": null,
+      "skipped": false,
+      "ok": true,
+      "error": null,
+      "meta": {
+        "title": "VibeWar — The battlefield for vibecoded apps & SaaS.",
+        "description": "The battlefield for vibecoded apps & SaaS — and nothing else. No ads. No subscriptions. Founders pay to rank — outbid them to take their spot."
+      },
+      "checkedAt": "2026-08-24T02:38:57.186Z",
+      "exact": true,
+      "previousBid": null,
+      "changedAt": null,
+      "stale": false
+    },
+    "afkbid.lol": {
+      "domain": "afkbid.lol",
+      "topBid": null,
+      "topEntry": null,
+      "source": null,
+      "claimPrice": null,
+      "nextBid": null,
+      "skipped": true,
+      "ok": false,
+      "error": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "meta": {
+        "title": "Stay, rank higher.",
+        "description": "One second on this page = one point for your startup. Or pay to buy some time."
+      },
+      "checkedAt": "2026-08-24T02:38:57.307Z",
+      "exact": false,
+      "stale": false
+    },
+    "bestdirectories.lol": {
+      "domain": "bestdirectories.lol",
+      "topBid": 13,
+      "topEntry": "tinystartups.com",
+      "source": "api",
+      "claimPrice": null,
+      "nextBid": null,
+      "skipped": false,
+      "ok": true,
+      "error": null,
+      "meta": {
+        "title": "bestdirectories.lol — launch directories & agencies, ranked by bid",
+        "description": "Every launch directory and agency on one board, ranked by how much they bid to be seen. No ads, no algorithm — the top spot goes to whoever pays most."
+      },
+      "checkedAt": "2026-08-24T02:38:57.686Z",
+      "exact": true,
+      "previousBid": null,
+      "changedAt": null,
+      "stale": false
+    },
+    "footballbid.lol": {
+      "domain": "footballbid.lol",
+      "topBid": 5,
+      "topEntry": null,
+      "source": "embedded",
+      "claimPrice": null,
+      "nextBid": null,
+      "skipped": false,
+      "ok": true,
+      "error": null,
+      "meta": {
+        "title": "FOOTBALLBID.LOL — 150 clubs across 24 European leagues.",
+        "description": "150 clubs across 24 European leagues. Take your club&#x27;s fan crown, put your name on the map, and defend it from rivals."
+      },
+      "checkedAt": "2026-08-24T02:38:57.877Z",
+      "exact": true,
+      "previousBid": null,
+      "changedAt": null,
+      "stale": false
+    },
+    "outbids.lol": {
+      "domain": "outbids.lol",
+      "topBid": 5,
+      "topEntry": "bunnyrace.lol — The daily startup bunny race",
+      "source": "api",
+      "claimPrice": null,
+      "nextBid": null,
+      "skipped": false,
+      "ok": true,
+      "error": null,
+      "meta": {
+        "title": "outbids.lol — Outbid your competition",
+        "description": "Claim a verified public position. Your bid decides your rank on the live outbids.lol board."
+      },
+      "checkedAt": "2026-08-24T02:38:57.929Z",
+      "exact": true,
+      "previousBid": null,
+      "changedAt": null,
+      "stale": false
+    },
+    "subwars.lol": {
+      "domain": "subwars.lol",
+      "topBid": null,
+      "topEntry": null,
+      "source": null,
+      "claimPrice": null,
+      "nextBid": null,
+      "skipped": true,
+      "ok": false,
+      "error": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "meta": {
+        "title": "subwars — the front page is for sale",
+        "description": "Every subreddit is at war with the one above it. Rank is what your community paid. $1 minimum."
+      },
+      "checkedAt": "2026-08-24T02:38:58.378Z",
+      "exact": false,
+      "stale": false
+    },
+    "toolbid.lol": {
+      "domain": "toolbid.lol",
+      "topBid": null,
+      "topEntry": null,
+      "source": null,
+      "claimPrice": null,
+      "nextBid": null,
+      "skipped": true,
+      "ok": false,
+      "error": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "meta": {
+        "title": "toolbid — get your tool to #1",
+        "description": "Pay $1 more than #1. List a developer tool, AI tool, Chrome extension, Android app, or X handle, so people can see your work."
+      },
+      "checkedAt": "2026-08-24T02:38:58.447Z",
+      "exact": false,
+      "stale": false
+    },
+    "buildbid.lol": {
+      "domain": "buildbid.lol",
+      "topBid": null,
+      "topEntry": null,
+      "source": null,
+      "claimPrice": null,
+      "nextBid": null,
+      "skipped": true,
+      "ok": false,
+      "error": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "meta": {
+        "title": null,
+        "description": null
+      },
+      "checkedAt": "2026-08-24T02:38:58.613Z",
+      "exact": false,
+      "stale": false
+    },
+    "toolcup.lol": {
+      "domain": "toolcup.lol",
+      "topBid": 5,
+      "topEntry": null,
+      "source": "claim",
+      "claimPrice": 5,
+      "nextBid": null,
+      "skipped": false,
+      "ok": true,
+      "error": null,
+      "meta": {
+        "title": "toolcup.lol | list your website and win the ToolCup",
+        "description": "Paid leaderboard for websites, AI tools and software. $1 to list. Pay more to take #1. Every bid is public."
+      },
+      "checkedAt": "2026-08-24T02:38:58.614Z",
+      "exact": false,
+      "previousBid": null,
+      "changedAt": null,
+      "stale": false
+    },
+    "solarwar.lol": {
+      "domain": "solarwar.lol",
+      "topBid": null,
+      "topEntry": null,
+      "source": null,
+      "claimPrice": null,
+      "nextBid": null,
+      "skipped": true,
+      "ok": false,
+      "error": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "meta": {
+        "title": "Solarwar.lol — The solar system is for sale",
+        "description": "Click the Sun or a planet. Conquer it vacant, or invade at 1.5× the last hold. The Sun opens at $10, planets at $2. The belt is $100 for a week."
+      },
+      "checkedAt": "2026-08-24T02:38:58.757Z",
+      "exact": false,
+      "stale": false
+    },
+    "tapshelf.lol": {
+      "domain": "tapshelf.lol",
+      "topBid": null,
+      "topEntry": null,
+      "source": null,
+      "claimPrice": null,
+      "nextBid": null,
+      "skipped": true,
+      "ok": false,
+      "error": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "meta": {
+        "title": "tapshelf · weekly iOS shelf",
+        "description": "Join when the price feels right. Your payment puts the app at the top, then the next move costs $1 more."
+      },
+      "checkedAt": "2026-08-24T02:38:58.870Z",
+      "exact": false,
+      "stale": false
+    },
+    "leaderbid.lol": {
+      "domain": "leaderbid.lol",
+      "topBid": 6,
+      "topEntry": null,
+      "source": "embedded",
+      "claimPrice": null,
+      "nextBid": null,
+      "skipped": false,
+      "ok": true,
+      "error": null,
+      "meta": {
+        "title": "Leaderbid.lol — Leaderbid Your Competition",
+        "description": "Pay to climb the leaderboard. Leaderbid your competition and take the top spot."
+      },
+      "checkedAt": "2026-08-24T02:38:58.919Z",
+      "exact": true,
+      "previousBid": null,
+      "changedAt": null,
+      "stale": false
+    },
+    "wintop.lol": {
+      "domain": "wintop.lol",
+      "topBid": null,
+      "topEntry": null,
+      "source": null,
+      "claimPrice": null,
+      "nextBid": null,
+      "skipped": true,
+      "ok": false,
+      "error": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "meta": {
+        "title": "Weekly Product Leaderboard | wintop",
+        "description": "Discover products winning this week&#x27;s leaderboard, compare live bids, and bid for seven days of visibility on the next wintop product ranking every Wednesday."
+      },
+      "checkedAt": "2026-08-24T02:38:58.994Z",
+      "exact": false,
+      "stale": false
+    },
+    "hiddengems.lol": {
+      "domain": "hiddengems.lol",
+      "topBid": null,
+      "topEntry": null,
+      "source": null,
+      "claimPrice": null,
+      "nextBid": null,
+      "skipped": false,
+      "ok": false,
+      "error": "site unreachable (HTTP 429)",
+      "meta": {
+        "title": "Vercel Security Checkpoint",
+        "description": null
+      },
+      "checkedAt": "2026-08-24T02:38:59.132Z",
+      "exact": false,
+      "stale": false
+    },
+    "claimland.lol": {
+      "domain": "claimland.lol",
+      "topBid": null,
+      "topEntry": null,
+      "source": null,
+      "claimPrice": null,
+      "nextBid": null,
+      "skipped": true,
+      "ok": false,
+      "error": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "meta": {
+        "title": "claimland.lol — Claim your territory on the internet",
+        "description": "Claim territory on the internet at claimland.lol. Claimland independently donates 75% of eligible season payments to Cure4CF for cystic fibrosis research."
+      },
+      "checkedAt": "2026-08-24T02:38:59.312Z",
+      "exact": false,
+      "stale": false
+    },
+    "dnbid.lol": {
+      "domain": "dnbid.lol",
+      "topBid": null,
+      "topEntry": null,
+      "source": null,
+      "claimPrice": null,
+      "nextBid": null,
+      "skipped": true,
+      "ok": false,
+      "error": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "meta": {
+        "title": "DNBid — Buy a coffee, rank your domain",
+        "description": "DNBid is a coffee-powered domain leaderboard. Buy a coffee to list your domain, buy more to climb the ranks and gain visibility."
+      },
+      "checkedAt": "2026-08-24T02:38:59.397Z",
+      "exact": false,
+      "stale": false
+    },
+    "eu-outbid.lol": {
+      "domain": "eu-outbid.lol",
+      "topBid": 5,
+      "topEntry": null,
+      "source": "embedded",
+      "claimPrice": null,
+      "nextBid": null,
+      "skipped": false,
+      "ok": true,
+      "error": null,
+      "meta": {
+        "title": "eu-outbid.lol",
+        "description": "A leaderboard for European startups. No ads, no algorithm, no revenue share. The board is sorted by money, and nothing else."
+      },
+      "checkedAt": "2026-08-24T02:38:59.666Z",
+      "exact": true,
+      "previousBid": null,
+      "changedAt": null,
+      "stale": false
+    },
+    "xrank.lol": {
+      "domain": "xrank.lol",
+      "topBid": 12,
+      "topEntry": null,
+      "source": "claim",
+      "claimPrice": 12,
+      "nextBid": null,
+      "skipped": false,
+      "ok": true,
+      "error": null,
+      "meta": {
+        "title": "Xrank — The X leaderboard money can buy.",
+        "description": "Xrank is a public leaderboard of X accounts ordered purely by the money paid into each account&#x27;s rank value. No algorithm, no votes."
+      },
+      "checkedAt": "2026-08-24T02:38:59.754Z",
+      "exact": false,
+      "previousBid": null,
+      "changedAt": null,
+      "stale": false
+    },
+    "georush.lol": {
+      "domain": "georush.lol",
+      "topBid": 15,
+      "topEntry": null,
+      "source": "claim",
+      "claimPrice": 15,
+      "nextBid": null,
+      "skipped": false,
+      "ok": true,
+      "error": null,
+      "meta": {
+        "title": "GeoRush — The AI Search Leaderboard",
+        "description": "Everyone claims they&#x27;re winning AI Search. Now there&#x27;s a leaderboard — highest bid wins. The #1 spot currently costs $15. Tools, agencies and people compete for rank."
+      },
+      "checkedAt": "2026-08-24T02:38:59.887Z",
+      "exact": false,
+      "previousBid": null,
+      "changedAt": null,
+      "stale": false
+    },
+    "topple.lol": {
+      "domain": "topple.lol",
+      "topBid": 11,
+      "topEntry": null,
+      "source": "embedded",
+      "claimPrice": 10,
+      "nextBid": null,
+      "skipped": false,
+      "ok": true,
+      "error": null,
+      "meta": {
+        "title": "topple.lol — get your product seen from $1",
+        "description": "The live leaderboard where listings start at $1, every bid melts 50% a day, and #1 opens back up daily. Public stats, real cost per click, no account needed."
+      },
+      "checkedAt": "2026-08-24T02:39:00.181Z",
+      "exact": true,
+      "previousBid": null,
+      "changedAt": null,
+      "stale": false
+    },
+    "landgrab.lol": {
+      "domain": "landgrab.lol",
+      "topBid": null,
+      "topEntry": null,
+      "source": null,
+      "claimPrice": null,
+      "nextBid": null,
+      "skipped": true,
+      "ok": false,
+      "error": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "meta": {
+        "title": "LANDGRAB - Own your share of the pot",
+        "description": "A live ad grid where your square&#x27;s size is your share of the total pot. Every new dollar dilutes everyone. Grab land, get seen, defend your ground."
+      },
+      "checkedAt": "2026-08-24T02:39:00.286Z",
+      "exact": false,
+      "stale": false
+    },
+    "charitybid.lol": {
+      "domain": "charitybid.lol",
+      "topBid": null,
+      "topEntry": null,
+      "source": null,
+      "claimPrice": null,
+      "nextBid": null,
+      "skipped": false,
+      "ok": false,
+      "error": "site unreachable (HTTP 503)",
+      "meta": {
+        "title": null,
+        "description": null
+      },
+      "checkedAt": "2026-08-24T02:39:00.289Z",
+      "exact": false,
+      "stale": false
+    },
+    "top-job.lol": {
+      "domain": "top-job.lol",
+      "topBid": null,
+      "topEntry": null,
+      "source": null,
+      "claimPrice": null,
+      "nextBid": null,
+      "skipped": true,
+      "ok": false,
+      "error": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "meta": {
+        "title": "Put your open role at the top.",
+        "description": "top-job.lol is the transparent paid leaderboard for open job positions."
+      },
+      "checkedAt": "2026-08-24T02:39:00.433Z",
+      "exact": false,
+      "stale": false
+    },
+    "rankbid.lol": {
+      "domain": "rankbid.lol",
+      "topBid": null,
+      "topEntry": null,
+      "source": null,
+      "claimPrice": null,
+      "nextBid": null,
+      "skipped": true,
+      "ok": false,
+      "error": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "meta": {
+        "title": "rankbid — bigger bid, better position",
+        "description": "No judges, votes, or secret sauce. Name your price, take the place it buys, and stay there until someone brings one more dollar."
+      },
+      "checkedAt": "2026-08-24T02:39:00.469Z",
+      "exact": false,
+      "stale": false
+    },
+    "topx.lol": {
+      "domain": "topx.lol",
+      "topBid": 11,
+      "topEntry": null,
+      "source": "embedded",
+      "claimPrice": null,
+      "nextBid": null,
+      "skipped": false,
+      "ok": true,
+      "error": null,
+      "meta": {
+        "title": "@nicolaslecocqhq is #1 on topx.lol",
+        "description": "@nicolaslecocqhq holds the top at $10. Bid $11 to take it. Own a piece of internet real estate."
+      },
+      "checkedAt": "2026-08-24T02:39:00.518Z",
+      "exact": true,
+      "previousBid": null,
+      "changedAt": null,
+      "stale": false
+    },
+    "xbid.lol": {
+      "domain": "xbid.lol",
+      "topBid": 26,
+      "topEntry": null,
+      "source": "claim",
+      "claimPrice": 26,
+      "nextBid": null,
+      "skipped": false,
+      "ok": true,
+      "error": null,
+      "meta": {
+        "title": "xbid.lol — the leaderboard is for sale",
+        "description": "A public leaderboard of X accounts ranked by one thing: how much you have paid to be on it. Outbid the person above you and take their spot."
+      },
+      "checkedAt": "2026-08-24T02:39:00.555Z",
+      "exact": false,
+      "previousBid": null,
+      "changedAt": null,
+      "stale": false
+    },
+    "topferry.lol": {
+      "domain": "topferry.lol",
+      "topBid": 8,
+      "topEntry": null,
+      "source": "embedded",
+      "claimPrice": null,
+      "nextBid": null,
+      "skipped": false,
+      "ok": true,
+      "error": null,
+      "meta": {
+        "title": "topferry — the board where money talks",
+        "description": "puremoney.lol holds №1 at $7. $18.84 in the pot. Anyone can outbid anyone."
+      },
+      "checkedAt": "2026-08-24T02:39:00.711Z",
+      "exact": true,
+      "previousBid": null,
+      "changedAt": null,
+      "stale": false
+    },
+    "theinternetkeyboard.lol": {
+      "domain": "theinternetkeyboard.lol",
+      "topBid": null,
+      "topEntry": null,
+      "source": null,
+      "claimPrice": null,
+      "nextBid": null,
+      "skipped": true,
+      "ok": false,
+      "error": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "meta": {
+        "title": "The Internet Keyboard",
+        "description": "Claim a key on the internet&#x27;s keyboard. 0 keys claimed, 67 still open. Every first key is free."
+      },
+      "checkedAt": "2026-08-24T02:39:00.734Z",
+      "exact": false,
+      "stale": false
+    },
+    "biggerfish.lol": {
+      "domain": "biggerfish.lol",
+      "topBid": 22,
+      "topEntry": null,
+      "source": "embedded",
+      "claimPrice": 22,
+      "nextBid": null,
+      "skipped": false,
+      "ok": true,
+      "error": null,
+      "meta": {
+        "title": "biggerfish.lol",
+        "description": "Pay to rank. Your place is what you have paid, highest first. Outspend the fish above you and take its place."
+      },
+      "checkedAt": "2026-08-24T02:39:00.763Z",
+      "exact": true,
+      "previousBid": null,
+      "changedAt": null,
+      "stale": false
+    },
+    "thebidboard.lol": {
+      "domain": "thebidboard.lol",
+      "topBid": null,
+      "topEntry": null,
+      "source": null,
+      "claimPrice": null,
+      "nextBid": null,
+      "skipped": true,
+      "ok": false,
+      "error": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "meta": {
+        "title": "The BidBoard",
+        "description": "TheBidBoard — claim your spot on the board."
+      },
+      "checkedAt": "2026-08-24T02:39:00.770Z",
+      "exact": false,
+      "stale": false
+    },
+    "outbidstory.lol": {
+      "domain": "outbidstory.lol",
+      "topBid": null,
+      "topEntry": null,
+      "source": null,
+      "claimPrice": null,
+      "nextBid": null,
+      "skipped": true,
+      "ok": false,
+      "error": "reading this page is switched off",
+      "meta": {
+        "title": "The Outbid Story - the live directory of the viral bid site wave",
+        "description": "One founder turned a public leaderboard into roughly $182,000 in about 90 hours, and the whole indie community started building their own. Outbid Story tracks every bid site as it launches, climbs, an"
+      },
+      "checkedAt": "2026-08-24T02:39:01.033Z",
+      "exact": false,
+      "stale": false
+    },
+    "lamborghini.lol": {
+      "domain": "lamborghini.lol",
+      "topBid": null,
+      "topEntry": null,
+      "source": null,
+      "claimPrice": null,
+      "nextBid": null,
+      "skipped": true,
+      "ok": false,
+      "error": "reading this page is switched off",
+      "meta": {
+        "title": "lamborghini.lol",
+        "description": "Bid for screen time on a real Lamborghini&#x27;s digital billboard. $1,000 minimum, $200,000 total. Your ad runs for the lifetime of the car."
+      },
+      "checkedAt": "2026-08-24T02:39:01.088Z",
+      "exact": false,
+      "stale": false
+    },
+    "bidfast.lol": {
+      "domain": "bidfast.lol",
+      "topBid": null,
+      "topEntry": null,
+      "source": null,
+      "claimPrice": null,
+      "nextBid": null,
+      "skipped": true,
+      "ok": false,
+      "error": "reading this page is switched off",
+      "meta": {
+        "title": "bidfast.lol — Beat the Car Race — Play to Get #1 Leaderboard",
+        "description": "Overtake competitor products on the 3-lane highway in a 3D car race to claim the #1 rank on the leaderboard!"
+      },
+      "checkedAt": "2026-08-24T02:39:01.240Z",
+      "exact": false,
+      "stale": false
+    },
+    "when1m.lol": {
+      "domain": "when1m.lol",
+      "topBid": null,
+      "topEntry": null,
+      "source": null,
+      "claimPrice": null,
+      "nextBid": null,
+      "skipped": true,
+      "ok": false,
+      "error": "reading this page is switched off",
+      "meta": {
+        "title": "When $1M? Guess the day Jonathan hits $1,000,000",
+        "description": "Guess the UTC day Outbid hits $1,000,000. Each day can only be claimed once — from $10. Your X profile or product is featured on every day you bid."
+      },
+      "checkedAt": "2026-08-24T02:39:01.243Z",
+      "exact": false,
+      "stale": false
+    },
+    "outlike.lol": {
+      "domain": "outlike.lol",
+      "topBid": null,
+      "topEntry": null,
+      "source": null,
+      "claimPrice": null,
+      "nextBid": null,
+      "skipped": true,
+      "ok": false,
+      "error": "reading this page is switched off",
+      "meta": {
+        "title": "outliked",
+        "description": "List your site for free. Post the announcement tweet. The most-liked tweet holds #1. No bids, no money, just likes."
+      },
+      "checkedAt": "2026-08-24T02:39:01.247Z",
       "exact": false,
       "stale": false
     }
