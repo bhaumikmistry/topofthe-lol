@@ -34,7 +34,13 @@ export function Footer({ count }: { count: number }) {
           Bids refresh every 30 minutes, read straight off each site&rsquo;s own public board. These
           are the numbers those sites publish, not verified payments. Nobody paid to be on this
           page and there is nothing to buy here.
-          {updatedAt ? ` Last refresh: ${new Date(updatedAt).toUTCString()}.` : ''}
+          {updatedAt
+            ? ` Last refresh: ${new Date(updatedAt).toLocaleString('en-US', {
+                timeZone: 'America/New_York',
+                dateStyle: 'medium',
+                timeStyle: 'short',
+              })} ET.`
+            : ''}
         </p>
       </div>
     </footer>

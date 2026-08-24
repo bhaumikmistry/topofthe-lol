@@ -327,7 +327,13 @@ export async function probeSite(site) {
     const html = await response.text();
     // A site that is down or paused is a transient failure: keep whatever was
     // last read rather than dropping the row to a dash.
-    const reachable = response.ok !== false && response.status < 400 && !/DEPLOYMENT_PAUSED|DEPLOYMENT_NOT_FOUND/i.test(html);
+    const reachable =
+      response.ok !== false &&
+      response.status < 400 &&
+      !/DEPLOYMENT_PAUSED|DEPLOYMENT_NOT_FOUND/i.test(html) &&
+      // A bot checkpoint answers every request with the same page; treat it as
+      // the site being closed to us rather than as a board with no bid on it.
+      !/Vercel Security Checkpoint|Just a moment\.\.\.|Checking your browser/i.test(html);
     result.meta = extractMeta(html);
     const text = toText(html);
     result.claimPrice = claimPrice(text);

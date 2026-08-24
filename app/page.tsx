@@ -119,8 +119,10 @@ export default function Home() {
               {stats.empty > 0
                 ? `${stats.empty} of these boards are empty right now, so #1 is there for the taking. `
                 : ''}
-              Every board here has a number read from its own page or API. A tilde means the figure
-              is what the board asks for #1 rather than the bid already on it.{' '}
+              Numbers are read from each board's own page or API. A tilde means the figure is what
+              the board asks for #1 rather than the bid already on it, and a dash means the board
+              has stopped publishing anything readable: a reading that cannot be re-checked within
+              twelve hours is dropped rather than left standing.{' '}
               {candidateCount > 0 ? (
                 <>
                   Another {candidateCount} .lol boards are tracked in the repo but publish nothing

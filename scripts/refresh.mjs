@@ -2,6 +2,10 @@
 // Refresh every listed site's current top bid: node scripts/refresh.mjs [domain ...]
 import { BIDS_FILE, SITES_FILE, mapWithConcurrency, probeSite, readJson, writeJson } from './lib.mjs';
 
+// How long a number survives without being re-read. The refresh runs every 30
+// minutes, so anything this old has been failing for a day's worth of attempts.
+const STALE_LIMIT_MS = 12 * 60 * 60 * 1000;
+
 const only = process.argv.slice(2).filter((arg) => !arg.startsWith('-'));
 
 const { sites } = await readJson(SITES_FILE, { sites: [] });
@@ -18,10 +22,30 @@ const probed = await mapWithConcurrency(targets, 8, async (site) => {
   const result = await probeSite(site);
   const before = previous.results?.[site.domain];
   // Keep the last known good number visible instead of blanking the row — but
-  // only for transient failures. A site we deliberately stopped reading must
-  // lose its old number rather than keep showing it.
+  // only for transient failures, and only for a while. A board that has not
+  // been readable for half a day has usually changed underneath us, and a
+  // number nobody can re-verify is worse than no number.
   if (!result.ok && before?.ok && !result.skipped) {
-    return { ...before, error: result.error, stale: true, checkedAt: result.checkedAt };
+    const readAt = Date.parse(before.verifiedAt ?? before.checkedAt ?? '');
+    const expired = Number.isFinite(readAt) && Date.now() - readAt > STALE_LIMIT_MS;
+    if (!expired) {
+      return {
+        ...before,
+        error: result.error,
+        stale: true,
+        checkedAt: result.checkedAt,
+        // Keep the time of the last successful read, or the clock never starts.
+        verifiedAt: before.verifiedAt ?? before.checkedAt ?? result.checkedAt,
+      };
+    }
+    return {
+      ...result,
+      topBid: null,
+      topEntry: null,
+      source: null,
+      stale: false,
+      error: `${result.error} (last read ${new Date(readAt).toISOString()}, dropped)`,
+    };
   }
   if (result.ok && before?.ok && typeof before.topBid === 'number' && before.topBid !== result.topBid) {
     result.previousBid = before.topBid;
@@ -30,6 +54,7 @@ const probed = await mapWithConcurrency(targets, 8, async (site) => {
     result.previousBid = before?.previousBid ?? null;
     result.changedAt = before?.changedAt ?? null;
   }
+  if (result.ok) result.verifiedAt = result.checkedAt;
   return { ...result, stale: false };
 });
 
