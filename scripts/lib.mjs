@@ -193,16 +193,32 @@ export function claimPrice(html) {
 // "price" all show up as board-wide aggregates or shop prices.
 const EMBEDDED_BID_KEY = /^(bid|bid_?amount|bid_?cents|amount|amount_?cents|current_?bid|top_?bid|highest_?bid|highest_?bid_?cents|bidAmount|bidCents|amountCents|currentBid|topBid|highestBid)$/i;
 
-/** Is this dollar figure actually printed on the page? */
+/** Which currency does this page quote? Not every board is in dollars. */
+export function detectCurrency(text) {
+  const counts = { USD: 0, GBP: 0, EUR: 0 };
+  for (const match of text.matchAll(/([$£€])\s?[0-9]/g)) {
+    if (match[1] === '$') counts.USD += 1;
+    if (match[1] === '£') counts.GBP += 1;
+    if (match[1] === '€') counts.EUR += 1;
+  }
+  const [top] = Object.entries(counts).sort((a, b) => b[1] - a[1]);
+  return top[1] > 0 ? top[0] : 'USD';
+}
+
+/** Is this figure actually printed on the page, in any currency? */
 export function shownOnPage(text, value) {
   const whole = Math.round(value);
-  const forms = new Set([
-    `$${value}`,
-    `$${whole}`,
-    `$${whole.toLocaleString('en-US')}`,
-    `$${value.toFixed(2)}`,
-    `$${whole.toLocaleString('en-US')}.00`,
-  ]);
+  const numbers = [
+    String(value),
+    String(whole),
+    whole.toLocaleString('en-US'),
+    value.toFixed(2),
+    `${whole.toLocaleString('en-US')}.00`,
+  ];
+  const forms = new Set();
+  for (const symbol of ['$', '£', '€']) {
+    for (const number of numbers) forms.add(`${symbol}${number}`);
+  }
   return [...forms].some((form) => text.includes(form));
 }
 
@@ -269,6 +285,7 @@ export async function probeSite(site) {
     result.topBid = site.manualBid;
     result.topEntry = site.manualEntry ?? null;
     result.source = 'manual';
+    result.manualAsOf = site.manualAsOf ?? null;
     result.ok = true;
   }
 
@@ -337,6 +354,19 @@ export async function probeSite(site) {
     result.meta = extractMeta(html);
     const text = toText(html);
     result.claimPrice = claimPrice(text);
+    result.currency = detectCurrency(text);
+
+    // An endpoint's "amount" is as likely to be minor units as whole ones, and
+    // the key name rarely says. Whichever reading the page prints is the one.
+    if (
+      result.ok &&
+      typeof result.topBid === 'number' &&
+      result.topBid >= 100 &&
+      !shownOnPage(text, result.topBid) &&
+      shownOnPage(text, result.topBid / 100)
+    ) {
+      result.topBid = result.topBid / 100;
+    }
 
     // Resolution order for a page, most trustworthy first.
     // 1. A key this site was configured with.
@@ -376,6 +406,12 @@ export async function probeSite(site) {
         if (embedded !== null && embedded >= 100 && !shownOnPage(text, embedded) && shownOnPage(text, embedded / 100)) {
           embedded = embedded / 100;
         }
+        // And the page has to actually show it. A key that matches the pattern
+        // but appears nowhere on the rendered page is usually a running total,
+        // a goal, or a row that is not the top one.
+        if (embedded !== null && !shownOnPage(text, embedded)) {
+          embedded = null;
+        }
         if (embedded !== null) {
           result.topBid = embedded;
           result.source = 'embedded';
@@ -414,7 +450,8 @@ export async function probeSite(site) {
     // and on these boards the largest number on the page is usually the latter.
     // Say so rather than presenting a guess as a reading.
     result.exact =
-      (result.source === 'api' || result.source === 'embedded' || result.source === 'manual') &&
+      // A hand-entered number is a snapshot someone took, not a live read.
+      (result.source === 'api' || result.source === 'embedded') &&
       // Some pages only publish the ask. It is exact, but it is not the bid.
       site.htmlKeyIsAsk !== true;
   } catch (error) {

@@ -4,7 +4,10 @@
     {
       "domain": "outbid.lol",
       "tagline": "The original pay-to-rank leaderboard",
-      "htmlKey": "amountCents"
+      "htmlKey": "amountCents",
+      "manualBid": 17005,
+      "manualAsOf": "2026-08-25",
+      "htmlFallback": false
     },
     {
       "domain": "watchbid.lol",
@@ -134,7 +137,7 @@
     {
       "domain": "herobid.lol",
       "endpoint": "/api/board",
-      "tagline": "Paste a URL, name a price. Outbid everyone and your site takes over the top of the page. SaaS, agencies, designers, side projects — anyone with a URL."
+      "tagline": "Paste a URL, name a price. Outbid everyone and your site takes over the top of the page. SaaS, agencies, designers, side projects \u2014 anyone with a URL."
     },
     {
       "domain": "hotbid.lol",
@@ -149,12 +152,12 @@
     {
       "domain": "vibewar.lol",
       "endpoint": "/api/leaderboard",
-      "tagline": "The battlefield for vibecoded apps & SaaS — and nothing else. No ads. No subscriptions. Founders pay to rank — outbid them to take their spot."
+      "tagline": "The battlefield for vibecoded apps & SaaS \u2014 and nothing else. No ads. No subscriptions. Founders pay to rank \u2014 outbid them to take their spot."
     },
     {
       "domain": "bestdirectories.lol",
       "endpoint": "/api/board",
-      "tagline": "Every launch directory and agency on one board, ranked by how much they bid to be seen. No ads, no algorithm — the top spot goes to whoever pays most."
+      "tagline": "Every launch directory and agency on one board, ranked by how much they bid to be seen. No ads, no algorithm \u2014 the top spot goes to whoever pays most."
     },
     {
       "domain": "footballbid.lol",
@@ -182,7 +185,7 @@
     },
     {
       "domain": "georush.lol",
-      "tagline": "Everyone claims they&#x27;re winning AI Search. Now there&#x27;s a leaderboard — highest bid wins. The #1 spot currently costs $15. Tools, agencies and people compete for rank."
+      "tagline": "Everyone claims they&#x27;re winning AI Search. Now there&#x27;s a leaderboard \u2014 highest bid wins. The #1 spot currently costs $15. Tools, agencies and people compete for rank."
     },
     {
       "domain": "topple.lol",
@@ -198,7 +201,7 @@
     },
     {
       "domain": "topferry.lol",
-      "tagline": "puremoney.lol holds №1 at $7. $18.84 in the pot. Anyone can outbid anyone."
+      "tagline": "puremoney.lol holds \u21161 at $7. $18.84 in the pot. Anyone can outbid anyone."
     },
     {
       "domain": "biggerfish.lol",
@@ -211,7 +214,7 @@
     {
       "domain": "agentfind.lol",
       "endpoint": "/api/board",
-      "tagline": "No ads. No API keys. No revenue sharing. AI agents are coming for the web — make sure they find you. Claim your spot, outbid your competition, take #1."
+      "tagline": "No ads. No API keys. No revenue sharing. AI agents are coming for the web \u2014 make sure they find you. Claim your spot, outbid your competition, take #1."
     },
     {
       "domain": "aistartups.lol",
@@ -224,7 +227,7 @@
     },
     {
       "domain": "appmog.lol",
-      "tagline": "Pay to be #1. Public iOS app leaderboard — App Store link only. Rank is the bid."
+      "tagline": "Pay to be #1. Public iOS app leaderboard \u2014 App Store link only. Rank is the bid."
     },
     {
       "domain": "auraflex.lol",
@@ -295,7 +298,7 @@
     },
     {
       "domain": "cryptodapp.lol",
-      "tagline": "Claim the #1 spot for your crypto dapp. Bid in USDC or USDT on Solana, Ethereum, Base, BNB Chain, or Polygon — highest bid ranks first."
+      "tagline": "Claim the #1 spot for your crypto dapp. Bid in USDC or USDT on Solana, Ethereum, Base, BNB Chain, or Polygon \u2014 highest bid ranks first."
     },
     {
       "domain": "dailyoutbid.lol",
@@ -304,7 +307,7 @@
     },
     {
       "domain": "designerbid.lol",
-      "tagline": "A directory of design tools, studios, web and product designers, Framer developers and motion designers — ranked by what each one pays. Claim a spot, get clicks"
+      "tagline": "A directory of design tools, studios, web and product designers, Framer developers and motion designers \u2014 ranked by what each one pays. Claim a spot, get clicks"
     },
     {
       "domain": "elseweb.lol",
@@ -378,7 +381,7 @@
     },
     {
       "domain": "kingbid.lol",
-      "tagline": "A public pay-to-rank leaderboard. List your product or X handle — the only ranking factor is how much you bid. Higher bid, higher rank."
+      "tagline": "A public pay-to-rank leaderboard. List your product or X handle \u2014 the only ranking factor is how much you bid. Higher bid, higher rank."
     },
     {
       "domain": "kingme.lol",
@@ -386,7 +389,7 @@
     },
     {
       "domain": "kingoftheweb.lol",
-      "tagline": "doja holds the #1 spot, bought for $3. One link on top at a time — outbid for just $1 more and the spot is yours."
+      "tagline": "doja holds the #1 spot, bought for $3. One link on top at a time \u2014 outbid for just $1 more and the spot is yours."
     },
     {
       "domain": "kingseat.lol",
@@ -404,12 +407,12 @@
     },
     {
       "domain": "mobpush.lol",
-      "tagline": "Start a push for anything — your app, your community, a project, a meme. Bring your people and push it up the public board together."
+      "tagline": "Start a push for anything \u2014 your app, your community, a project, a meme. Bring your people and push it up the public board together."
     },
     {
       "domain": "occupied.lol",
       "endpoint": "/api/state",
-      "tagline": "Bid on any country. Your website holds it. Anyone can conquer it for 1.5× your bid."
+      "tagline": "Bid on any country. Your website holds it. Anyone can conquer it for 1.5\u00d7 your bid."
     },
     {
       "domain": "outapp.lol",
@@ -464,12 +467,12 @@
     },
     {
       "domain": "outprofiled.lol",
-      "tagline": "3 LinkedIn profiles ranked · $6 moved. Outbid Doruk Gezici and take #1 for $4."
+      "tagline": "3 LinkedIn profiles ranked \u00b7 $6 moved. Outbid Doruk Gezici and take #1 for $4."
     },
     {
       "domain": "outshill.lol",
       "endpoint": "/api/board",
-      "tagline": "The trenches PvP leaderboard — projects, community coins, tokens, memes, whatever. Your total bid buys your rank. Outbid the coin above you."
+      "tagline": "The trenches PvP leaderboard \u2014 projects, community coins, tokens, memes, whatever. Your total bid buys your rank. Outbid the coin above you."
     },
     {
       "domain": "pageone.lol",
@@ -502,7 +505,7 @@
     },
     {
       "domain": "ranktube.lol",
-      "tagline": "A homepage that looks like a video feed, except every tile is a paid slot. Outbid the current holder and your brand takes their place — until someone outbids yo"
+      "tagline": "A homepage that looks like a video feed, except every tile is a paid slot. Outbid the current holder and your brand takes their place \u2014 until someone outbids yo"
     },
     {
       "domain": "screenwar.lol",
@@ -510,7 +513,7 @@
     },
     {
       "domain": "sitover.lol",
-      "tagline": "Oddsage (oddsage.com) · $1 · 58h 20m held. Sit over them and they get their sit money back."
+      "tagline": "Oddsage (oddsage.com) \u00b7 $1 \u00b7 58h 20m held. Sit over them and they get their sit money back."
     },
     {
       "domain": "slopboard.lol",
@@ -522,7 +525,7 @@
     },
     {
       "domain": "stackrank.lol",
-      "tagline": "A paid public leaderboard for AI apps, SaaS, and dev tools. Pay what you want — the highest bid holds the top."
+      "tagline": "A paid public leaderboard for AI apps, SaaS, and dev tools. Pay what you want \u2014 the highest bid holds the top."
     },
     {
       "domain": "thehundred.lol",
@@ -547,11 +550,11 @@
     {
       "domain": "topandroidapp.lol",
       "endpoint": "/api/leaderboard",
-      "tagline": "Pay to rank #1 on the Android leaderboard. Your bid decides your rank — better than paying for TikTok ads. Sure."
+      "tagline": "Pay to rank #1 on the Android leaderboard. Your bid decides your rank \u2014 better than paying for TikTok ads. Sure."
     },
     {
       "domain": "topbids.lol",
-      "tagline": "A live leaderboard where every rank is for sale. Paste a link, place a bid — your total decides your spot, until someone outbids you."
+      "tagline": "A live leaderboard where every rank is for sale. Paste a link, place a bid \u2014 your total decides your spot, until someone outbids you."
     },
     {
       "domain": "topchannels.lol",
@@ -561,12 +564,12 @@
     {
       "domain": "topchat.lol",
       "endpoint": "/api/board",
-      "tagline": "Pay $2, say anything. Money decides the order — and anyone can boost any message to the top."
+      "tagline": "Pay $2, say anything. Money decides the order \u2014 and anyone can boost any message to the top."
     },
     {
       "domain": "tophuman.lol",
       "endpoint": "/api/leaderboard",
-      "tagline": "Eight billion people. One top spot. Add your website or social profile, outbid the current leader, and become the internet’s Top Human."
+      "tagline": "Eight billion people. One top spot. Add your website or social profile, outbid the current leader, and become the internet\u2019s Top Human."
     },
     {
       "domain": "tophumans.lol",
@@ -599,7 +602,7 @@
     },
     {
       "domain": "twitterbid.lol",
-      "tagline": "A public leaderboard for X profiles. Pay to stand above everyone else — rank is the bid, nothing else."
+      "tagline": "A public leaderboard for X profiles. Pay to stand above everyone else \u2014 rank is the bid, nothing else."
     },
     {
       "domain": "undercut.lol",
@@ -625,7 +628,7 @@
     },
     {
       "domain": "wehavelinks.lol",
-      "tagline": "Fully clickable links. No ads, no algorithm. Bold and beautiful. Claim your spot while the trend is hot. 🔥"
+      "tagline": "Fully clickable links. No ads, no algorithm. Bold and beautiful. Claim your spot while the trend is hot. \ud83d\udd25"
     },
     {
       "domain": "whiteboard.lol",
@@ -633,7 +636,7 @@
     },
     {
       "domain": "whos1.lol",
-      "tagline": "One leaderboard, ranked by cash. Bid on your Instagram, TikTok, X, YouTube, LinkedIn, GitHub, site or creator page — your amount is your rank."
+      "tagline": "One leaderboard, ranked by cash. Bid on your Instagram, TikTok, X, YouTube, LinkedIn, GitHub, site or creator page \u2014 your amount is your rank."
     },
     {
       "domain": "worstside.lol",

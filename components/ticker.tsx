@@ -8,7 +8,7 @@ export function Ticker({ listings }: { listings: Listing[] }) {
   const items = listings
     .filter((listing) => listing.topBid !== null)
     .slice(0, 12)
-    .map((listing) => `${listing.domain} ${formatMoney(listing.topBid)}`);
+    .map((listing) => `${listing.domain} ${formatMoney(listing.topBid, listing.currency)}`);
 
   if (!items.length) return null;
 

@@ -18,6 +18,7 @@ const KNOWN_KEYS = new Set([
   'htmlKey',
   'htmlKeyCents',
   'htmlKeyIsAsk',
+  'manualAsOf',
 ]);
 
 // The list is .lol only — that is the whole premise, so it is enforced here
@@ -70,7 +71,7 @@ file.sites.forEach((site, index) => {
     }
   }
 
-  for (const key of ['tagline', 'endpoint', 'listPath', 'valuePath', 'bidKey', 'nameKey', 'nameValuePath', 'manualEntry', 'htmlKey']) {
+  for (const key of ['tagline', 'endpoint', 'listPath', 'valuePath', 'bidKey', 'nameKey', 'nameValuePath', 'manualEntry', 'htmlKey', 'manualAsOf']) {
     if (key in site && typeof site[key] !== 'string') {
       errors.push(`${domain}: "${key}" must be a string.`);
     }
@@ -84,6 +85,10 @@ file.sites.forEach((site, index) => {
     if (key in site && typeof site[key] !== 'boolean') {
       errors.push(`${domain}: "${key}" must be true or false.`);
     }
+  }
+
+  if ('manualBid' in site && !site.manualAsOf) {
+    warnings.push(`${domain}: "manualBid" without "manualAsOf" — a hand-entered number with no date cannot be judged stale.`);
   }
 
   if ('manualBid' in site) {

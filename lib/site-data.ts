@@ -22,6 +22,7 @@ export interface BidResult {
   topEntry: string | null;
   previousBid?: number | null;
   source: 'api' | 'embedded' | 'claim' | 'html' | 'manual' | null;
+  currency?: 'USD' | 'GBP' | 'EUR';
   exact?: boolean;
   ok: boolean;
   stale?: boolean;
@@ -41,6 +42,7 @@ export interface Listing {
   topEntry: string | null;
   previousBid: number | null;
   source: BidResult['source'];
+  currency: NonNullable<BidResult['currency']>;
   exact: boolean;
   stale: boolean;
   checkedAt: string | null;
@@ -76,6 +78,7 @@ export function getListings(): Listing[] {
         topEntry: result?.topEntry ?? null,
         previousBid: result?.previousBid ?? null,
         source: result?.source ?? null,
+        currency: result?.currency ?? 'USD',
         exact: result?.exact !== false,
         stale: Boolean(result?.stale),
         checkedAt: result?.checkedAt ?? null,
@@ -100,9 +103,13 @@ export function getStats(listings: Listing[]) {
   };
 }
 
-export function formatMoney(amount: number | null): string {
+const SYMBOLS = { USD: '$', GBP: '£', EUR: '€' } as const;
+
+// Not every board charges in dollars, so the symbol comes from the board.
+export function formatMoney(amount: number | null, currency: keyof typeof SYMBOLS = 'USD'): string {
   if (amount === null) return '—';
+  const symbol = SYMBOLS[currency] ?? '$';
   return amount % 1 === 0
-    ? `$${amount.toLocaleString('en-US')}`
-    : `$${amount.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+    ? `${symbol}${amount.toLocaleString('en-US')}`
+    : `${symbol}${amount.toLocaleString('en-US', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
 }

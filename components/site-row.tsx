@@ -2,7 +2,7 @@ import { formatMoney, type Listing } from '@/lib/site-data';
 import { cn } from '@/lib/utils';
 
 export function SiteRow({ listing }: { listing: Listing }) {
-  const { rank, domain, url, tagline, topBid, topEntry, exact } = listing;
+  const { rank, domain, url, tagline, topBid, topEntry, exact, currency } = listing;
   // Scraped numbers are the price to take #1, not a confirmed standing bid.
   const approximate = topBid !== null && !exact;
   const leader = rank === 1;
@@ -52,7 +52,7 @@ export function SiteRow({ listing }: { listing: Listing }) {
           title={approximate ? 'Read off the page — this is the price to take #1' : undefined}
         >
           {approximate ? '~' : ''}
-          {formatMoney(topBid)}
+          {formatMoney(topBid, currency)}
         </span>
         <span
           className={cn(
