@@ -77,7 +77,7 @@ export function Donations() {
   const recent = data.recent.slice(0, 5);
 
   return (
-    <section className="border-b-[3px] border-border py-8">
+    <section className="border-b-[3px] border-border pb-10">
       <h2 className="mb-4 text-[13px] font-extrabold uppercase tracking-[0.08em]">
         <span className="text-[var(--orange)]">00 /</span> The board that feeds people
       </h2>

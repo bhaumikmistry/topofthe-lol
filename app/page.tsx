@@ -38,16 +38,33 @@ export default function Home() {
 
       <main className="flex-1">
         <div className="mx-auto max-w-3xl px-4">
-          <section className="border-b-[3px] border-border py-10">
+          <section className="py-10">
             <h1 className="text-[clamp(32px,7.6vw,62px)] font-extrabold uppercase leading-[1.12] tracking-[-0.04em]">
-              Every .lol bid site,
+              Bid to be the
               <br />
-              <span className="mark box-decoration-clone">ranked by bid</span>
+              <span className="mark box-decoration-clone">top feeder</span>
             </h1>
 
             <p className="mt-5 text-sm font-medium leading-relaxed">
+              People have spent a fortune this month outbidding each other for a link. This board
+              runs on the same rule, except the money buys hot school meals for children in India
+              through Akshaya Patra. Pay more than the person above you and your name goes to the
+              top, exactly like everywhere else.
+            </p>
+          </section>
+
+          <Donations />
+
+          <section className="border-b-[3px] border-border py-10">
+            <h2 className="text-[clamp(24px,4.6vw,38px)] font-extrabold uppercase leading-[1.14] tracking-[-0.04em]">
+              Every .lol bid site,
+              <br />
+              <span className="mark box-decoration-clone">ranked by bid</span>
+            </h2>
+
+            <p className="mt-5 text-sm font-medium leading-relaxed">
               A market map for the .lol bidding boom. Every .lol board in one place, what the top
-              spot costs on each, and who is already holding it — so you can pick the room your
+              spot costs on each, and who is already holding it, so you can pick the room your
               audience is actually in and buy attention where it is still cheap.
               {leader?.domain ? (
                 <>
@@ -58,6 +75,13 @@ export default function Home() {
                   gap between those two numbers is the whole opportunity.
                 </>
               ) : null}
+            </p>
+
+            <p className="mt-4 text-sm font-medium leading-relaxed">
+              Listing is free and always will be. The only thing asked of anyone on this page is to
+              have a look at the fundraiser above. Donate if you want to, and if you would rather
+              not, a share or a quote of the donation post helps just as much. Neither is a
+              condition of being listed.
             </p>
 
             <p className="brut mt-5 border-l-[14px] border-l-[var(--orange)] bg-card px-4 py-3 text-[12px] font-bold uppercase leading-relaxed tracking-[0.02em]">
@@ -110,8 +134,6 @@ export default function Home() {
               />
             </div>
           </section>
-
-          <Donations />
 
           <section className="py-8">
             <h2 className="mb-4 text-[13px] font-extrabold uppercase tracking-[0.08em]">
