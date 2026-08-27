@@ -14,6 +14,7 @@ data/sites.json      # the list you edit — one object per site
 data/candidates.json # known boards that publish no readable number, with reasons
 data/excluded.json   # boards that rank by something other than money
 data/owners.json     # who built each board, for credit
+data/donations.json  # the school meals fundraiser, read from its public feed
 scripts/refresh.mjs  # visits each site, works out its current top bid
 data/bids.json    # generated output, committed to git, read at build time
 app/page.tsx      # renders data/bids.json as a static page

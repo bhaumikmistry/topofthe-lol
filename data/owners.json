@@ -385,7 +385,9 @@
     },
     "bidtree.lol": {
       "about": "About · bidtree bid tree • Biggest App Market Rules About Get on the board About A ranked list tells you the order. It does not tell you the distance. Number one and number two look the same on a list whether they are a dollar apart or ten thousand. A treemap shows the distance, and that turns out to be the whole story. The board is one image of what people are willing to pay to be seen, and every",
-      "name": "a real agency since"
+      "name": "a real agency since",
+      "handle": "TheSpacerr",
+      "via": "outbidstory.lol roll call"
     },
     "cheapseat.lol": {
       "email": "elysiumventuresgroup@gmail.com",
@@ -511,7 +513,9 @@
     },
     "srank.lol": {
       "email": "support@srank.lol",
-      "about": "How SRank Helps Twitch Streamers Get Discovered srank . lol Discover How it works Rules 1 live now · 18 channels ranked · 44 browsing now · Browse streams → Why SRank exists Twitch directories make smaller channels hard to find. SRank provides another discovery surface: placement is openly paid for, by streamers or by anyone else, while viewers browse channels that are live right now. Transparent "
+      "about": "How SRank Helps Twitch Streamers Get Discovered srank . lol Discover How it works Rules 1 live now · 18 channels ranked · 44 browsing now · Browse streams → Why SRank exists Twitch directories make smaller channels hard to find. SRank provides another discovery surface: placement is openly paid for, by streamers or by anyone else, while viewers browse channels that are live right now. Transparent ",
+      "handle": "m0rkym4rk",
+      "via": "outbidstory.lol roll call"
     },
     "stackrank.lol": {
       "email": "abuse@stackrank.lol",
@@ -521,10 +525,14 @@
       "about": "Rules · THE PLOT BACK TO THE WORLD PLOT. THE WHOLE WORLD Rules Effective August 21, 2026 1. One leader per territory Each territory displays its highest processed paid bid. Open territory uses its published founding price. To attack controlled territory, the minimum is the leader&#x27;s paid value plus $2; a bidder may choose any higher whole-dollar amount. 2. Battle bids are attacks Every success"
     },
     "thisday.lol": {
-      "about": "About - thisday.lol thisday.lol Pick a day Leaderboard About Rules Claim a day WHAT THIS IS Own a day on the internet About thisday.lol is the calendar of the internet. Every day of the year is its own public board. Claim a day, leave your mark - a name, a message, a link - and the amount you pay decides your rank on that day. No algorithms, no feed, no cut of your clicks. The highest amount sits "
+      "about": "About - thisday.lol thisday.lol Pick a day Leaderboard About Rules Claim a day WHAT THIS IS Own a day on the internet About thisday.lol is the calendar of the internet. Every day of the year is its own public board. Claim a day, leave your mark - a name, a message, a link - and the amount you pay decides your rank on that day. No algorithms, no feed, no cut of your clicks. The highest amount sits ",
+      "handle": "penkalad",
+      "via": "outbidstory.lol roll call"
     },
     "topandroidapp.lol": {
-      "about": "Rules | Top Android App Home Leaderboard Rules Terms ← Back to home Rules Top Android App is a public leaderboard for real Android apps. An app&#x27;s lifetime paid total determines its position in the default Top view. How ranking works Bids are made in whole US dollars, with a $1 minimum. Every successful payment is added to the app&#x27;s lifetime total, which does not expire. The default Top v"
+      "about": "Rules | Top Android App Home Leaderboard Rules Terms ← Back to home Rules Top Android App is a public leaderboard for real Android apps. An app&#x27;s lifetime paid total determines its position in the default Top view. How ranking works Bids are made in whole US dollars, with a $1 minimum. Every successful payment is added to the app&#x27;s lifetime total, which does not expire. The default Top v",
+      "handle": "firojalam2",
+      "via": "outbidstory.lol roll call"
     },
     "topbids.lol": {
       "about": "A live leaderboard where every rank is for sale. Paste a link, place a bid — your total decides your spot, until someone outbids you."
@@ -565,9 +573,11 @@
       "about": "About — YouLose.lol youlose .lol LEADERBOARDS ABOUT RULES HILL IS LIVE ABOUT THE HILL ONE WINNER. FOR NOW. YouLose.lol is one piece of internet real estate with one owner at a time. Take the throne, put your X profile or website in the spotlight, and see how long you can survive. THE SHORT VERSION Someone is King. Pay the live takeover price before anyone else and now it’s you. Long live the King—"
     },
     "hiddengems.lol": {
-      "about": "About | HiddenGems Skip to submit HiddenGems Leaderboard Rules About More Leaderboard Rules About ← Back to the board About HiddenGems No ads. No API keys. No revenue share. You bid, you rank, players find the game. The board HiddenGems.lol is a public leaderboard for underrated indie games. Paste a store or web game URL, pay, and sit wherever that lifetime total belongs. The highest bid is #1 unt"
+      "about": "About | HiddenGems Skip to submit HiddenGems Leaderboard Rules About More Leaderboard Rules About ← Back to the board About HiddenGems No ads. No API keys. No revenue share. You bid, you rank, players find the game. The board HiddenGems.lol is a public leaderboard for underrated indie games. Paste a store or web game URL, pay, and sit wherever that lifetime total belongs. The highest bid is #1 unt",
+      "handle": "swSalim",
+      "via": "outbidstory.lol roll call"
     }
   },
-  "updatedAt": "2026-08-27T10:09:56.961Z",
+  "updatedAt": "2026-08-27T11:08:30.265Z",
   "$comment": "Who built each board, from what the board publishes or from the public roll call on outbidstory.lol. Used for credit, not scraped from anywhere private."
 }
