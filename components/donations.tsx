@@ -85,8 +85,8 @@ export function Donations() {
       <div className="brut brut-shadow bg-card">
         <div className="border-b-[3px] border-border bg-[var(--orange)] px-4 py-4 text-black">
           <p className="text-[13px] font-extrabold uppercase leading-snug tracking-[0.02em]">
-            Same game, different scoreboard. Outbid each other into school meals for children in
-            India through Akshaya Patra.
+            Same game, different scoreboard. Outbid each other into school meals for kids through
+            Akshaya Patra.
           </p>
           <div className="mt-3 flex flex-wrap items-end gap-x-5 gap-y-1">
             <span className="text-3xl font-extrabold tabular-nums">{formatMoney(data.raised)}</span>

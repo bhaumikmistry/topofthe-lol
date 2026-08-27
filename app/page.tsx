@@ -47,9 +47,9 @@ export default function Home() {
 
             <p className="mt-5 text-sm font-medium leading-relaxed">
               People have spent a fortune this month outbidding each other for a link. This board
-              runs on the same rule, except the money buys hot school meals for children in India
-              through Akshaya Patra. Pay more than the person above you and your name goes to the
-              top, exactly like everywhere else.
+              runs on the same rule, except the money buys hot school meals for kids through
+              Akshaya Patra. Pay more than the person above you and your name goes to the top,
+              exactly like everywhere else.
             </p>
           </section>
 
