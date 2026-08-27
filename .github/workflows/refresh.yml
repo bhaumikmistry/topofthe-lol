@@ -23,14 +23,17 @@ jobs:
           node-version: 22
       - name: Refresh bids
         run: node scripts/refresh.mjs
+
+      - name: Refresh the fundraiser
+        run: node scripts/donations.mjs
       - name: Commit if changed
         run: |
-          if git diff --quiet -- data/bids.json; then
+          if git diff --quiet -- data/bids.json data/donations.json; then
             echo "No bid changes."
             exit 0
           fi
           git config user.name "bid-bot"
           git config user.email "bid-bot@users.noreply.github.com"
-          git add data/bids.json
-          git commit -m "chore: refresh bids"
+          git add data/bids.json data/donations.json
+          git commit -m "chore: refresh bids and donations"
           git push

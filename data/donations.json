@@ -1,0 +1,30 @@
+{
+  "$comment": "Public donation feed for the Akshaya Patra fundraiser. Rewritten by scripts/donations.mjs.",
+  "url": "https://www.gofundme.com/f/outbidlol-but-for-donation-to-akshaya-patras-mission",
+  "updatedAt": "2026-08-27T10:08:02.787Z",
+  "goal": 5000,
+  "raised": 50,
+  "count": 1,
+  "top": [
+    {
+      "id": 1563795675,
+      "name": "Mistry",
+      "handle": "bhaumikk9",
+      "amount": 50,
+      "currency": "USD",
+      "at": "2026-08-27T04:52:25.000-05:00",
+      "position": 1
+    }
+  ],
+  "recent": [
+    {
+      "id": 1563795675,
+      "name": "Mistry",
+      "handle": "bhaumikk9",
+      "amount": 50,
+      "currency": "USD",
+      "at": "2026-08-27T04:52:25.000-05:00",
+      "position": 1
+    }
+  ]
+}

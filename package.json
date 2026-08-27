@@ -7,6 +7,7 @@
     "dev": "next dev",
     "build": "node scripts/validate.mjs && npm run refresh:safe && next build",
     "refresh:safe": "node scripts/refresh.mjs || true",
+    "donations": "node scripts/donations.mjs",
     "start": "next start",
     "lint": "eslint",
     "format": "prettier --write \"**/*.{ts,tsx}\"",

@@ -1,4 +1,5 @@
 import { Board } from '@/components/board';
+import { Donations } from '@/components/donations';
 import { Footer } from '@/components/footer';
 import { Header } from '@/components/header';
 import { ShareButton } from '@/components/share-button';
@@ -109,6 +110,8 @@ export default function Home() {
               />
             </div>
           </section>
+
+          <Donations />
 
           <section className="py-8">
             <h2 className="mb-4 text-[13px] font-extrabold uppercase tracking-[0.08em]">
