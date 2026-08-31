@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-31T11:29:20.723Z",
+  "updatedAt": "2026-08-31T18:06:56.860Z",
   "results": {
     "outbid.lol": {
       "domain": "outbid.lol",
@@ -15,13 +15,13 @@
         "title": "Vercel Security Checkpoint",
         "description": null
       },
-      "checkedAt": "2026-08-31T11:28:56.367Z",
+      "checkedAt": "2026-08-31T18:06:33.104Z",
       "manualAsOf": "2026-08-25",
       "currency": "USD",
       "exact": false,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:28:56.367Z",
+      "verifiedAt": "2026-08-31T18:06:33.104Z",
       "stale": false
     },
     "watchbid.lol": {
@@ -38,12 +38,12 @@
         "title": "watchbid.lol — buy the top screen",
         "description": "A leaderboard you buy your way up. The top 3 ranks play video. Everyone else is a line of text."
       },
-      "checkedAt": "2026-08-31T11:28:56.420Z",
+      "checkedAt": "2026-08-31T18:06:33.153Z",
       "currency": "USD",
       "exact": true,
       "previousBid": 4,
       "changedAt": "2026-08-29T20:44:52.538Z",
-      "verifiedAt": "2026-08-31T11:28:56.420Z",
+      "verifiedAt": "2026-08-31T18:06:33.153Z",
       "stale": false
     },
     "takeone.lol": {
@@ -60,12 +60,12 @@
         "title": "takeone — pay your way to #1",
         "description": "A public leaderboard where people pay real money to rank their link. New spots start at $5. Claim #1 for one dollar more than the current king."
       },
-      "checkedAt": "2026-08-31T11:28:56.421Z",
+      "checkedAt": "2026-08-31T18:06:33.154Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:28:56.421Z",
+      "verifiedAt": "2026-08-31T18:06:33.154Z",
       "stale": false
     },
     "overbid.lol": {
@@ -82,7 +82,7 @@
         "title": "overbid.lol — the pay-to-rank leaderboard",
         "description": "Rank is for sale. Overbid everyone, take #1, and get seen when this board goes viral. No ads, no API keys, no revenue share."
       },
-      "checkedAt": "2026-08-31T11:28:56.422Z",
+      "checkedAt": "2026-08-31T18:06:33.155Z",
       "currency": "USD",
       "exact": false,
       "stale": false
@@ -101,12 +101,12 @@
         "title": "Pay to Be #1",
         "description": "No algorithm. Highest bid wins."
       },
-      "checkedAt": "2026-08-31T11:28:56.423Z",
+      "checkedAt": "2026-08-31T18:06:33.156Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:28:56.423Z",
+      "verifiedAt": "2026-08-31T18:06:33.156Z",
       "stale": false
     },
     "spots.lol": {
@@ -123,12 +123,12 @@
         "title": "spots.lol — the ad board where the highest bid ranks #1",
         "description": "Buy an advertising spot for your product or startup. Your bid is your rank — take the spot above you to climb, and the whole board clears every Sunday."
       },
-      "checkedAt": "2026-08-31T11:28:56.423Z",
+      "checkedAt": "2026-08-31T18:06:33.157Z",
       "currency": "USD",
       "exact": true,
       "previousBid": 6,
       "changedAt": "2026-08-24T02:38:54.046Z",
-      "verifiedAt": "2026-08-31T11:28:56.423Z",
+      "verifiedAt": "2026-08-31T18:06:33.157Z",
       "stale": false
     },
     "topapp.lol": {
@@ -145,12 +145,12 @@
         "title": "Top iOS & Mac App Leaderboard — topapp.lol",
         "description": "Discover and promote independent iOS and macOS apps on a transparent leaderboard ranked by lifetime payments."
       },
-      "checkedAt": "2026-08-31T11:28:56.424Z",
+      "checkedAt": "2026-08-31T18:06:33.158Z",
       "currency": "USD",
       "exact": true,
       "previousBid": 187,
       "changedAt": "2026-08-23T14:27:54.510Z",
-      "verifiedAt": "2026-08-31T11:28:56.424Z",
+      "verifiedAt": "2026-08-31T18:06:33.158Z",
       "stale": false
     },
     "uprank.lol": {
@@ -167,12 +167,12 @@
         "title": "uprank — pay more, rank higher",
         "description": "A public leaderboard for websites. Your rank is your lifetime total, and anyone can pay a dollar more to take it."
       },
-      "checkedAt": "2026-08-31T11:28:56.425Z",
+      "checkedAt": "2026-08-31T18:06:33.159Z",
       "currency": "USD",
       "exact": false,
       "previousBid": 79,
       "changedAt": "2026-08-24T04:22:28.063Z",
-      "verifiedAt": "2026-08-31T11:28:56.425Z",
+      "verifiedAt": "2026-08-31T18:06:33.159Z",
       "stale": false
     },
     "dontbid.lol": {
@@ -189,7 +189,7 @@
         "title": "dontbid.lol — the top of the page is for sale",
         "description": "A product directory with no algorithm. Every listing is ranked by how much it paid to sit there. Entries are closed and the board is final."
       },
-      "checkedAt": "2026-08-31T11:28:56.624Z",
+      "checkedAt": "2026-08-31T18:06:33.297Z",
       "currency": "USD",
       "exact": false,
       "stale": false
@@ -208,7 +208,7 @@
         "title": "WARMAP — the world is for sale",
         "description": "Conquer a country. Your company, your color, on the world map — until someone pays 1.5x to take it from you. No refunds. That’s war."
       },
-      "checkedAt": "2026-08-31T11:28:57.108Z",
+      "checkedAt": "2026-08-31T18:06:33.599Z",
       "currency": "USD",
       "exact": false,
       "stale": false
@@ -227,12 +227,12 @@
         "title": "whosetheboss.lol",
         "description": "One company is the boss of the internet. Everyone else is just rich. Pay to take the crown. Every dollar you&#x27;ve ever paid stays banked."
       },
-      "checkedAt": "2026-08-31T11:28:57.390Z",
+      "checkedAt": "2026-08-31T18:06:33.634Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:28:57.390Z",
+      "verifiedAt": "2026-08-31T18:06:33.634Z",
       "stale": false
     },
     "topnewsletters.lol": {
@@ -249,12 +249,12 @@
         "title": "Subscribers don&#x27;t scroll. They open. · topnewsletters.lol",
         "description": "Subscribers don&#x27;t scroll. They open. Bid for the inbox — the opens, the replies, the forwards."
       },
-      "checkedAt": "2026-08-31T11:28:57.620Z",
+      "checkedAt": "2026-08-31T18:06:33.814Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:28:57.620Z",
+      "verifiedAt": "2026-08-31T18:06:33.814Z",
       "stale": false
     },
     "bidding.lol": {
@@ -271,12 +271,12 @@
         "title": "bidding.lol — the directory of bidding sites, ranked by bid",
         "description": "A leaderboard of auction and pay-to-rank sites, ordered the only way that fits: by what each one pays for its row. Bid, and your site moves up."
       },
-      "checkedAt": "2026-08-31T11:28:57.868Z",
+      "checkedAt": "2026-08-31T18:06:34.051Z",
       "currency": "USD",
       "exact": false,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:28:57.868Z",
+      "verifiedAt": "2026-08-31T18:06:34.051Z",
       "stale": false
     },
     "aithrone.lol": {
@@ -293,12 +293,12 @@
         "title": "Pay your way to the AI throne.",
         "description": "The live leaderboard where AI startups bid to claim the AI throne."
       },
-      "checkedAt": "2026-08-31T11:28:58.012Z",
+      "checkedAt": "2026-08-31T18:06:34.248Z",
       "currency": "USD",
       "exact": true,
       "previousBid": 13,
       "changedAt": "2026-08-23T13:36:04.407Z",
-      "verifiedAt": "2026-08-31T11:28:58.012Z",
+      "verifiedAt": "2026-08-31T18:06:34.248Z",
       "stale": false
     },
     "biddirectory.lol": {
@@ -315,12 +315,12 @@
         "title": "Bid Directory — for bid sites, ranked by bid",
         "description": "Auction and pay-to-rank directories, competing the only way that fits: by bidding. A leaderboard of bid sites — for bid sites."
       },
-      "checkedAt": "2026-08-31T11:28:58.239Z",
+      "checkedAt": "2026-08-31T18:06:34.311Z",
       "currency": "USD",
       "exact": true,
       "previousBid": 61,
       "changedAt": "2026-08-24T21:34:16.972Z",
-      "verifiedAt": "2026-08-31T11:28:58.239Z",
+      "verifiedAt": "2026-08-31T18:06:34.311Z",
       "stale": false
     },
     "stealmyspot.lol": {
@@ -337,12 +337,12 @@
         "title": "Promote Your Website on a Live Leaderboard | Steal My Spot",
         "description": "Place your website or X profile on a live paid leaderboard. Outbid another listing to claim a higher position and attract more visitors."
       },
-      "checkedAt": "2026-08-31T11:28:58.427Z",
+      "checkedAt": "2026-08-31T18:06:34.410Z",
       "currency": "USD",
       "exact": true,
       "previousBid": 29,
       "changedAt": "2026-08-22T07:44:13.668Z",
-      "verifiedAt": "2026-08-31T11:28:58.427Z",
+      "verifiedAt": "2026-08-31T18:06:34.410Z",
       "stale": false
     },
     "bidroyale.lol": {
@@ -359,12 +359,12 @@
         "title": "@MohakBajaj5 holds the seat · bidroyale.lol",
         "description": "Pay whole dollars to rank a site or X handle on a public board. #1 is a public reign. Listings never expire. Raise by paying the difference. Rank is the bid."
       },
-      "checkedAt": "2026-08-31T11:28:58.694Z",
+      "checkedAt": "2026-08-31T18:06:34.698Z",
       "currency": "USD",
       "exact": true,
       "previousBid": 1,
       "changedAt": "2026-08-27T10:08:40.423Z",
-      "verifiedAt": "2026-08-31T11:28:58.694Z",
+      "verifiedAt": "2026-08-31T18:06:34.698Z",
       "stale": false
     },
     "topseos.lol": {
@@ -381,12 +381,12 @@
         "title": "topseos.lol",
         "description": "Pay to rank on top of the leaderboard of the best SEO"
       },
-      "checkedAt": "2026-08-31T11:28:59.194Z",
+      "checkedAt": "2026-08-31T18:06:35.196Z",
       "currency": "USD",
       "exact": false,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:28:59.194Z",
+      "verifiedAt": "2026-08-31T18:06:35.196Z",
       "stale": false
     },
     "launchwars.lol": {
@@ -403,12 +403,12 @@
         "title": "LaunchWars - Launch Your Product & Climb the Leaderboard",
         "description": "Launch your startup, SaaS, or product on LaunchWars. Place a bid, climb the leaderboard, get discovered, and compete for the top spot."
       },
-      "checkedAt": "2026-08-31T11:28:59.301Z",
+      "checkedAt": "2026-08-31T18:06:35.457Z",
       "currency": "USD",
       "exact": false,
       "previousBid": 16,
       "changedAt": "2026-08-24T04:22:30.045Z",
-      "verifiedAt": "2026-08-31T11:28:59.301Z",
+      "verifiedAt": "2026-08-31T18:06:35.457Z",
       "stale": false
     },
     "befamous.lol": {
@@ -425,12 +425,12 @@
         "title": "befamous.lol — pay to rank yourself",
         "description": "Outbid everyone else to put your name at the top. No ads. Rank is the bid."
       },
-      "checkedAt": "2026-08-31T11:28:59.429Z",
+      "checkedAt": "2026-08-31T18:06:35.546Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:28:59.429Z",
+      "verifiedAt": "2026-08-31T18:06:35.546Z",
       "stale": false
     },
     "herobid.lol": {
@@ -447,12 +447,12 @@
         "title": "Herobid — Bid to show your hero at the top",
         "description": "Paste any URL, name a price, and your site ranks by what you paid. The #1 spot renders live at the top of the page. Bids from $2 — free for .lol domains."
       },
-      "checkedAt": "2026-08-31T11:28:59.663Z",
+      "checkedAt": "2026-08-31T18:06:35.851Z",
       "currency": "USD",
       "exact": false,
       "previousBid": 22,
       "changedAt": "2026-08-26T11:03:00.024Z",
-      "verifiedAt": "2026-08-31T11:28:59.663Z",
+      "verifiedAt": "2026-08-31T18:06:35.851Z",
       "stale": false
     },
     "hotbid.lol": {
@@ -469,12 +469,12 @@
         "title": "hotbid.lol",
         "description": "A public leaderboard of builders, ranked strictly by what they paid. No algorithm, no merit, just the figure."
       },
-      "checkedAt": "2026-08-31T11:28:59.778Z",
+      "checkedAt": "2026-08-31T18:06:36.215Z",
       "currency": "GBP",
       "exact": true,
       "previousBid": 500,
       "changedAt": "2026-08-25T04:45:50.828Z",
-      "verifiedAt": "2026-08-31T11:28:59.778Z",
+      "verifiedAt": "2026-08-31T18:06:36.215Z",
       "stale": false
     },
     "stackbid.lol": {
@@ -491,12 +491,12 @@
         "title": "stackbid — the top of the stack",
         "description": "One slot on top of the stack. Everyone else is underneath it."
       },
-      "checkedAt": "2026-08-31T11:28:59.928Z",
+      "checkedAt": "2026-08-31T18:06:36.241Z",
       "currency": "USD",
       "exact": true,
       "previousBid": 19,
       "changedAt": "2026-08-27T10:08:41.607Z",
-      "verifiedAt": "2026-08-31T11:28:59.928Z",
+      "verifiedAt": "2026-08-31T18:06:36.241Z",
       "stale": false
     },
     "vibewar.lol": {
@@ -513,12 +513,12 @@
         "title": "VibeWar — The battlefield for apps & SaaS.",
         "description": "The battlefield for apps & SaaS. No ads. No subscriptions. Founders pay to rank — outbid them to take their spot."
       },
-      "checkedAt": "2026-08-31T11:29:00.125Z",
+      "checkedAt": "2026-08-31T18:06:36.524Z",
       "currency": "USD",
       "exact": false,
       "previousBid": 61,
       "changedAt": "2026-08-24T04:22:31.193Z",
-      "verifiedAt": "2026-08-31T11:29:00.125Z",
+      "verifiedAt": "2026-08-31T18:06:36.524Z",
       "stale": false
     },
     "bestdirectories.lol": {
@@ -535,12 +535,12 @@
         "title": "bestdirectories.lol — launch directories & agencies, ranked by bid",
         "description": "Every launch directory and agency on one board, ranked by how much they bid to be seen. No ads, no algorithm — the top spot goes to whoever pays most."
       },
-      "checkedAt": "2026-08-31T11:29:00.454Z",
+      "checkedAt": "2026-08-31T18:06:36.630Z",
       "currency": "USD",
       "exact": true,
       "previousBid": 16,
       "changedAt": "2026-08-29T01:51:51.178Z",
-      "verifiedAt": "2026-08-31T11:29:00.454Z",
+      "verifiedAt": "2026-08-31T18:06:36.630Z",
       "stale": false
     },
     "footballbid.lol": {
@@ -557,7 +557,7 @@
         "title": null,
         "description": null
       },
-      "checkedAt": "2026-08-31T11:29:01.164Z",
+      "checkedAt": "2026-08-31T18:06:36.996Z",
       "currency": "USD",
       "exact": false,
       "stale": false
@@ -576,12 +576,12 @@
         "title": "outbids.lol — Outbid your competition",
         "description": "Claim a verified public position. Your bid decides your rank on the live outbids.lol board."
       },
-      "checkedAt": "2026-08-31T11:29:01.425Z",
+      "checkedAt": "2026-08-31T18:06:37.246Z",
       "currency": "USD",
       "exact": true,
       "previousBid": 25,
       "changedAt": "2026-08-30T13:56:28.189Z",
-      "verifiedAt": "2026-08-31T11:29:01.425Z",
+      "verifiedAt": "2026-08-31T18:06:37.246Z",
       "stale": false
     },
     "leaderbid.lol": {
@@ -598,12 +598,12 @@
         "title": "Leaderbid.lol — Leaderbid Your Competition",
         "description": "Pay to climb the leaderboard. Leaderbid your competition and take the top spot."
       },
-      "checkedAt": "2026-08-31T11:29:01.478Z",
+      "checkedAt": "2026-08-31T18:06:37.373Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:01.478Z",
+      "verifiedAt": "2026-08-31T18:06:37.373Z",
       "stale": false
     },
     "eu-outbid.lol": {
@@ -620,12 +620,12 @@
         "title": "eu-outbid.lol",
         "description": "A leaderboard for European startups. No ads, no algorithm, no revenue share. The board is sorted by money, and nothing else."
       },
-      "checkedAt": "2026-08-31T11:29:01.713Z",
+      "checkedAt": "2026-08-31T18:06:37.471Z",
       "currency": "EUR",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:01.713Z",
+      "verifiedAt": "2026-08-31T18:06:37.471Z",
       "stale": false
     },
     "xrank.lol": {
@@ -642,12 +642,12 @@
         "title": "Xrank — The X leaderboard money can buy.",
         "description": "Xrank is a public leaderboard of X accounts ordered purely by the money paid into each account&#x27;s rank value. No algorithm, no votes."
       },
-      "checkedAt": "2026-08-31T11:29:01.779Z",
+      "checkedAt": "2026-08-31T18:06:37.522Z",
       "currency": "USD",
       "exact": false,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:01.779Z",
+      "verifiedAt": "2026-08-31T18:06:37.522Z",
       "stale": false
     },
     "georush.lol": {
@@ -664,7 +664,7 @@
         "title": null,
         "description": null
       },
-      "checkedAt": "2026-08-31T11:29:01.888Z",
+      "checkedAt": "2026-08-31T18:06:38.006Z",
       "currency": "USD",
       "exact": false,
       "stale": false
@@ -683,12 +683,12 @@
         "title": "topple.lol — get your product seen from $1",
         "description": "The live leaderboard where listings start at $1, every bid melts 50% a day, and #1 opens back up daily. Public stats, real cost per click, no account needed."
       },
-      "checkedAt": "2026-08-31T11:29:01.952Z",
+      "checkedAt": "2026-08-31T18:06:38.090Z",
       "currency": "USD",
       "exact": false,
       "previousBid": 3,
       "changedAt": "2026-08-31T11:29:01.952Z",
-      "verifiedAt": "2026-08-31T11:29:01.952Z",
+      "verifiedAt": "2026-08-31T18:06:38.090Z",
       "stale": false
     },
     "topx.lol": {
@@ -705,7 +705,7 @@
         "title": "@nicolaslecocqhq is #1 on topx.lol",
         "description": "@nicolaslecocqhq holds the top at $10. Bid $11 to take it. Own a piece of internet real estate."
       },
-      "checkedAt": "2026-08-31T11:29:02.208Z",
+      "checkedAt": "2026-08-31T18:06:38.284Z",
       "currency": "USD",
       "exact": false,
       "stale": false
@@ -724,7 +724,7 @@
         "title": "xbid.lol — entries closed. the leaderboard stands till the end.",
         "description": "A public leaderboard of X accounts ranked by one thing: how much you have paid to be on it. Outbid the person above you and take their spot."
       },
-      "checkedAt": "2026-08-31T11:29:02.414Z",
+      "checkedAt": "2026-08-31T18:06:38.676Z",
       "currency": "USD",
       "exact": false,
       "stale": false
@@ -743,12 +743,12 @@
         "title": "topferry — the board where money talks",
         "description": "puremoney.lol holds №1 at $7. $22.05 in the pot. Anyone can outbid anyone."
       },
-      "checkedAt": "2026-08-31T11:29:02.838Z",
+      "checkedAt": "2026-08-31T18:06:38.900Z",
       "currency": "USD",
       "exact": true,
       "previousBid": 1,
       "changedAt": "2026-08-24T15:43:24.646Z",
-      "verifiedAt": "2026-08-31T11:29:02.838Z",
+      "verifiedAt": "2026-08-31T18:06:38.900Z",
       "stale": false
     },
     "biggerfish.lol": {
@@ -765,12 +765,12 @@
         "title": "biggerfish.lol",
         "description": "Pay to rank. Your place is what you have paid, highest first. Outspend the fish above you and take its place."
       },
-      "checkedAt": "2026-08-31T11:29:02.946Z",
+      "checkedAt": "2026-08-31T18:06:39.045Z",
       "currency": "USD",
       "exact": false,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:02.946Z",
+      "verifiedAt": "2026-08-31T18:06:39.045Z",
       "stale": false
     },
     "1board.lol": {
@@ -787,12 +787,12 @@
         "title": "#1Board — Who&#x27;s #1?",
         "description": "Claim your spot. Add up to 2 links. Bid to climb the board."
       },
-      "checkedAt": "2026-08-31T11:29:02.997Z",
+      "checkedAt": "2026-08-31T18:06:39.188Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:02.997Z",
+      "verifiedAt": "2026-08-31T18:06:39.188Z",
       "stale": false
     },
     "agentfind.lol": {
@@ -809,7 +809,7 @@
         "title": "agentfind.lol — Get found by AI agents",
         "description": "No ads. No API keys. No revenue sharing. AI agents are coming for the web — make sure they find you. Claim your spot, outbid your competition, take #1."
       },
-      "checkedAt": "2026-08-31T11:29:03.047Z",
+      "checkedAt": "2026-08-31T18:06:39.196Z",
       "currency": "USD",
       "exact": false,
       "stale": false
@@ -828,12 +828,12 @@
         "title": "aistartups.lol - Find interesting AI startups and tools",
         "description": "Find interesting AI startups and tools, or outbid competitors to put yours at the top."
       },
-      "checkedAt": "2026-08-31T11:29:03.219Z",
+      "checkedAt": "2026-08-31T18:06:39.450Z",
       "currency": "USD",
       "exact": false,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:03.219Z",
+      "verifiedAt": "2026-08-31T18:06:39.450Z",
       "stale": false
     },
     "apebid.lol": {
@@ -850,12 +850,12 @@
         "title": "apebid.lol",
         "description": "Promote your favorite memecoin. Rule the board."
       },
-      "checkedAt": "2026-08-31T11:29:03.329Z",
+      "checkedAt": "2026-08-31T18:06:39.531Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:03.329Z",
+      "verifiedAt": "2026-08-31T18:06:39.531Z",
       "stale": false
     },
     "appmog.lol": {
@@ -872,12 +872,12 @@
         "title": "appmog — MOGGED!",
         "description": "Pay to be #1. Public iOS app leaderboard — App Store link only. Rank is the bid."
       },
-      "checkedAt": "2026-08-31T11:29:03.345Z",
+      "checkedAt": "2026-08-31T18:06:39.717Z",
       "currency": "USD",
       "exact": false,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:03.345Z",
+      "verifiedAt": "2026-08-31T18:06:39.717Z",
       "stale": false
     },
     "auraflex.lol": {
@@ -894,12 +894,12 @@
         "title": "AuraFlex | Elite Pay-to-Rank Leaderboard & Social Exposure",
         "description": "Bid to claim the top spot and flex your project, app or social profile aura. No expiring ads or monthly subscriptions. Just permanent visibility and founder exposure."
       },
-      "checkedAt": "2026-08-31T11:29:03.601Z",
+      "checkedAt": "2026-08-31T18:06:40.030Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:03.601Z",
+      "verifiedAt": "2026-08-31T18:06:40.030Z",
       "stale": false
     },
     "bid2rank.lol": {
@@ -916,7 +916,7 @@
         "title": "SeeRanks.com",
         "description": "Transparent product discovery. Products ranked two ways. Sponsored placement and community votes stay separate."
       },
-      "checkedAt": "2026-08-31T11:29:03.680Z",
+      "checkedAt": "2026-08-31T18:06:40.160Z",
       "currency": "USD",
       "exact": false,
       "stale": false
@@ -935,12 +935,12 @@
         "title": "BidAnything.lol — Put anything on top of the internet.",
         "description": "Your app. Your startup. Your YouTube video. Your cat. If it has a link, you can bid on it. Highest bid takes #1. No algorithm, just money."
       },
-      "checkedAt": "2026-08-31T11:29:03.692Z",
+      "checkedAt": "2026-08-31T18:06:40.253Z",
       "currency": "USD",
       "exact": false,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:03.692Z",
+      "verifiedAt": "2026-08-31T18:06:40.253Z",
       "stale": false
     },
     "bidbench.lol": {
@@ -957,12 +957,12 @@
         "title": "bidbench.lol",
         "description": "The public leaderboard for LLM models. No ads, no API keys, no revenue share. Outbid the other models to take #1."
       },
-      "checkedAt": "2026-08-31T11:29:03.723Z",
+      "checkedAt": "2026-08-31T18:06:40.291Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:03.723Z",
+      "verifiedAt": "2026-08-31T18:06:40.291Z",
       "stale": false
     },
     "bidclicks.lol": {
@@ -979,12 +979,12 @@
         "title": "bidclicks.lol — pay per visitor, not per position",
         "description": "A competitive ad leaderboard where sites bid a cost-per-click and only pay for delivered human visits."
       },
-      "checkedAt": "2026-08-31T11:29:04.096Z",
+      "checkedAt": "2026-08-31T18:06:40.361Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:04.096Z",
+      "verifiedAt": "2026-08-31T18:06:40.361Z",
       "stale": false
     },
     "biddr.lol": {
@@ -1001,12 +1001,12 @@
         "title": "Biddr! Pay-to-Rank Leaderboard",
         "description": "Biddr is a public pay-to-rank leaderboard. Claim a spot for your product URL or X handle. Highest bid holds #1. Rank is the bid, nothing else."
       },
-      "checkedAt": "2026-08-31T11:29:04.390Z",
+      "checkedAt": "2026-08-31T18:06:40.697Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:04.390Z",
+      "verifiedAt": "2026-08-31T18:06:40.697Z",
       "stale": false
     },
     "bidfolio.lol": {
@@ -1023,12 +1023,12 @@
         "title": "Bidfolio · The jury is money.",
         "description": "A ranked list of portfolios, products and projects. Rank is the bid, nothing else. Resets every month."
       },
-      "checkedAt": "2026-08-31T11:29:04.413Z",
+      "checkedAt": "2026-08-31T18:06:40.726Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:04.413Z",
+      "verifiedAt": "2026-08-31T18:06:40.726Z",
       "stale": false
     },
     "bidmax.lol": {
@@ -1045,12 +1045,12 @@
         "title": "bidmax.lol — pay to launch on top",
         "description": "A live leaderboard of product launches, ranked by what founders pay. Highest bid takes rank #1. Real builders, ranked by who wants the spotlight the most."
       },
-      "checkedAt": "2026-08-31T11:29:04.545Z",
+      "checkedAt": "2026-08-31T18:06:40.840Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:04.545Z",
+      "verifiedAt": "2026-08-31T18:06:40.840Z",
       "stale": false
     },
     "bidmeme.lol": {
@@ -1067,12 +1067,12 @@
         "title": "bidmeme.lol — Proof of Conviction Leaderboard",
         "description": "Engagement can be faked. Paid KOL shills can be bought. Volume bots can run 24/7. But real on-chain capital cannot lie. Put your money where your ticker is."
       },
-      "checkedAt": "2026-08-31T11:29:04.735Z",
+      "checkedAt": "2026-08-31T18:06:40.947Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:04.735Z",
+      "verifiedAt": "2026-08-31T18:06:40.947Z",
       "stale": false
     },
     "bidrush.lol": {
@@ -1089,12 +1089,12 @@
         "title": "bidrush: the board where the highest bid wins",
         "description": "One leaderboard, one rule: the biggest bid sits on top. No ads, no algorithm, no revenue share. Put your product up and outbid the rest."
       },
-      "checkedAt": "2026-08-31T11:29:04.766Z",
+      "checkedAt": "2026-08-31T18:06:41.203Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:04.766Z",
+      "verifiedAt": "2026-08-31T18:06:41.203Z",
       "stale": false
     },
     "bidtree.lol": {
@@ -1111,12 +1111,12 @@
         "title": "bidtree",
         "description": "Every tile is a product, sized by the money behind it. One dollar puts you on the board. Pay more, grow bigger, outbid the rest."
       },
-      "checkedAt": "2026-08-31T11:29:05.024Z",
+      "checkedAt": "2026-08-31T18:06:41.464Z",
       "currency": "USD",
       "exact": true,
       "previousBid": 86,
       "changedAt": "2026-08-26T13:09:12.676Z",
-      "verifiedAt": "2026-08-31T11:29:05.024Z",
+      "verifiedAt": "2026-08-31T18:06:41.464Z",
       "stale": false
     },
     "cheapseat.lol": {
@@ -1133,12 +1133,12 @@
         "title": "cheapseat.lol",
         "description": "The top seat is up for grabs and it is cheap. Bids stack, clicks are public, and the seat has a clock on it. New seats start at $1."
       },
-      "checkedAt": "2026-08-31T11:29:05.069Z",
+      "checkedAt": "2026-08-31T18:06:41.650Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:05.069Z",
+      "verifiedAt": "2026-08-31T18:06:41.650Z",
       "stale": false
     },
     "claimrank.lol": {
@@ -1155,12 +1155,12 @@
         "title": "Claimrank — Put your product in front",
         "description": "A live public leaderboard for useful apps and tools. Bid whole US dollars, move up instantly, and compete transparently for attention."
       },
-      "checkedAt": "2026-08-31T11:29:05.282Z",
+      "checkedAt": "2026-08-31T18:06:41.750Z",
       "currency": "USD",
       "exact": false,
       "previousBid": 15,
       "changedAt": "2026-08-27T10:08:46.449Z",
-      "verifiedAt": "2026-08-31T11:29:05.282Z",
+      "verifiedAt": "2026-08-31T18:06:41.750Z",
       "stale": false
     },
     "coinup.lol": {
@@ -1177,12 +1177,12 @@
         "title": "Buy rank #1. Pay in Bitcoin.",
         "description": "A leaderboard for crypto coins, ranked by satoshis spent. Paid placement, settled on-chain. Minimum bid 0.00013 BTC."
       },
-      "checkedAt": "2026-08-31T11:29:05.523Z",
+      "checkedAt": "2026-08-31T18:06:41.968Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:05.523Z",
+      "verifiedAt": "2026-08-31T18:06:41.968Z",
       "stale": false
     },
     "cryptobids.lol": {
@@ -1199,12 +1199,12 @@
         "title": "cryptobid - the crypto leaderboard you buy your way up",
         "description": "A leaderboard for crypto companies. Rank is the bid, nothing else. Listings start at $1 and any spot can be claimed for 1.5x what its holder paid."
       },
-      "checkedAt": "2026-08-31T11:29:05.563Z",
+      "checkedAt": "2026-08-31T18:06:41.995Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:05.563Z",
+      "verifiedAt": "2026-08-31T18:06:41.995Z",
       "stale": false
     },
     "cryptodapp.lol": {
@@ -1221,18 +1221,18 @@
         "title": "CryptoDapp.lol — Bid Your Dapp #1",
         "description": "Claim the #1 spot for your crypto dapp. Bid in USDC or USDT on Solana, Ethereum, Base, BNB Chain, or Polygon — highest bid ranks first."
       },
-      "checkedAt": "2026-08-31T11:29:05.721Z",
+      "checkedAt": "2026-08-31T18:06:42.002Z",
       "currency": "USD",
       "exact": false,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:05.721Z",
+      "verifiedAt": "2026-08-31T18:06:42.002Z",
       "stale": false
     },
     "dailyoutbid.lol": {
       "domain": "dailyoutbid.lol",
-      "topBid": 4,
-      "topEntry": "halalbid.lol — rent the #1 spot by auction",
+      "topBid": 1,
+      "topEntry": "Encrypted Clipboard Manager - Securely Sync Your Clipboard",
       "source": "api",
       "claimPrice": null,
       "nextBid": null,
@@ -1243,12 +1243,12 @@
         "title": "Daily Outbid — Real traffic + a dofollow backlink for your product",
         "description": "Pay to rank your product. Every listing lasts exactly 24 hours. No permanent top spots. Fresh chances every day."
       },
-      "checkedAt": "2026-08-31T11:29:06.023Z",
+      "checkedAt": "2026-08-31T18:06:42.288Z",
       "currency": "USD",
       "exact": true,
-      "previousBid": 5,
-      "changedAt": "2026-08-30T23:44:09.907Z",
-      "verifiedAt": "2026-08-31T11:29:06.023Z",
+      "previousBid": 4,
+      "changedAt": "2026-08-31T18:06:42.288Z",
+      "verifiedAt": "2026-08-31T18:06:42.288Z",
       "stale": false
     },
     "designerbid.lol": {
@@ -1265,12 +1265,12 @@
         "title": "designerbid.lol — Pay to rank in the design directory.",
         "description": "A directory of design tools, studios, web and product designers, Framer developers and motion designers — ranked by what each one pays. Claim a spot, get clicks, hold it until someone outbids you."
       },
-      "checkedAt": "2026-08-31T11:29:06.395Z",
+      "checkedAt": "2026-08-31T18:06:42.788Z",
       "currency": "USD",
       "exact": true,
       "previousBid": 11,
       "changedAt": "2026-08-24T10:41:33.770Z",
-      "verifiedAt": "2026-08-31T11:29:06.395Z",
+      "verifiedAt": "2026-08-31T18:06:42.788Z",
       "stale": false
     },
     "elseweb.lol": {
@@ -1287,7 +1287,7 @@
         "title": "Your website has a community. You don",
         "description": "An open-source, domain-based subreddit for every website on the internet."
       },
-      "checkedAt": "2026-08-31T11:29:06.402Z",
+      "checkedAt": "2026-08-31T18:06:42.856Z",
       "currency": "USD",
       "exact": false,
       "stale": false
@@ -1306,12 +1306,12 @@
         "title": "famebid.lol — 50 states. 50 thrones.",
         "description": "Every U.S. state has a throne. Add your website, outbid the current owner, and take over."
       },
-      "checkedAt": "2026-08-31T11:29:06.669Z",
+      "checkedAt": "2026-08-31T18:06:42.961Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:06.669Z",
+      "verifiedAt": "2026-08-31T18:06:42.961Z",
       "stale": false
     },
     "feedbid.lol": {
@@ -1328,12 +1328,12 @@
         "title": "feedbid.lol",
         "description": "Outbid the #1 spot. The top video gets the views."
       },
-      "checkedAt": "2026-08-31T11:29:06.720Z",
+      "checkedAt": "2026-08-31T18:06:43.257Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:06.720Z",
+      "verifiedAt": "2026-08-31T18:06:43.257Z",
       "stale": false
     },
     "forceplay.lol": {
@@ -1350,12 +1350,12 @@
         "title": "FORCEPLAY — pay to force the clip",
         "description": "A public jukebox for short clips. Rank is the bid. Nothing else."
       },
-      "checkedAt": "2026-08-31T11:29:06.999Z",
+      "checkedAt": "2026-08-31T18:06:43.294Z",
       "currency": "USD",
       "exact": false,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:06.999Z",
+      "verifiedAt": "2026-08-31T18:06:43.294Z",
       "stale": false
     },
     "founderboard.lol": {
@@ -1372,12 +1372,12 @@
         "title": "Rank is the bid. Followers don&#x27;t count.",
         "description": "A public board of X and LinkedIn profiles. Highest bid sits at #1."
       },
-      "checkedAt": "2026-08-31T11:29:07.121Z",
+      "checkedAt": "2026-08-31T18:06:43.408Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:07.121Z",
+      "verifiedAt": "2026-08-31T18:06:43.408Z",
       "stale": false
     },
     "freeoutbid.lol": {
@@ -1394,12 +1394,12 @@
         "title": "freeoutbid.lol — Put your app where people look first",
         "description": "Paid projects lead with rich cards, real screenshots, and their own story. Community listings stay in a separate reviewed section."
       },
-      "checkedAt": "2026-08-31T11:29:07.167Z",
+      "checkedAt": "2026-08-31T18:06:43.449Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:07.167Z",
+      "verifiedAt": "2026-08-31T18:06:43.449Z",
       "stale": false
     },
     "freshgames.lol": {
@@ -1416,12 +1416,12 @@
         "title": "freshgames.lol — Find your next game or take #1",
         "description": "Describe what you want to play, get three useful matches, explore live player demand, or bid to put your game at the top."
       },
-      "checkedAt": "2026-08-31T11:29:07.319Z",
+      "checkedAt": "2026-08-31T18:06:43.639Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:07.319Z",
+      "verifiedAt": "2026-08-31T18:06:43.639Z",
       "stale": false
     },
     "getbumped.lol": {
@@ -1438,12 +1438,12 @@
         "title": "getbumped.lol",
         "description": "A public leaderboard you buy your way onto. Every bid costs a dollar more than the last. Nobody gets a refund. That&#x27;s the game."
       },
-      "checkedAt": "2026-08-31T11:29:07.941Z",
+      "checkedAt": "2026-08-31T18:06:44.046Z",
       "currency": "USD",
       "exact": false,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:07.941Z",
+      "verifiedAt": "2026-08-31T18:06:44.046Z",
       "stale": false
     },
     "getlisted.lol": {
@@ -1460,12 +1460,12 @@
         "title": "LISTED — Take Yourself Public",
         "description": "Get listed with any amount from US$5, choose your opening simulated value, then read the crowd through free LONG and SHORT interest signals."
       },
-      "checkedAt": "2026-08-31T11:29:07.943Z",
+      "checkedAt": "2026-08-31T18:06:44.079Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:07.943Z",
+      "verifiedAt": "2026-08-31T18:06:44.079Z",
       "stale": false
     },
     "gitflex.lol": {
@@ -1482,12 +1482,12 @@
         "title": "GitFlex — Can Your Repo Beat the Board?",
         "description": "The live leaderboard where developers flex their GitHub stats. Boost your rank. Get clicks. Show off your stars."
       },
-      "checkedAt": "2026-08-31T11:29:07.944Z",
+      "checkedAt": "2026-08-31T18:06:44.372Z",
       "currency": "USD",
       "exact": false,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:07.944Z",
+      "verifiedAt": "2026-08-31T18:06:44.372Z",
       "stale": false
     },
     "graaveyard.lol": {
@@ -1504,12 +1504,12 @@
         "title": "graaveyard.lol · where side projects go to die",
         "description": "Where side projects go to die. Verified numbers, real post-mortems."
       },
-      "checkedAt": "2026-08-31T11:29:08.079Z",
+      "checkedAt": "2026-08-31T18:06:44.385Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:08.079Z",
+      "verifiedAt": "2026-08-31T18:06:44.385Z",
       "stale": false
     },
     "growu.lol": {
@@ -1526,12 +1526,12 @@
         "title": "GrowU",
         "description": "No ads, no algorithms. Your bid decides your rank. Every listed product gets a free do-follow link."
       },
-      "checkedAt": "2026-08-31T11:29:08.131Z",
+      "checkedAt": "2026-08-31T18:06:44.638Z",
       "currency": "USD",
       "exact": false,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:08.131Z",
+      "verifiedAt": "2026-08-31T18:06:44.638Z",
       "stale": false
     },
     "hire-me.lol": {
@@ -1548,12 +1548,12 @@
         "title": "hire-me.lol — the talent exchange",
         "description": "Showcase your craft. Project yourself to the top. Get an unfiltered AI verdict on your proof, then claim your spot on the live talent leaderboard."
       },
-      "checkedAt": "2026-08-31T11:29:08.291Z",
+      "checkedAt": "2026-08-31T18:06:44.689Z",
       "currency": "USD",
       "exact": false,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:08.291Z",
+      "verifiedAt": "2026-08-31T18:06:44.689Z",
       "stale": false
     },
     "indieapp.lol": {
@@ -1570,12 +1570,12 @@
         "title": "indieapp.lol — Pay for the spot. Rank is what you paid.",
         "description": "indieapp.lol: flightyflow.com is #1 at $5. Rank is what you paid. Pay more to stand above them. No accounts. Stripe checkout."
       },
-      "checkedAt": "2026-08-31T11:29:08.482Z",
+      "checkedAt": "2026-08-31T18:06:44.789Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:08.482Z",
+      "verifiedAt": "2026-08-31T18:06:44.789Z",
       "stale": false
     },
     "indiehackers.lol": {
@@ -1592,7 +1592,7 @@
         "title": "Project not found",
         "description": null
       },
-      "checkedAt": "2026-08-31T11:29:08.743Z",
+      "checkedAt": "2026-08-31T18:06:45.375Z",
       "currency": "USD",
       "exact": false,
       "stale": false
@@ -1611,12 +1611,12 @@
         "title": "instabid.lol — Leaderboard",
         "description": "The Instagram Leaderboard. Add your username. See where you land. Outbid whoever"
       },
-      "checkedAt": "2026-08-31T11:29:08.799Z",
+      "checkedAt": "2026-08-31T18:06:45.449Z",
       "currency": "USD",
       "exact": true,
       "previousBid": 35,
       "changedAt": "2026-08-25T10:02:20.044Z",
-      "verifiedAt": "2026-08-31T11:29:08.799Z",
+      "verifiedAt": "2026-08-31T18:06:45.449Z",
       "stale": false
     },
     "justonespot.lol": {
@@ -1633,7 +1633,7 @@
         "title": null,
         "description": null
       },
-      "checkedAt": "2026-08-31T11:29:08.899Z",
+      "checkedAt": "2026-08-31T18:06:45.503Z",
       "currency": "USD",
       "exact": false,
       "stale": false
@@ -1652,7 +1652,7 @@
         "title": "kingbid.lol — WHO&#x27;S KING? 👑",
         "description": "Bid for digital crowns. Keep the title until someone outbids you. Highest valid bid wins."
       },
-      "checkedAt": "2026-08-31T11:29:09.099Z",
+      "checkedAt": "2026-08-31T18:06:45.594Z",
       "currency": "USD",
       "exact": false,
       "stale": false
@@ -1671,12 +1671,12 @@
         "title": "Kingme",
         "description": "The only leaderboard where getting outbid makes you money."
       },
-      "checkedAt": "2026-08-31T11:29:09.267Z",
+      "checkedAt": "2026-08-31T18:06:45.663Z",
       "currency": "USD",
       "exact": false,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:09.267Z",
+      "verifiedAt": "2026-08-31T18:06:45.663Z",
       "stale": false
     },
     "kingoftheweb.lol": {
@@ -1693,12 +1693,12 @@
         "title": "doja holds #1 — King of the Domain",
         "description": "doja holds the #1 spot, bought for $3. One link on top at a time — outbid for just $1 more and the spot is yours."
       },
-      "checkedAt": "2026-08-31T11:29:09.273Z",
+      "checkedAt": "2026-08-31T18:06:45.963Z",
       "currency": "USD",
       "exact": false,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:09.273Z",
+      "verifiedAt": "2026-08-31T18:06:45.963Z",
       "stale": false
     },
     "kingseat.lol": {
@@ -1715,12 +1715,12 @@
         "title": "KingSeat — Claim the Theater",
         "description": "Brands battle for seats in a movie-theater war map. Claim the throne or take a seat."
       },
-      "checkedAt": "2026-08-31T11:29:09.353Z",
+      "checkedAt": "2026-08-31T18:06:45.970Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:09.353Z",
+      "verifiedAt": "2026-08-31T18:06:45.970Z",
       "stale": false
     },
     "leadingboards.lol": {
@@ -1737,12 +1737,12 @@
         "title": "leadingboards.lol — directory of pay-to-rank leaderboards",
         "description": "Discover bid-based leaderboard sites like outbid.lol. Free listings. Pay to get featured."
       },
-      "checkedAt": "2026-08-31T11:29:09.533Z",
+      "checkedAt": "2026-08-31T18:06:46.217Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:09.533Z",
+      "verifiedAt": "2026-08-31T18:06:46.217Z",
       "stale": false
     },
     "maxbid.lol": {
@@ -1759,7 +1759,7 @@
         "title": "maxbid.lol — Outbid. Rank #1.",
         "description": "No ads, no API keys, no revenue sharing. Pay in SOL to outbid your competition and get to the top. Built for memecoins & Web3 brands."
       },
-      "checkedAt": "2026-08-31T11:29:10.165Z",
+      "checkedAt": "2026-08-31T18:06:46.659Z",
       "currency": "USD",
       "exact": false,
       "stale": false
@@ -1778,12 +1778,12 @@
         "title": "mobpush.lol — together, you can push everything",
         "description": "Start a push for anything — your app, your community, a project, a meme. Bring your people and push it up the public board together."
       },
-      "checkedAt": "2026-08-31T11:29:10.440Z",
+      "checkedAt": "2026-08-31T18:06:46.662Z",
       "currency": "USD",
       "exact": false,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:10.440Z",
+      "verifiedAt": "2026-08-31T18:06:46.662Z",
       "stale": false
     },
     "occupied.lol": {
@@ -1800,12 +1800,12 @@
         "title": "Occupied",
         "description": "Bid on any country. Your website holds it. Anyone can conquer it for 1.5× your bid."
       },
-      "checkedAt": "2026-08-31T11:29:10.718Z",
+      "checkedAt": "2026-08-31T18:06:46.796Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:10.718Z",
+      "verifiedAt": "2026-08-31T18:06:46.796Z",
       "stale": false
     },
     "outapp.lol": {
@@ -1822,12 +1822,12 @@
         "title": "Outapp — The competitive app leaderboard",
         "description": "Pay to move up. Get discovered. See exactly what traffic you received."
       },
-      "checkedAt": "2026-08-31T11:29:10.721Z",
+      "checkedAt": "2026-08-31T18:06:47.016Z",
       "currency": "USD",
       "exact": false,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:10.721Z",
+      "verifiedAt": "2026-08-31T18:06:47.016Z",
       "stale": false
     },
     "outbid-eu.lol": {
@@ -1844,7 +1844,7 @@
         "title": "outbid-eu.lol | European Startup & Challenger Leaderboard",
         "description": "Mainly for European startups and products, but anyone worldwide is free to outbid them."
       },
-      "checkedAt": "2026-08-31T11:29:10.748Z",
+      "checkedAt": "2026-08-31T18:06:47.037Z",
       "currency": "EUR",
       "exact": false,
       "stale": false
@@ -1863,12 +1863,12 @@
         "title": "outbidception.lol — the leaderboard of leaderboards (pay-to-rank)",
         "description": "Where outbid.lol clones and pay-to-rank sites pay to rank each other. #1 right now: Tool Arena at $6.02. Total placed: $23.27. Listings from $1."
       },
-      "checkedAt": "2026-08-31T11:29:10.780Z",
+      "checkedAt": "2026-08-31T18:06:47.143Z",
       "currency": "USD",
       "exact": false,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:10.780Z",
+      "verifiedAt": "2026-08-31T18:06:47.143Z",
       "stale": false
     },
     "outbidcreators.lol": {
@@ -1885,12 +1885,12 @@
         "title": "Outbid Creators: the Instagram creator leaderboard you can buy your way onto",
         "description": "Pay to rank. Get outbid. A pay-to-rank leaderboard for Instagram creators worldwide, bid for the top spot, or get outbid by whoever&#x27;s below you."
       },
-      "checkedAt": "2026-08-31T11:29:10.913Z",
+      "checkedAt": "2026-08-31T18:06:47.164Z",
       "currency": "USD",
       "exact": false,
       "previousBid": 4,
       "changedAt": "2026-08-28T05:33:46.568Z",
-      "verifiedAt": "2026-08-31T11:29:10.913Z",
+      "verifiedAt": "2026-08-31T18:06:47.164Z",
       "stale": false
     },
     "outbidme.lol": {
@@ -1907,12 +1907,12 @@
         "title": "Outbidme — Highest Bid Wins",
         "description": "A public leaderboard where people rank by what they paid. Highest bid wins the top spot."
       },
-      "checkedAt": "2026-08-31T11:29:10.965Z",
+      "checkedAt": "2026-08-31T18:06:47.177Z",
       "currency": "USD",
       "exact": false,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:10.965Z",
+      "verifiedAt": "2026-08-31T18:06:47.177Z",
       "stale": false
     },
     "outbuilt.lol": {
@@ -1929,7 +1929,7 @@
         "title": "outbuilt.lol — don&#x27;t outbid them, outbuild them",
         "description": "A public leaderboard rendered as a skyline. Every bid is a building, your money is the height, and the tallest tower owns the view. No ads, no API keys, no refunds."
       },
-      "checkedAt": "2026-08-31T11:29:11.225Z",
+      "checkedAt": "2026-08-31T18:06:47.703Z",
       "currency": "USD",
       "exact": false,
       "stale": false
@@ -1948,12 +1948,12 @@
         "title": "Outclick | Put your link on the board",
         "description": "One-time public placements for links worth noticing. Bids set the order, visitors choose what to open, and traffic is not guaranteed."
       },
-      "checkedAt": "2026-08-31T11:29:11.355Z",
+      "checkedAt": "2026-08-31T18:06:47.985Z",
       "currency": "USD",
       "exact": false,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:11.355Z",
+      "verifiedAt": "2026-08-31T18:06:47.985Z",
       "stale": false
     },
     "outdo.lol": {
@@ -1967,7 +1967,7 @@
       "ok": false,
       "error": "api: fetch failed",
       "meta": {},
-      "checkedAt": "2026-08-31T11:29:11.737Z",
+      "checkedAt": "2026-08-31T18:06:48.244Z",
       "stale": false
     },
     "outdog.lol": {
@@ -1984,12 +1984,12 @@
         "title": "outdog.lol — a leaderboard of pets, ranked by money",
         "description": "one leaderboard for every pet on earth, ranked purely by how much has been paid to boost them. new pets start at $1. you can always beat #1 by one dollar."
       },
-      "checkedAt": "2026-08-31T11:29:11.795Z",
+      "checkedAt": "2026-08-31T18:06:48.307Z",
       "currency": "USD",
       "exact": false,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:11.795Z",
+      "verifiedAt": "2026-08-31T18:06:48.307Z",
       "stale": false
     },
     "outhustle.lol": {
@@ -2006,12 +2006,12 @@
         "title": "outhustle — rank is dollars. Pay them or earn them.",
         "description": "A public leaderboard where rank is dollars. Outbid everyone for #1, or earn your way up by sending visitors. New spots from $5, or list free."
       },
-      "checkedAt": "2026-08-31T11:29:11.855Z",
+      "checkedAt": "2026-08-31T18:06:48.309Z",
       "currency": "USD",
       "exact": false,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:11.855Z",
+      "verifiedAt": "2026-08-31T18:06:48.309Z",
       "stale": false
     },
     "outlead.lol": {
@@ -2028,12 +2028,12 @@
         "title": "outlead — Lead the public leaderboard",
         "description": "No ads, no API keys, no revenue sharing. Just outlead your competition to get to the top. Will you take #1 on the leaderboard?"
       },
-      "checkedAt": "2026-08-31T11:29:11.858Z",
+      "checkedAt": "2026-08-31T18:06:48.475Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:11.858Z",
+      "verifiedAt": "2026-08-31T18:06:48.475Z",
       "stale": false
     },
     "outoutbid.lol": {
@@ -2050,12 +2050,12 @@
         "title": "outoutbid.lol — every outbid.lol clone, in one directory",
         "description": "462 verified pay-to-rank leaderboards — sites where position is bought, not earned — copied from outbid.lol, each with its entry price and published takings."
       },
-      "checkedAt": "2026-08-31T11:29:11.977Z",
+      "checkedAt": "2026-08-31T18:06:48.490Z",
       "currency": "USD",
       "exact": true,
       "previousBid": 8,
       "changedAt": "2026-08-27T21:06:37.708Z",
-      "verifiedAt": "2026-08-31T11:29:11.977Z",
+      "verifiedAt": "2026-08-31T18:06:48.490Z",
       "stale": false
     },
     "outprofiled.lol": {
@@ -2072,12 +2072,12 @@
         "title": "Doruk Gezici holds #1 on outprofiled.lol — take it for $4",
         "description": "3 LinkedIn profiles ranked · $6 moved. Outbid Doruk Gezici and take #1 for $4."
       },
-      "checkedAt": "2026-08-31T11:29:12.091Z",
+      "checkedAt": "2026-08-31T18:06:48.904Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:12.091Z",
+      "verifiedAt": "2026-08-31T18:06:48.904Z",
       "stale": false
     },
     "outshill.lol": {
@@ -2094,12 +2094,12 @@
         "title": "outshill.lol",
         "description": "The trenches PvP leaderboard — projects, community coins, tokens, memes, whatever. Your total bid buys your rank. Outbid the coin above you."
       },
-      "checkedAt": "2026-08-31T11:29:12.466Z",
+      "checkedAt": "2026-08-31T18:06:49.357Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:12.466Z",
+      "verifiedAt": "2026-08-31T18:06:49.357Z",
       "stale": false
     },
     "pageone.lol": {
@@ -2116,12 +2116,12 @@
         "title": "Page One — the homepage belongs to whoever paid most",
         "description": "One page. Whoever paid most owns what you see first. Every page ever bought is still here."
       },
-      "checkedAt": "2026-08-31T11:29:12.509Z",
+      "checkedAt": "2026-08-31T18:06:49.425Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:12.509Z",
+      "verifiedAt": "2026-08-31T18:06:49.425Z",
       "stale": false
     },
     "posterwar.lol": {
@@ -2138,31 +2138,34 @@
         "title": "posterwar — One wall. Paste your poster up. Anyone can paste over you.",
         "description": "A finite paste-up wall. Put a poster up from $1, it links to your site and counts every click. Anyone can paste straight over you for 1.5x what you paid."
       },
-      "checkedAt": "2026-08-31T11:29:12.813Z",
+      "checkedAt": "2026-08-31T18:06:49.507Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:12.813Z",
+      "verifiedAt": "2026-08-31T18:06:49.507Z",
       "stale": false
     },
     "puremoney.lol": {
       "domain": "puremoney.lol",
-      "topBid": null,
+      "topBid": 27,
       "topEntry": null,
-      "source": null,
-      "claimPrice": null,
+      "source": "claim",
+      "claimPrice": 27,
       "nextBid": null,
-      "skipped": true,
-      "ok": false,
-      "error": "nothing readable: no endpoint, no bid key, no \"claim #1 for $X\"",
+      "skipped": false,
+      "ok": true,
+      "error": null,
       "meta": {
-        "title": "ThinkTime.lol | Own a Day of the Year",
-        "description": "Claim any of 365 dates on the public year wall. Own it every year until stolen at 1.5x. Name, note & X handle displayed. Pay by card, X Money or crypto."
+        "title": "Pure Money | Public record of who paid for rank",
+        "description": "Public money ledger for the live bid board. Rank equals the bid. First listing $1. Each new #1 is $1 more. Unique page per paid listing."
       },
-      "checkedAt": "2026-08-31T11:29:12.838Z",
+      "checkedAt": "2026-08-31T18:06:49.649Z",
       "currency": "USD",
       "exact": false,
+      "previousBid": null,
+      "changedAt": null,
+      "verifiedAt": "2026-08-31T18:06:49.649Z",
       "stale": false
     },
     "pushyouryt.lol": {
@@ -2179,12 +2182,12 @@
         "title": "PushYourYT — the YouTube leaderboard you can buy into",
         "description": "A public leaderboard of YouTube channels where rank is paid for. Highest amount sits on top. No algorithm, no sub4sub."
       },
-      "checkedAt": "2026-08-31T11:29:12.919Z",
+      "checkedAt": "2026-08-31T18:06:49.767Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:12.919Z",
+      "verifiedAt": "2026-08-31T18:06:49.767Z",
       "stale": false
     },
     "rankaffiliate.lol": {
@@ -2201,12 +2204,12 @@
         "title": "rankaffiliate.lol — outbid for affiliate #1",
         "description": "Paste your affiliate link and outbid for the top spot. Highest bid stays #1."
       },
-      "checkedAt": "2026-08-31T11:29:12.949Z",
+      "checkedAt": "2026-08-31T18:06:49.832Z",
       "currency": "USD",
       "exact": false,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:12.949Z",
+      "verifiedAt": "2026-08-31T18:06:49.832Z",
       "stale": false
     },
     "rankfirst.lol": {
@@ -2223,12 +2226,12 @@
         "title": "rankfirst.lol — the leaderboard money can buy",
         "description": "A public leaderboard where rank is bought, not earned. List your site or X profile from $2, then outbid the listing above you to climb. No algorithm, no merit."
       },
-      "checkedAt": "2026-08-31T11:29:12.985Z",
+      "checkedAt": "2026-08-31T18:06:49.873Z",
       "currency": "USD",
       "exact": false,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:12.985Z",
+      "verifiedAt": "2026-08-31T18:06:49.873Z",
       "stale": false
     },
     "ranktop.lol": {
@@ -2245,12 +2248,12 @@
         "title": "Ranktop — Fair Website Ranking & Product Leaderboard",
         "description": "Rank your website or SaaS product on a live leaderboard with fair bidding. Every new top bid is limited to a $10 increase, so every founder can compete."
       },
-      "checkedAt": "2026-08-31T11:29:13.461Z",
+      "checkedAt": "2026-08-31T18:06:50.176Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:13.461Z",
+      "verifiedAt": "2026-08-31T18:06:50.176Z",
       "stale": false
     },
     "ranktube.lol": {
@@ -2267,12 +2270,12 @@
         "title": "RankTube — Every video is an ad. Every ad is for sale.",
         "description": "A homepage that looks like a video feed, except every tile is a paid slot. Outbid the current holder and your brand takes their place — until someone outbids you."
       },
-      "checkedAt": "2026-08-31T11:29:13.495Z",
+      "checkedAt": "2026-08-31T18:06:50.297Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:13.495Z",
+      "verifiedAt": "2026-08-31T18:06:50.297Z",
       "stale": false
     },
     "screenwar.lol": {
@@ -2289,7 +2292,7 @@
         "title": "Screenwar — One screen. One pot. Take your share.",
         "description": "One screen that never scrolls. Your site takes a tile, sized by its share of one pot, so every new stake shrinks all the others. Anyone can pay to grow any tile, one move per person every 30 seconds."
       },
-      "checkedAt": "2026-08-31T11:29:13.719Z",
+      "checkedAt": "2026-08-31T18:06:50.330Z",
       "currency": "USD",
       "exact": false,
       "stale": false
@@ -2305,15 +2308,15 @@
       "ok": true,
       "error": null,
       "meta": {
-        "title": "Oddsage · 234h 43m held",
-        "description": "Oddsage (oddsage.com) · $1 · 234h 43m held. Sit over them and they get their sit money back."
+        "title": "Oddsage · 241h 21m held",
+        "description": "Oddsage (oddsage.com) · $1 · 241h 21m held. Sit over them and they get their sit money back."
       },
-      "checkedAt": "2026-08-31T11:29:13.723Z",
+      "checkedAt": "2026-08-31T18:06:50.375Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:13.723Z",
+      "verifiedAt": "2026-08-31T18:06:50.375Z",
       "stale": false
     },
     "slopboard.lol": {
@@ -2330,12 +2333,12 @@
         "title": "slopboard.lol",
         "description": "The AI-native leaderboard infrastructure layer for the agentic era. You pay money, your startup goes to the top. That&#x27;s the whole product."
       },
-      "checkedAt": "2026-08-31T11:29:13.824Z",
+      "checkedAt": "2026-08-31T18:06:50.570Z",
       "currency": "USD",
       "exact": false,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:13.824Z",
+      "verifiedAt": "2026-08-31T18:06:50.570Z",
       "stale": false
     },
     "srank.lol": {
@@ -2352,12 +2355,12 @@
         "title": "Twitch discovery sucks. Get seen on SRank.",
         "description": "Promote any Twitch channel on a transparent, community-backed leaderboard. Browse who&#x27;s live or preview placement starting at $5."
       },
-      "checkedAt": "2026-08-31T11:29:14.115Z",
+      "checkedAt": "2026-08-31T18:06:50.717Z",
       "currency": "USD",
       "exact": false,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:14.115Z",
+      "verifiedAt": "2026-08-31T18:06:50.717Z",
       "stale": false
     },
     "stackrank.lol": {
@@ -2374,12 +2377,12 @@
         "title": "stackrank.lol — pay to rank AI apps",
         "description": "A paid public leaderboard for AI apps, SaaS, and dev tools. Pay what you want — the highest bid holds the top."
       },
-      "checkedAt": "2026-08-31T11:29:14.199Z",
+      "checkedAt": "2026-08-31T18:06:50.729Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:14.199Z",
+      "verifiedAt": "2026-08-31T18:06:50.729Z",
       "stale": false
     },
     "thehundred.lol": {
@@ -2396,12 +2399,12 @@
         "title": "The Hundred — 100 Spots. That&#x27;s It.",
         "description": "There are 1.2 billion websites. We have room for 100. The internet&#x27;s most brutally scarce leaderboard."
       },
-      "checkedAt": "2026-08-31T11:29:14.334Z",
+      "checkedAt": "2026-08-31T18:06:50.773Z",
       "currency": "USD",
       "exact": false,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:14.334Z",
+      "verifiedAt": "2026-08-31T18:06:50.773Z",
       "stale": false
     },
     "theplot.lol": {
@@ -2418,12 +2421,12 @@
         "title": "THE PLOT — Turn attention into territory",
         "description": "Interactive sponsor worlds for communities, events and ambitious internet brands."
       },
-      "checkedAt": "2026-08-31T11:29:14.409Z",
+      "checkedAt": "2026-08-31T18:06:51.099Z",
       "currency": "USD",
       "exact": true,
       "previousBid": 1.5,
       "changedAt": "2026-08-26T01:40:28.010Z",
-      "verifiedAt": "2026-08-31T11:29:14.409Z",
+      "verifiedAt": "2026-08-31T18:06:51.099Z",
       "stale": false
     },
     "thisday.lol": {
@@ -2440,12 +2443,12 @@
         "title": "thisday.lol - own a day on the internet",
         "description": "Own a day on the internet. Pay what you want - highest bid sits on top. Any amount from $1 gets you on the board."
       },
-      "checkedAt": "2026-08-31T11:29:14.560Z",
+      "checkedAt": "2026-08-31T18:06:51.322Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:14.560Z",
+      "verifiedAt": "2026-08-31T18:06:51.322Z",
       "stale": false
     },
     "top3.lol": {
@@ -2462,12 +2465,12 @@
         "title": "Startup leaderboard & verified MRR directory",
         "description": "Rank your startup, verify Stripe MRR, and bid for homepage visibility. Browse trending listings and discover indie SaaS products for sale."
       },
-      "checkedAt": "2026-08-31T11:29:14.618Z",
+      "checkedAt": "2026-08-31T18:06:51.521Z",
       "currency": "USD",
       "exact": true,
       "previousBid": 10,
       "changedAt": "2026-08-26T13:09:20.914Z",
-      "verifiedAt": "2026-08-31T11:29:14.618Z",
+      "verifiedAt": "2026-08-31T18:06:51.521Z",
       "stale": false
     },
     "top5.lol": {
@@ -2484,12 +2487,12 @@
         "title": "Top5.lol — Five seats. That&#x27;s it.",
         "description": "Outbid your way onto one of five permanent seats."
       },
-      "checkedAt": "2026-08-31T11:29:14.803Z",
+      "checkedAt": "2026-08-31T18:06:51.713Z",
       "currency": "USD",
       "exact": false,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:14.803Z",
+      "verifiedAt": "2026-08-31T18:06:51.713Z",
       "stale": false
     },
     "topandroidapp.lol": {
@@ -2506,12 +2509,12 @@
         "title": "Top Android Apps Leaderboard — topandroidapp.lol",
         "description": "Discover and rank the best Android apps. Lifetime USD bids determine each app&#x27;s position on the Top Android Apps leaderboard."
       },
-      "checkedAt": "2026-08-31T11:29:15.264Z",
+      "checkedAt": "2026-08-31T18:06:51.957Z",
       "currency": "USD",
       "exact": false,
       "previousBid": 5,
       "changedAt": "2026-08-29T14:17:21.392Z",
-      "verifiedAt": "2026-08-31T11:29:15.264Z",
+      "verifiedAt": "2026-08-31T18:06:51.957Z",
       "stale": false
     },
     "topbids.lol": {
@@ -2528,7 +2531,7 @@
         "title": "TopBid — Your logo. Our truck.",
         "description": "TopBid runs the internet&#x27;s billboard truck — a virtual semi parked on this page, seen by every visitor. Bid on a panel and your brand rides it for 14 days."
       },
-      "checkedAt": "2026-08-31T11:29:15.639Z",
+      "checkedAt": "2026-08-31T18:06:52.450Z",
       "currency": "USD",
       "exact": false,
       "stale": false
@@ -2542,12 +2545,12 @@
       "nextBid": null,
       "skipped": false,
       "ok": false,
-      "error": "site unreachable (HTTP 404) (last read 2026-08-30T21:25:24.762Z, dropped)",
+      "error": "site unreachable (HTTP 404)",
       "meta": {
         "title": null,
         "description": null
       },
-      "checkedAt": "2026-08-31T11:29:15.659Z",
+      "checkedAt": "2026-08-31T18:06:52.478Z",
       "currency": "USD",
       "exact": false,
       "stale": false
@@ -2566,12 +2569,12 @@
         "title": "topchat.lol — money talks",
         "description": "Pay $2, say anything. Money decides the order — and anyone can boost any message to the top."
       },
-      "checkedAt": "2026-08-31T11:29:15.702Z",
+      "checkedAt": "2026-08-31T18:06:52.549Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:15.702Z",
+      "verifiedAt": "2026-08-31T18:06:52.549Z",
       "stale": false
     },
     "tophuman.lol": {
@@ -2588,12 +2591,12 @@
         "title": "Top Human — Eight Billion People. One Top Spot.",
         "description": "Eight billion people. One top spot. Add your website or social profile, outbid the current leader, and become the internet’s Top Human."
       },
-      "checkedAt": "2026-08-31T11:29:15.901Z",
+      "checkedAt": "2026-08-31T18:06:52.615Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:15.901Z",
+      "verifiedAt": "2026-08-31T18:06:52.615Z",
       "stale": false
     },
     "tophumans.lol": {
@@ -2610,12 +2613,12 @@
         "title": "tophumans.lol · the human leaderboard",
         "description": "A public leaderboard of humans, ranked by money alone. Whoever pays the most sits on top. Claim your rank."
       },
-      "checkedAt": "2026-08-31T11:29:15.931Z",
+      "checkedAt": "2026-08-31T18:06:52.692Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:15.931Z",
+      "verifiedAt": "2026-08-31T18:06:52.692Z",
       "stale": false
     },
     "toplaunch.lol": {
@@ -2632,12 +2635,12 @@
         "title": "toplaunch.lol · the highest bid takes #1",
         "description": "The launch leaderboard. No ads, no algorithms. Your bid is your rank. Bids stack, ranks shuffle live, and every click lands on your site."
       },
-      "checkedAt": "2026-08-31T11:29:16.023Z",
+      "checkedAt": "2026-08-31T18:06:52.737Z",
       "currency": "USD",
       "exact": false,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:16.023Z",
+      "verifiedAt": "2026-08-31T18:06:52.737Z",
       "stale": false
     },
     "toplocal.lol": {
@@ -2654,7 +2657,7 @@
         "title": "toplocal: the leaderboard money buys, per continent",
         "description": "Bid real dollars to rank #1 on any continent. Highest bid wins the top spot, from Europe to Asia. One input: dollars."
       },
-      "checkedAt": "2026-08-31T11:29:16.134Z",
+      "checkedAt": "2026-08-31T18:06:52.759Z",
       "currency": "USD",
       "exact": false,
       "stale": false
@@ -2673,12 +2676,12 @@
         "title": "Toppl — Brands bid. Buyers get the deal.",
         "description": "Browse transparent paid rankings and advertiser-declared discounts."
       },
-      "checkedAt": "2026-08-31T11:29:16.160Z",
+      "checkedAt": "2026-08-31T18:06:52.947Z",
       "currency": "USD",
       "exact": true,
       "previousBid": 1,
       "changedAt": "2026-08-24T13:43:27.935Z",
-      "verifiedAt": "2026-08-31T11:29:16.160Z",
+      "verifiedAt": "2026-08-31T18:06:52.947Z",
       "stale": false
     },
     "toptools.lol": {
@@ -2695,12 +2698,12 @@
         "title": "TopTools: Bid your way to the top of the internet.",
         "description": "A leaderboard of websites ranked by what they bid. Put in more than the site above you and you move up. Hold #1 until somebody outbids you."
       },
-      "checkedAt": "2026-08-31T11:29:16.268Z",
+      "checkedAt": "2026-08-31T18:06:53.009Z",
       "currency": "USD",
       "exact": true,
       "previousBid": 3,
       "changedAt": "2026-08-25T17:06:51.195Z",
-      "verifiedAt": "2026-08-31T11:29:16.268Z",
+      "verifiedAt": "2026-08-31T18:06:53.009Z",
       "stale": false
     },
     "tweetbid.lol": {
@@ -2717,12 +2720,12 @@
         "title": "tweetbid.lol — pay to rank any tweet",
         "description": null
       },
-      "checkedAt": "2026-08-31T11:29:16.648Z",
+      "checkedAt": "2026-08-31T18:06:53.087Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:16.648Z",
+      "verifiedAt": "2026-08-31T18:06:53.087Z",
       "stale": false
     },
     "tweetrank.lol": {
@@ -2739,12 +2742,12 @@
         "title": "tweetrank.lol — pay to put your tweet on top",
         "description": "A live leaderboard of tweets, ranked by what people pay. Highest bid takes #1. Every dollar under it takes the next best spot."
       },
-      "checkedAt": "2026-08-31T11:29:16.675Z",
+      "checkedAt": "2026-08-31T18:06:53.258Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:16.675Z",
+      "verifiedAt": "2026-08-31T18:06:53.258Z",
       "stale": false
     },
     "twitterbid.lol": {
@@ -2761,12 +2764,12 @@
         "title": "Twitterbid — rank is the bid",
         "description": "A public leaderboard for X profiles. Pay to stand above everyone else — rank is the bid, nothing else."
       },
-      "checkedAt": "2026-08-31T11:29:16.764Z",
+      "checkedAt": "2026-08-31T18:06:53.280Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:16.764Z",
+      "verifiedAt": "2026-08-31T18:06:53.280Z",
       "stale": false
     },
     "undercut.lol": {
@@ -2783,12 +2786,12 @@
         "title": "undercut.lol",
         "description": "A rolling hourly auction. Every hour the price falls from $100 to $10. Bids stay hidden until the hour ends."
       },
-      "checkedAt": "2026-08-31T11:29:16.873Z",
+      "checkedAt": "2026-08-31T18:06:53.486Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:16.873Z",
+      "verifiedAt": "2026-08-31T18:06:53.486Z",
       "stale": false
     },
     "upbid.lol": {
@@ -2802,7 +2805,7 @@
       "ok": false,
       "error": "api: fetch failed",
       "meta": {},
-      "checkedAt": "2026-08-31T11:29:17.075Z",
+      "checkedAt": "2026-08-31T18:06:53.624Z",
       "stale": false
     },
     "upnext.lol": {
@@ -2819,7 +2822,7 @@
         "title": "UpNext — The YouTube Leaderboard",
         "description": "Bid for your spot. Get seen. Stay on top."
       },
-      "checkedAt": "2026-08-31T11:29:17.114Z",
+      "checkedAt": "2026-08-31T18:06:53.628Z",
       "currency": "USD",
       "exact": false,
       "stale": false
@@ -2838,12 +2841,12 @@
         "title": "VIALWARS — pay your way to #1",
         "description": "The peptide vendor leaderboard where the highest bidder wins. Subtle? No. Honest? Completely. Outbid your competitors to rank #1 and consider marketing done for today."
       },
-      "checkedAt": "2026-08-31T11:29:17.248Z",
+      "checkedAt": "2026-08-31T18:06:53.640Z",
       "currency": "USD",
       "exact": false,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:17.248Z",
+      "verifiedAt": "2026-08-31T18:06:53.640Z",
       "stale": false
     },
     "viralbid.lol": {
@@ -2860,7 +2863,7 @@
         "title": null,
         "description": null
       },
-      "checkedAt": "2026-08-31T11:29:17.274Z",
+      "checkedAt": "2026-08-31T18:06:53.662Z",
       "currency": "USD",
       "exact": false,
       "stale": false
@@ -2879,7 +2882,7 @@
         "title": "We have links.",
         "description": "Fully clickable links. No ads, no algorithm. Bold and beautiful. Claim your spot while the trend is hot. 🔥"
       },
-      "checkedAt": "2026-08-31T11:29:17.358Z",
+      "checkedAt": "2026-08-31T18:06:53.770Z",
       "currency": "USD",
       "exact": false,
       "stale": false
@@ -2898,12 +2901,12 @@
         "title": "Your Next Launch Starts Here",
         "description": "Launch free with one X post. Your product and builder profile go live together, while paid boosts fade 5% daily."
       },
-      "checkedAt": "2026-08-31T11:29:17.420Z",
+      "checkedAt": "2026-08-31T18:06:53.772Z",
       "currency": "USD",
       "exact": false,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:17.420Z",
+      "verifiedAt": "2026-08-31T18:06:53.772Z",
       "stale": false
     },
     "whos1.lol": {
@@ -2917,7 +2920,7 @@
       "ok": false,
       "error": "html: fetch failed",
       "meta": {},
-      "checkedAt": "2026-08-31T11:29:17.430Z",
+      "checkedAt": "2026-08-31T18:06:53.797Z",
       "stale": false
     },
     "worstside.lol": {
@@ -2934,12 +2937,12 @@
         "title": "Left vs Right: Which Is Worse for Humanity? | WorstSide.lol",
         "description": "An intentionally unscientific internet experiment where people put money behind their political opinion."
       },
-      "checkedAt": "2026-08-31T11:29:17.447Z",
+      "checkedAt": "2026-08-31T18:06:53.800Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:17.447Z",
+      "verifiedAt": "2026-08-31T18:06:53.800Z",
       "stale": false
     },
     "xme.lol": {
@@ -2956,12 +2959,12 @@
         "title": "Bid your X profile up!",
         "description": "The leaderboard for X profiles. Your bid decides your rank. Top ranks get seen. Seen profiles get followed."
       },
-      "checkedAt": "2026-08-31T11:29:17.483Z",
+      "checkedAt": "2026-08-31T18:06:53.822Z",
       "currency": "USD",
       "exact": true,
       "previousBid": 45,
       "changedAt": "2026-08-24T08:54:24.153Z",
-      "verifiedAt": "2026-08-31T11:29:17.483Z",
+      "verifiedAt": "2026-08-31T18:06:53.822Z",
       "stale": false
     },
     "youlose.lol": {
@@ -2978,12 +2981,12 @@
         "title": "youlose.lol — Claim the Hill",
         "description": "Outbid the ruler, plant your link, and claim the hill."
       },
-      "checkedAt": "2026-08-31T11:29:17.569Z",
+      "checkedAt": "2026-08-31T18:06:53.824Z",
       "currency": "USD",
       "exact": true,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:17.569Z",
+      "verifiedAt": "2026-08-31T18:06:53.824Z",
       "stale": false
     },
     "toolcup.lol": {
@@ -3000,12 +3003,12 @@
         "title": "ToolCup | Paid leaderboard for websites, AI tools & software",
         "description": "ToolCup (toolcup.lol, also known as ToolCup Lol) is the paid leaderboard for websites, AI tools, and software. List your tool and compete for the top spot on the permanent public board."
       },
-      "checkedAt": "2026-08-31T11:29:17.582Z",
+      "checkedAt": "2026-08-31T18:06:54.044Z",
       "currency": "USD",
       "exact": false,
       "previousBid": 18,
       "changedAt": "2026-08-29T01:52:06.109Z",
-      "verifiedAt": "2026-08-31T11:29:17.582Z",
+      "verifiedAt": "2026-08-31T18:06:54.044Z",
       "stale": false
     },
     "hiddengems.lol": {
@@ -3022,12 +3025,12 @@
         "title": "HiddenGems.lol — Claim #1. Get Your Indie Game Played",
         "description": "Paste a game URL and bid for a leaderboard spot. Rank is the lifetime total — highest bid is #1 until someone pays more. No ads, no upvotes, no algorithm."
       },
-      "checkedAt": "2026-08-31T11:29:17.664Z",
+      "checkedAt": "2026-08-31T18:06:54.048Z",
       "currency": "USD",
       "exact": false,
       "previousBid": null,
       "changedAt": null,
-      "verifiedAt": "2026-08-31T11:29:17.664Z",
+      "verifiedAt": "2026-08-31T18:06:54.048Z",
       "stale": false
     }
   }
