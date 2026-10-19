@@ -61,7 +61,7 @@ npm run refresh              # all sites, ~5s
 npm run refresh outbid.lol   # just one
 ```
 
-`.github/workflows/refresh.yml` runs the same command every 30 minutes and commits
+`.github/workflows/refresh.yml` runs the same command once a day and commits
 `data/bids.json` when a number moves — which triggers a redeploy, which rebuilds the static page.
 No database, no cron function, no runtime fetching.
 

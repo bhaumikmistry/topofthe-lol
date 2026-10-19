@@ -2,9 +2,9 @@
 // Refresh every listed site's current top bid: node scripts/refresh.mjs [domain ...]
 import { BIDS_FILE, SITES_FILE, mapWithConcurrency, probeSite, readJson, writeJson } from './lib.mjs';
 
-// How long a number survives without being re-read. The refresh runs every 30
-// minutes, so anything this old has been failing for a day's worth of attempts.
-const STALE_LIMIT_MS = 12 * 60 * 60 * 1000;
+// How long a number survives without being re-read. The refresh runs once a
+// day, so anything this old has failed three days running.
+const STALE_LIMIT_MS = 3 * 24 * 60 * 60 * 1000;
 
 const only = process.argv.slice(2).filter((arg) => !arg.startsWith('-'));
 

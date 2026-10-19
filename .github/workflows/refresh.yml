@@ -2,8 +2,9 @@ name: Refresh bids
 
 on:
   schedule:
-    # Every 30 minutes. GitHub queues cron jobs, so expect a few minutes of drift.
-    - cron: '*/30 * * * *'
+    # Once a day at 06:00 UTC. Every data commit is a Vercel production deploy,
+    # and at every 30 minutes those filled the free 10 GB of deployment storage.
+    - cron: '0 6 * * *'
   workflow_dispatch:
 
 permissions:
